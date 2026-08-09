@@ -3,7 +3,7 @@
 ## 🎯 Overview
 Analysis of my steam dataset from the Steam Web API examining game popularity, pricing trends, genre performance, and developer output to understand what drives success on the platform.
 
-It is important to remember only the top 1000 titles on Steam by concurrent player count were collected for this dataset. 
+It is important to remember that only the top 1,000 titles on Steam by concurrent player count were collected for this dataset.
 
 ## 💼 Business Questions
 Out of the current top 1000 titles:
@@ -86,7 +86,7 @@ Query: [3_most_played_genres.sql](sql/3_most_played_genres.sql)
 **Key Findings**
 
 - Free-To-Play is the dominant genre by concurrent player count, over more than double the later genre (RPG).
-- Strategy and Action seem to have a generous following, infering that other multiplayer-adjacent genres are also valued by players.
+- Strategy and Action seem to have a generous following, suggesting that other multiplayer-adjacent genres are also valued by players.
 - Niche genres such as Game Development and Video Production trail significantly behind, confirming that genre choice has a meaningful impact on potential audience size.
 
 **Business Insights**
@@ -221,7 +221,7 @@ Query: [7_game_count_by_developer.sql](sql/7_game_count_by_developer.sql)
 
 
 ## What Makes a Steam Title Special?
-With all metrics considered, a successful steam title requires a dedicated player base; either a Free-To-Play approach, or a paid title with a generously inviting amount of game content. A title that can create an entriely different gameplay experience in comparision to its competitors will surely dominate within the market.
+With all metrics considered, a successful Steam title requires a dedicated player base; either a Free-To-Play approach or a paid title with a generously inviting amount of game content. A title that can create an entirely different gameplay experience in comparison to its competitors will surely dominate within the market.
 
 ## ⚙️ Technical Details
 - Database: PostgreSQL
