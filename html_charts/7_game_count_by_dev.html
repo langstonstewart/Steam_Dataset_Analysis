@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Most Prolific Developers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: radial-gradient(circle at top, #1c1c1c, #050505 65%);
+            color: #d4d4d4;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: #111111;
+            border: 1px solid #2a2a2a;
+            border-radius: 18px;
+            padding: 40px 36px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .header {
+            margin-bottom: 28px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .header .eyebrow {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72em;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #808080;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+        }
+
+        .header p {
+            font-size: 0.9em;
+            color: #8a8a8a;
+            margin-top: 6px;
+            font-style: italic;
+        }
+
+        .chart-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .chart-header h2 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9em;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            color: #f2f2f2;
+        }
+
+        .stats-row {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat {
+            flex: 1;
+            border: 1px solid #2a2a2a;
+            border-top: 2px solid #808080;
+            border-radius: 10px;
+            padding: 14px 16px;
+            background: #161616;
+            transition: border-color 0.2s ease;
+        }
+
+        .stat:hover {
+            border-top-color: #ffffff;
+        }
+
+        .stat .stat-label {
+            font-size: 0.72em;
+            color: #8a8a8a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .stat .stat-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.25em;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .stat .stat-meta {
+            font-size: 0.82em;
+            color: #8a8a8a;
+            margin-top: 3px;
+        }
+
+        .chart-wrap {
+            height: 460px;
+        }
+
+        footer {
+            margin-top: 26px;
+            padding-top: 18px;
+            border-top: 1px solid #2a2a2a;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75em;
+            letter-spacing: 0.5px;
+            color: #707070;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .stats-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="eyebrow">Steam Platform · Developer Analysis</div>
+            <h1>Most Prolific Developers</h1>
+            <p>Number of games developed by studio</p>
+        </div>
+
+        <div class="chart-header">
+            <h2>Games Developed by Studio</h2>
+        </div>
+
+        <div class="stats-row" id="statsRow"></div>
+
+        <div class="chart-wrap">
+            <canvas id="devChart"></canvas>
+        </div>
+
+        <footer>Data sourced from the Steam Web API. Only the top 1000 games/apps by concurrent player count in Late July 2026 were included into this dataset.</footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <script>
+        const devData = [
+            { name: 'Valve', gameCount: 18 },
+            { name: 'CAPCOM Co., Ltd.', gameCount: 15 },
+            { name: 'Square Enix', gameCount: 12 },
+            { name: 'CREATIVE ASSEMBLY', gameCount: 10 },
+            { name: 'Firaxis Games', gameCount: 9 },
+            { name: 'Sports Interactive', gameCount: 8 },
+            { name: 'Bethesda Game Studios', gameCount: 8 },
+            { name: 'Obsidian Entertainment', gameCount: 8 },
+            { name: 'Frontier Developments', gameCount: 7 },
+            { name: 'Ubisoft Montreal', gameCount: 7 },
+            { name: 'Paradox Development Studio', gameCount: 7 },
+            { name: 'FromSoftware, Inc.', gameCount: 6 },
+            { name: 'ATLUS', gameCount: 6 },
+            { name: 'Infinity Ward', gameCount: 5 },
+            { name: 'DICE', gameCount: 5 }
+        ];
+
+        const data = [...devData].sort((a, b) => b.gameCount - a.gameCount);
+        const topDev = data[0];
+        const total = data.reduce((sum, item) => sum + item.gameCount, 0);
+        const avg = total / data.length;
+
+        document.getElementById('statsRow').innerHTML = `
+            <div class="stat">
+                <div class="stat-label">Top Developer</div>
+                <div class="stat-value">${topDev.name}</div>
+                <div class="stat-meta">${topDev.gameCount} games developed</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Developers Tracked</div>
+                <div class="stat-value">${data.length}</div>
+                <div class="stat-meta">in current view</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Average Count</div>
+                <div class="stat-value">${avg.toFixed(1)}</div>
+                <div class="stat-meta">games per studio</div>
+            </div>
+        `;
+
+        new Chart(document.getElementById('devChart'), {
+            type: 'bar',
+            data: {
+                labels: data.map(item => item.name),
+                datasets: [{
+                    label: 'Games Developed',
+                    data: data.map(item => item.gameCount),
+                    backgroundColor: '#c9c9c9',
+                    hoverBackgroundColor: '#ffffff',
+                    borderRadius: 6,
+                    maxBarThickness: 22
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: { duration: 900, easing: 'easeOutQuart' },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: '#1a1a1a',
+                        titleColor: '#ffffff',
+                        bodyColor: '#c9c9c9',
+                        borderColor: '#3a3a3a',
+                        borderWidth: 1,
+                        bodyFont: { family: 'JetBrains Mono' },
+                        titleFont: { family: 'Inter', weight: '600' },
+                        callbacks: {
+                            label: function (context) {
+                                const item = data[context.dataIndex];
+                                return `Games Developed: ${item.gameCount}`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        ticks: { color: '#8a8a8a', font: { family: 'JetBrains Mono' } },
+                        grid: { color: 'rgba(255,255,255,0.06)' }
+                    },
+                    y: {
+                        ticks: { color: '#d4d4d4', font: { family: 'Inter' } },
+                        grid: { display: false }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

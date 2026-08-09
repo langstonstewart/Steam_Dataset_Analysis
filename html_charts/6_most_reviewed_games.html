@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Most Reviewed & Highest Rated Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: radial-gradient(circle at top, #1c1c1c, #050505 65%);
+            color: #d4d4d4;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: #111111;
+            border: 1px solid #2a2a2a;
+            border-radius: 18px;
+            padding: 40px 36px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .header {
+            margin-bottom: 28px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .header .eyebrow {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72em;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #808080;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+        }
+
+        .header p {
+            font-size: 0.9em;
+            color: #8a8a8a;
+            margin-top: 6px;
+            font-style: italic;
+        }
+
+        .tab-bar {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .tab-btn {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid transparent;
+            color: #8a8a8a;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.82em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 10px 16px;
+            cursor: pointer;
+            transition: color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .tab-btn:hover {
+            color: #ffffff;
+        }
+
+        .tab-btn.active {
+            color: #ffffff;
+            border-bottom-color: #ffffff;
+        }
+
+        .tab-panel {
+            display: none;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        .chart-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .chart-header h2 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9em;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            color: #f2f2f2;
+        }
+
+        .stats-row {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat {
+            flex: 1;
+            border: 1px solid #2a2a2a;
+            border-top: 2px solid #808080;
+            border-radius: 10px;
+            padding: 14px 16px;
+            background: #161616;
+            transition: border-color 0.2s ease;
+        }
+
+        .stat:hover {
+            border-top-color: #ffffff;
+        }
+
+        .stat .stat-label {
+            font-size: 0.72em;
+            color: #8a8a8a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .stat .stat-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.25em;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .stat .stat-meta {
+            font-size: 0.82em;
+            color: #8a8a8a;
+            margin-top: 3px;
+        }
+
+        .chart-wrap {
+            height: 620px;
+        }
+
+        footer {
+            margin-top: 26px;
+            padding-top: 18px;
+            border-top: 1px solid #2a2a2a;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75em;
+            letter-spacing: 0.5px;
+            color: #707070;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .stats-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="eyebrow">Steam Platform · Review Analysis</div>
+            <h1>Most Reviewed &amp; Highest Rated Games</h1>
+            <p>Total reviews and positive review score by game</p>
+        </div>
+
+        <div class="tab-bar" role="tablist" aria-label="Chart selector">
+            <button class="tab-btn active" data-tab="reviewed">Most Reviewed</button>
+            <button class="tab-btn" data-tab="rated">Highest Rated</button>
+        </div>
+
+        <div class="tab-panel active" data-panel="reviewed">
+            <div class="chart-header">
+                <h2>Total Reviews by Game</h2>
+            </div>
+            <div class="stats-row" id="statsRowReviewed"></div>
+            <div class="chart-wrap">
+                <canvas id="reviewedChart"></canvas>
+            </div>
+        </div>
+
+        <div class="tab-panel" data-panel="rated">
+            <div class="chart-header">
+                <h2>Positive Review Score by Game</h2>
+            </div>
+            <div class="stats-row" id="statsRowRated"></div>
+            <div class="chart-wrap">
+                <canvas id="ratedChart"></canvas>
+            </div>
+        </div>
+
+        <footer>Data sourced from the Steam Web API. Only the top 1000 games/apps by concurrent player count in Late July 2026 were included into this dataset.</footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <script>
+        // ---- Most Reviewed module ----
+        const reviewedModule = (function () {
+            const gameData = [
+                { name: 'Counter-Strike 2', totalReviews: 2575759, totalPositive: 2222734, totalNegative: 353025, score: 86.29 },
+                { name: 'Dota 2', totalReviews: 833096, totalPositive: 733097, totalNegative: 99999, score: 88 },
+                { name: 'HELLDIVERS 2', totalReviews: 815518, totalPositive: 652815, totalNegative: 162703, score: 80.05 },
+                { name: "Tom Clancy's Rainbow Six Siege", totalReviews: 795187, totalPositive: 653412, totalNegative: 141775, score: 82.17 },
+                { name: 'Team Fortress 2', totalReviews: 738526, totalPositive: 664231, totalNegative: 74295, score: 89.94 },
+                { name: 'Terraria', totalReviews: 735262, totalPositive: 716605, totalNegative: 18657, score: 97.46 },
+                { name: 'Grand Theft Auto V Legacy', totalReviews: 645280, totalPositive: 539852, totalNegative: 105428, score: 83.66 },
+                { name: 'Rust', totalReviews: 626782, totalPositive: 540008, totalNegative: 86774, score: 86.16 },
+                { name: "Garry's Mod", totalReviews: 613112, totalPositive: 594969, totalNegative: 18143, score: 97.04 },
+                { name: 'ELDEN RING', totalReviews: 567027, totalPositive: 532881, totalNegative: 34146, score: 93.98 },
+                { name: "Baldur's Gate 3", totalReviews: 499885, totalPositive: 483967, totalNegative: 15918, score: 96.82 },
+                { name: 'Stardew Valley', totalReviews: 462193, totalPositive: 456868, totalNegative: 5325, score: 98.85 },
+                { name: 'PUBG: BATTLEGROUNDS', totalReviews: 448023, totalPositive: 296924, totalNegative: 151099, score: 66.27 },
+                { name: 'Apex Legends', totalReviews: 446229, totalPositive: 341829, totalNegative: 104400, score: 76.6 },
+                { name: 'Phasmophobia', totalReviews: 438488, totalPositive: 413548, totalNegative: 24940, score: 94.31 },
+                { name: 'Among Us', totalReviews: 429632, totalPositive: 395331, totalNegative: 34301, score: 92.02 },
+                { name: 'Cyberpunk 2077', totalReviews: 409819, totalPositive: 363797, totalNegative: 46022, score: 88.77 },
+                { name: 'Destiny 2', totalReviews: 387982, totalPositive: 308029, totalNegative: 79953, score: 79.39 },
+                { name: 'Call of Duty', totalReviews: 379796, totalPositive: 224443, totalNegative: 155353, score: 59.1 },
+                { name: 'Dead by Daylight', totalReviews: 369263, totalPositive: 290087, totalNegative: 79176, score: 78.56 },
+                { name: 'Lethal Company', totalReviews: 344872, totalPositive: 335796, totalNegative: 9076, score: 97.37 },
+                { name: 'ARK: Survival Evolved', totalReviews: 331614, totalPositive: 265168, totalNegative: 66446, score: 79.96 },
+                { name: 'Red Dead Redemption 2', totalReviews: 325381, totalPositive: 299142, totalNegative: 26239, score: 91.94 },
+                { name: 'War Thunder', totalReviews: 320467, totalPositive: 231117, totalNegative: 89350, score: 72.12 },
+                { name: 'Left 4 Dead 2', totalReviews: 316558, totalPositive: 308517, totalNegative: 8041, score: 97.46 }
+            ];
+
+            const statsRow = document.getElementById('statsRowReviewed');
+            const ctx = document.getElementById('reviewedChart');
+
+            const data = [...gameData].sort((a, b) => b.totalReviews - a.totalReviews);
+            const top = data[0];
+            const total = data.reduce((sum, item) => sum + item.totalReviews, 0);
+            const avg = total / data.length;
+
+            statsRow.innerHTML = `
+                <div class="stat">
+                    <div class="stat-label">Most Reviewed</div>
+                    <div class="stat-value">${top.name}</div>
+                    <div class="stat-meta">${top.totalReviews.toLocaleString()} reviews</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">Games Tracked</div>
+                    <div class="stat-value">${data.length}</div>
+                    <div class="stat-meta">in current view</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">Average Reviews</div>
+                    <div class="stat-value">${Math.round(avg).toLocaleString()}</div>
+                    <div class="stat-meta">per game</div>
+                </div>
+            `;
+
+            return {
+                init() {
+                    new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: data.map(item => item.name),
+                            datasets: [{
+                                label: 'Total Reviews',
+                                data: data.map(item => item.totalReviews),
+                                backgroundColor: '#c9c9c9',
+                                hoverBackgroundColor: '#ffffff',
+                                borderRadius: 6,
+                                maxBarThickness: 20
+                            }]
+                        },
+                        options: {
+                            indexAxis: 'y',
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            animation: { duration: 900, easing: 'easeOutQuart' },
+                            plugins: {
+                                legend: { display: false },
+                                tooltip: {
+                                    backgroundColor: '#1a1a1a',
+                                    titleColor: '#ffffff',
+                                    bodyColor: '#c9c9c9',
+                                    borderColor: '#3a3a3a',
+                                    borderWidth: 1,
+                                    bodyFont: { family: 'JetBrains Mono' },
+                                    titleFont: { family: 'Inter', weight: '600' },
+                                    callbacks: {
+                                        label: function (context) {
+                                            const item = data[context.dataIndex];
+                                            return [`Total Reviews: ${item.totalReviews.toLocaleString()}`, `Positive: ${item.totalPositive.toLocaleString()}`, `Negative: ${item.totalNegative.toLocaleString()}`, `Score: ${item.score}%`];
+                                        }
+                                    }
+                                }
+                            },
+                            scales: {
+                                x: {
+                                    beginAtZero: true,
+                                    ticks: { color: '#8a8a8a', font: { family: 'JetBrains Mono' }, callback: value => value.toLocaleString() },
+                                    grid: { color: 'rgba(255,255,255,0.06)' }
+                                },
+                                y: {
+                                    ticks: { color: '#d4d4d4', font: { family: 'Inter' } },
+                                    grid: { display: false }
+                                }
+                            }
+                        }
+                    });
+                }
+            };
+        })();
+
+        // ---- Highest Rated module ----
+        const ratedModule = (function () {
+            const gameData = [
+                { name: 'Stardew Valley', totalReviews: 462193, totalPositive: 456868, totalNegative: 5325, score: 98.85 },
+                { name: 'Left 4 Dead 2', totalReviews: 316558, totalPositive: 308517, totalNegative: 8041, score: 97.46 },
+                { name: 'Terraria', totalReviews: 735262, totalPositive: 716605, totalNegative: 18657, score: 97.46 },
+                { name: 'Lethal Company', totalReviews: 344872, totalPositive: 335796, totalNegative: 9076, score: 97.37 },
+                { name: "Garry's Mod", totalReviews: 613112, totalPositive: 594969, totalNegative: 18143, score: 97.04 },
+                { name: "Baldur's Gate 3", totalReviews: 499885, totalPositive: 483967, totalNegative: 15918, score: 96.82 },
+                { name: 'Phasmophobia', totalReviews: 438488, totalPositive: 413548, totalNegative: 24940, score: 94.31 },
+                { name: 'ELDEN RING', totalReviews: 567027, totalPositive: 532881, totalNegative: 34146, score: 93.98 },
+                { name: 'Among Us', totalReviews: 429632, totalPositive: 395331, totalNegative: 34301, score: 92.02 },
+                { name: 'Red Dead Redemption 2', totalReviews: 325381, totalPositive: 299142, totalNegative: 26239, score: 91.94 },
+                { name: 'Team Fortress 2', totalReviews: 738526, totalPositive: 664231, totalNegative: 74295, score: 89.94 },
+                { name: 'Cyberpunk 2077', totalReviews: 409819, totalPositive: 363797, totalNegative: 46022, score: 88.77 },
+                { name: 'Dota 2', totalReviews: 833096, totalPositive: 733097, totalNegative: 99999, score: 88 },
+                { name: 'Counter-Strike 2', totalReviews: 2575759, totalPositive: 2222734, totalNegative: 353025, score: 86.29 },
+                { name: 'Rust', totalReviews: 626782, totalPositive: 540008, totalNegative: 86774, score: 86.16 },
+                { name: 'Grand Theft Auto V Legacy', totalReviews: 645280, totalPositive: 539852, totalNegative: 105428, score: 83.66 },
+                { name: "Tom Clancy's Rainbow Six Siege", totalReviews: 795187, totalPositive: 653412, totalNegative: 141775, score: 82.17 },
+                { name: 'HELLDIVERS 2', totalReviews: 815518, totalPositive: 652815, totalNegative: 162703, score: 80.05 },
+                { name: 'ARK: Survival Evolved', totalReviews: 331614, totalPositive: 265168, totalNegative: 66446, score: 79.96 },
+                { name: 'Destiny 2', totalReviews: 387982, totalPositive: 308029, totalNegative: 79953, score: 79.39 },
+                { name: 'Dead by Daylight', totalReviews: 369263, totalPositive: 290087, totalNegative: 79176, score: 78.56 },
+                { name: 'Apex Legends', totalReviews: 446229, totalPositive: 341829, totalNegative: 104400, score: 76.6 },
+                { name: 'War Thunder', totalReviews: 320467, totalPositive: 231117, totalNegative: 89350, score: 72.12 },
+                { name: 'PUBG: BATTLEGROUNDS', totalReviews: 448023, totalPositive: 296924, totalNegative: 151099, score: 66.27 },
+                { name: 'Call of Duty', totalReviews: 379796, totalPositive: 224443, totalNegative: 155353, score: 59.1 }
+            ];
+
+            const statsRow = document.getElementById('statsRowRated');
+            const ctx = document.getElementById('ratedChart');
+
+            const data = [...gameData].sort((a, b) => b.score - a.score);
+            const top = data[0];
+            const total = data.reduce((sum, item) => sum + item.score, 0);
+            const avg = total / data.length;
+
+            let chart;
+
+            function render() {
+                statsRow.innerHTML = `
+                    <div class="stat">
+                        <div class="stat-label">Highest Rated</div>
+                        <div class="stat-value">${top.name}</div>
+                        <div class="stat-meta">${top.score}% positive</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Games Tracked</div>
+                        <div class="stat-value">${data.length}</div>
+                        <div class="stat-meta">in current view</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Average Score</div>
+                        <div class="stat-value">${avg.toFixed(1)}%</div>
+                        <div class="stat-meta">across tracked games</div>
+                    </div>
+                `;
+
+                chart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: data.map(item => item.name),
+                        datasets: [{
+                            label: 'Positive Review Score',
+                            data: data.map(item => item.score),
+                            backgroundColor: '#c9c9c9',
+                            hoverBackgroundColor: '#ffffff',
+                            borderRadius: 6,
+                            maxBarThickness: 20
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        animation: { duration: 900, easing: 'easeOutQuart' },
+                        plugins: {
+                            legend: { display: false },
+                            tooltip: {
+                                backgroundColor: '#1a1a1a',
+                                titleColor: '#ffffff',
+                                bodyColor: '#c9c9c9',
+                                borderColor: '#3a3a3a',
+                                borderWidth: 1,
+                                bodyFont: { family: 'JetBrains Mono' },
+                                titleFont: { family: 'Inter', weight: '600' },
+                                callbacks: {
+                                    label: function (context) {
+                                        const item = data[context.dataIndex];
+                                        return [`Score: ${item.score}%`, `Total Reviews: ${item.totalReviews.toLocaleString()}`, `Positive: ${item.totalPositive.toLocaleString()}`, `Negative: ${item.totalNegative.toLocaleString()}`];
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                beginAtZero: true,
+                                max: 100,
+                                ticks: { color: '#8a8a8a', font: { family: 'JetBrains Mono' }, callback: value => value + '%' },
+                                grid: { color: 'rgba(255,255,255,0.06)' }
+                            },
+                            y: {
+                                ticks: { color: '#d4d4d4', font: { family: 'Inter' } },
+                                grid: { display: false }
+                            }
+                        }
+                    }
+                });
+            }
+
+            return {
+                init() {
+                    if (chart) {
+                        return;
+                    }
+                    render();
+                }
+            };
+        })();
+
+        // ---- Tab switching ----
+        reviewedModule.init();
+        let ratedInitialized = false;
+
+        document.querySelectorAll('.tab-bar .tab-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.tab-bar .tab-btn').forEach(b => b.classList.toggle('active', b === button));
+                document.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('active', p.dataset.panel === button.dataset.tab));
+
+                if (button.dataset.tab === 'rated' && !ratedInitialized) {
+                    ratedModule.init();
+                    ratedInitialized = true;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

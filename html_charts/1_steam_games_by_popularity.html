@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Most Played Steam Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: radial-gradient(circle at top, #1c1c1c, #050505 65%);
+            color: #d4d4d4;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: #111111;
+            border: 1px solid #2a2a2a;
+            border-radius: 18px;
+            padding: 40px 36px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .header {
+            margin-bottom: 28px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .header .eyebrow {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72em;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #808080;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+        }
+
+        .header p {
+            font-size: 0.9em;
+            color: #8a8a8a;
+            margin-top: 6px;
+            font-style: italic;
+        }
+
+        .chart-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .chart-header h2 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9em;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            color: #f2f2f2;
+        }
+
+        .stats-row {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat {
+            flex: 1;
+            border: 1px solid #2a2a2a;
+            border-top: 2px solid #808080;
+            border-radius: 10px;
+            padding: 14px 16px;
+            background: #161616;
+            transition: border-color 0.2s ease;
+        }
+
+        .stat:hover {
+            border-top-color: #ffffff;
+        }
+
+        .stat .stat-label {
+            font-size: 0.72em;
+            color: #8a8a8a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .stat .stat-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.25em;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .stat .stat-meta {
+            font-size: 0.82em;
+            color: #8a8a8a;
+            margin-top: 3px;
+        }
+
+        .chart-wrap {
+            height: 620px;
+        }
+
+        footer {
+            margin-top: 26px;
+            padding-top: 18px;
+            border-top: 1px solid #2a2a2a;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75em;
+            letter-spacing: 0.5px;
+            color: #707070;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .stats-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="eyebrow">Steam Platform · Player Analysis</div>
+            <h1>Most Played Steam Games</h1>
+            <p>Current player count across the platform's top games</p>
+        </div>
+
+        <div class="chart-header">
+            <h2>Current Player Count by Game</h2>
+        </div>
+
+        <div class="stats-row" id="statsRow"></div>
+
+        <div class="chart-wrap">
+            <canvas id="gameChart"></canvas>
+        </div>
+
+        <footer>Data sourced from the Steam Web API. Only the top 1000 games/apps by concurrent player count in Late July 2026 were included into this dataset.</footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <script>
+        const gameData = [
+            { name: 'Counter-Strike 2', playerCount: 1069883 },
+            { name: 'Dota 2', playerCount: 705245 },
+            { name: 'Palworld', playerCount: 641309 },
+            { name: 'PUBG: BATTLEGROUNDS', playerCount: 275556 },
+            { name: 'TBH: Task Bar Hero', playerCount: 234374 },
+            { name: 'FiveM', playerCount: 171838 },
+            { name: 'Bongo Cat', playerCount: 161822 },
+            { name: 'Rust', playerCount: 137474 },
+            { name: 'EA SPORTS FC', playerCount: 126730 },
+            { name: 'The Binding of Isaac: Rebirth', playerCount: 97795 },
+            { name: 'Grand Theft Auto V Legacy', playerCount: 89897 },
+            { name: 'Marvel Rivals', playerCount: 86292 },
+            { name: 'Apex Legends', playerCount: 82358 },
+            { name: 'Grand Theft Auto V Enhanced', playerCount: 80142 },
+            { name: 'Dead by Daylight', playerCount: 72787 },
+            { name: 'Wallpaper Engine', playerCount: 67312 },
+            { name: 'Warframe', playerCount: 65746 },
+            { name: 'Geometry Dash', playerCount: 61549 },
+            { name: 'Stardew Valley', playerCount: 59392 },
+            { name: 'Team Fortress 2', playerCount: 59187 },
+            { name: 'Slay the Spire 2', playerCount: 59167 },
+            { name: "Tom Clancy's Rainbow Six Siege", playerCount: 58825 },
+            { name: 'War Thunder', playerCount: 56360 },
+            { name: 'Delta Force', playerCount: 56127 },
+            { name: "Baldur's Gate 3", playerCount: 54369 }
+        ];
+
+        const data = [...gameData].sort((a, b) => b.playerCount - a.playerCount);
+        const topGame = data[0];
+        const total = data.reduce((sum, item) => sum + item.playerCount, 0);
+        const avg = total / data.length;
+
+        document.getElementById('statsRow').innerHTML = `
+            <div class="stat">
+                <div class="stat-label">Most Played</div>
+                <div class="stat-value">${topGame.name}</div>
+                <div class="stat-meta">${topGame.playerCount.toLocaleString()} players</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Games Tracked</div>
+                <div class="stat-value">${data.length}</div>
+                <div class="stat-meta">in current view</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Average Players</div>
+                <div class="stat-value">${Math.round(avg).toLocaleString()}</div>
+                <div class="stat-meta">per game</div>
+            </div>
+        `;
+
+        new Chart(document.getElementById('gameChart'), {
+            type: 'bar',
+            data: {
+                labels: data.map(item => item.name),
+                datasets: [{
+                    label: 'Player Count',
+                    data: data.map(item => item.playerCount),
+                    backgroundColor: '#c9c9c9',
+                    hoverBackgroundColor: '#ffffff',
+                    borderRadius: 6,
+                    maxBarThickness: 22
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: { duration: 900, easing: 'easeOutQuart' },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: '#1a1a1a',
+                        titleColor: '#ffffff',
+                        bodyColor: '#c9c9c9',
+                        borderColor: '#3a3a3a',
+                        borderWidth: 1,
+                        bodyFont: { family: 'JetBrains Mono' },
+                        titleFont: { family: 'Inter', weight: '600' },
+                        callbacks: {
+                            label: function (context) {
+                                const item = data[context.dataIndex];
+                                return `Players: ${item.playerCount.toLocaleString()}`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        ticks: { color: '#8a8a8a', font: { family: 'JetBrains Mono' }, callback: value => value.toLocaleString() },
+                        grid: { color: 'rgba(255,255,255,0.06)' }
+                    },
+                    y: {
+                        ticks: { color: '#d4d4d4', font: { family: 'Inter' } },
+                        grid: { display: false }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

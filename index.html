@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steam Database Analysis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-0: #050505;
+            --bg-1: #101010;
+            --bg-2: #161616;
+            --line: #2a2a2a;
+            --line-2: #3a3a3a;
+            --txt: #d4d4d4;
+            --txt-soft: #8f8f8f;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            color: var(--txt);
+            background:
+                radial-gradient(1200px 700px at 50% -20%, #2a2a2a 0%, transparent 60%),
+                radial-gradient(800px 500px at 90% 10%, #1a1a1a 0%, transparent 60%),
+                var(--bg-0);
+            min-height: 100vh;
+            padding: 24px;
+        }
+
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            background: linear-gradient(180deg, #111111 0%, #0d0d0d 100%);
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            box-shadow: 0 22px 56px rgba(0, 0, 0, 0.58);
+            overflow: hidden;
+        }
+
+        .hero {
+            padding: 44px 36px 34px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .eyebrow {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.74em;
+            text-transform: uppercase;
+            letter-spacing: 2.2px;
+            color: var(--txt-soft);
+            margin-bottom: 12px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            color: var(--white);
+            font-size: 2.25rem;
+            letter-spacing: 0.5px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            max-width: 920px;
+            color: var(--txt-soft);
+            line-height: 1.75;
+            font-size: 0.98rem;
+        }
+
+        .meta-strip {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        .meta-pill {
+            border: 1px solid var(--line-2);
+            background: #151515;
+            border-radius: 999px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            color: #bdbdbd;
+            padding: 7px 12px;
+        }
+
+        .section {
+            padding: 30px 36px;
+            border-bottom: 1px solid var(--line);
+            animation: reveal 0.75s ease both;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section h2 {
+            font-family: 'JetBrains Mono', monospace;
+            color: #efefef;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            font-size: 0.92rem;
+            margin-bottom: 14px;
+        }
+
+        .section-intro {
+            color: var(--txt-soft);
+            line-height: 1.75;
+            margin-bottom: 18px;
+        }
+
+        .questions-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+        }
+
+        .question-card {
+            border: 1px solid var(--line);
+            background: var(--bg-2);
+            border-radius: 11px;
+            padding: 14px 16px;
+        }
+
+        .question-card .q-number {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            color: #9f9f9f;
+            margin-bottom: 7px;
+        }
+
+        .question-card p {
+            line-height: 1.65;
+            color: #cdcdcd;
+        }
+
+        .analysis-stack {
+            display: grid;
+            gap: 16px;
+        }
+
+        .analysis-card {
+            border: 1px solid var(--line);
+            background: linear-gradient(160deg, #161616 0%, #121212 100%);
+            border-radius: 14px;
+            padding: 18px;
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 18px;
+            align-items: center;
+            transition: border-color 0.25s ease, transform 0.25s ease;
+        }
+
+        .analysis-card:hover {
+            border-color: #4a4a4a;
+            transform: translateY(-2px);
+        }
+
+        .analysis-title {
+            font-family: 'Playfair Display', serif;
+            color: var(--white);
+            font-size: 1.35rem;
+            margin-bottom: 8px;
+        }
+
+        .analysis-copy {
+            color: var(--txt-soft);
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+
+        .analysis-list {
+            padding-left: 18px;
+            color: #c9c9c9;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        .link-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .link-row a {
+            text-decoration: none;
+            border: 1px solid var(--line-2);
+            border-radius: 999px;
+            color: #dddddd;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.5px;
+            padding: 7px 12px;
+            transition: all 0.2s ease;
+        }
+
+        .link-row a:hover {
+            color: #0a0a0a;
+            border-color: var(--white);
+            background: var(--white);
+        }
+
+        .tag-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            padding: 5px 10px;
+            font-size: 0.71rem;
+            letter-spacing: 0.5px;
+            color: #b4b4b4;
+            background: #141414;
+        }
+
+        .analysis-figure {
+            text-decoration: none;
+        }
+
+        .analysis-figure img {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid var(--line-2);
+            display: block;
+            background: #090909;
+        }
+
+        .analysis-figure figcaption {
+            font-size: 0.76rem;
+            color: #9b9b9b;
+            margin-top: 8px;
+            text-align: center;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .recommendations,
+        .details-list {
+            display: grid;
+            gap: 10px;
+        }
+
+        .recommendation-item,
+        .details-item {
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            background: #141414;
+            padding: 12px 14px;
+        }
+
+        .recommendation-item h3,
+        .details-item h3 {
+            font-size: 0.94rem;
+            color: #f1f1f1;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .recommendation-item p,
+        .details-item p {
+            line-height: 1.7;
+            color: #bdbdbd;
+        }
+
+        footer {
+            border-top: 1px solid var(--line);
+            padding: 20px 36px;
+            color: #747474;
+            font-size: 0.77rem;
+            letter-spacing: 0.3px;
+            font-family: 'JetBrains Mono', monospace;
+            text-align: center;
+            background: #0b0b0b;
+        }
+
+        @keyframes reveal {
+            from {
+                opacity: 0;
+                transform: translateY(14px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 980px) {
+            .analysis-card {
+                grid-template-columns: 1fr;
+            }
+
+            .analysis-figure {
+                max-width: 620px;
+            }
+        }
+
+        @media (max-width: 760px) {
+            body {
+                padding: 12px;
+            }
+
+            .hero,
+            .section,
+            footer {
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+
+            .hero h1 {
+                font-size: 1.68rem;
+            }
+
+            .questions-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <div class="eyebrow">Steam Platform - Portfolio Project</div>
+            <h1>Steam Database Analysis</h1>
+            <p>
+                Analysis of a Steam dataset sourced from the Steam Web API, focused on popularity, pricing,
+                genre performance, review quality, and developer strategy across the top 1000 games by
+                concurrent player count in late July 2026.
+            </p>
+            <div class="meta-strip">
+                <div class="meta-pill">Dataset: Top 1000 Steam Titles</div>
+                <div class="meta-pill">Database: PostgreSQL</div>
+                <div class="meta-pill">Tools: SQL, Python, Excel</div>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2>Business Questions</h2>
+            <p class="section-intro">Out of the current top 1000 titles, the analysis asks seven direct business questions:</p>
+            <div class="questions-grid">
+                <article class="question-card"><div class="q-number">Question 01</div><p>Which games have the most players on Steam?</p></article>
+                <article class="question-card"><div class="q-number">Question 02</div><p>How do free-to-play and paid games compare in concurrent player counts?</p></article>
+                <article class="question-card"><div class="q-number">Question 03</div><p>Which genres attract the most players?</p></article>
+                <article class="question-card"><div class="q-number">Question 04</div><p>When were the most games released, and which recent titles are performing best?</p></article>
+                <article class="question-card"><div class="q-number">Question 05</div><p>How have game prices changed year to year?</p></article>
+                <article class="question-card"><div class="q-number">Question 06</div><p>Which games are most reviewed and best rated?</p></article>
+                <article class="question-card"><div class="q-number">Question 07</div><p>Which developers have published the most games?</p></article>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Analysis Approach</h2>
+            <p class="section-intro">Each module includes SQL analysis, static image output, and an interactive chart view.</p>
+
+            <div class="analysis-stack">
+                <article class="analysis-card">
+                    <div>
+                        <h3 class="analysis-title">1. Steam Games by Popularity</h3>
+                        <p class="analysis-copy">Ranked titles by concurrent player count and returned the top 25 most played games.</p>
+                        <ul class="analysis-list">
+                            <li>Filtered out missing player count data.</li>
+                            <li>Sorted by current concurrent players.</li>
+                            <li>Focused on the top tier for comparison.</li>
+                        </ul>
+                        <div class="link-row">
+                            <a href="sql/1_steam_games_by_popularity.sql">View SQL</a>
+                            <a href="html_charts/1_steam_games_by_popularity.html">View Interactive Chart</a>
+                        </div>
+                        <div class="tag-row">
+                            <span class="tag">Dominance is heavily concentrated</span>
+                            <span class="tag">Legacy esports titles remain resilient</span>
+                        </div>
+                    </div>
+                    <a class="analysis-figure" href="html_charts/1_steam_games_by_popularity.html">
+                        <figure>
+                            <img src="images/1_steam_games_by_popularity.png" alt="Steam games by popularity chart" />
+                            <figcaption>Top 25 by concurrent players</figcaption>
+                        </figure>
+                    </a>
+                </article>
+
+                <article class="analysis-card">
+                    <div>
+                        <h3 class="analysis-title">2. Free-to-Play vs Paid Games</h3>
+                        <p class="analysis-copy">Compared top free-to-play and paid titles, then merged them into a combined ranking with average metrics.</p>
+                        <ul class="analysis-list">
+                            <li>Top 15 free-to-play and top 15 paid extracted separately.</li>
+                            <li>Built a combined top-30 ranking.</li>
+                            <li>Computed average player counts by business model.</li>
+                        </ul>
+                        <div class="link-row">
+                            <a href="sql/2_ftp_vs_ptp_games.sql">View SQL</a>
+                            <a href="html_charts/2_top_free_vs_paid.html">View Interactive Chart</a>
+                        </div>
+                        <div class="tag-row">
+                            <span class="tag">Entry barrier strongly impacts scale</span>
+                            <span class="tag">Paid titles still perform at high levels</span>
+                        </div>
+                    </div>
+                    <a class="analysis-figure" href="html_charts/2_top_free_vs_paid.html">
+                        <figure>
+                            <img src="images/2D_ftp_vs_ptp.png" alt="Free-to-play vs paid comparison chart" />
+                            <figcaption>Average players by pricing model</figcaption>
+                        </figure>
+                    </a>
+                </article>
+
+                <article class="analysis-card">
+                    <div>
+                        <h3 class="analysis-title">3. Genre Popularity</h3>
+                        <p class="analysis-copy">Aggregated total concurrent players by genre to identify market-wide audience concentration.</p>
+                        <ul class="analysis-list">
+                            <li>Grouped by genre with valid count data.</li>
+                            <li>Summed concurrent players for each genre.</li>
+                            <li>Ranked genres from highest to lowest audience.</li>
+                        </ul>
+                        <div class="link-row">
+                            <a href="sql/3_most_played_genres.sql">View SQL</a>
+                            <a href="html_charts/3_genre_popularity.html">View Interactive Chart</a>
+                        </div>
+                        <div class="tag-row">
+                            <span class="tag">Free-to-play and RPG drive volume</span>
+                            <span class="tag">Niche genres remain far smaller</span>
+                        </div>
+                    </div>
+                    <a class="analysis-figure" href="html_charts/3_genre_popularity.html">
+                        <figure>
+                            <img src="images/3_genre_popularity.png" alt="Genre popularity chart" />
+                            <figcaption>Total players by genre</figcaption>
+                        </figure>
+                    </a>
+                </article>
+
+                <article class="analysis-card">
+                    <div>
+                        <h3 class="analysis-title">4. Game Release Trends</h3>
+                        <p class="analysis-copy">Measured release counts per year and highlighted the top performers from the peak release year.</p>
+                        <ul class="analysis-list">
+                            <li>Counted games released in each year.</li>
+                            <li>Identified the highest-output year.</li>
+                            <li>Listed top 2025 titles by player count.</li>
+                        </ul>
+                        <div class="link-row">
+                            <a href="sql/4_year_with_most_game_releases.sql">View SQL</a>
+                            <a href="html_charts/4_game_release_trends.html">View Interactive Chart</a>
+                        </div>
+                        <div class="tag-row">
+                            <span class="tag">Competition for discovery is rising</span>
+                            <span class="tag">Launch strategy is now critical</span>
+                        </div>
+                    </div>
+                    <a class="analysis-figure" href="html_charts/4_game_release_trends.html">
+                        <figure>
+                            <img src="images/4A_game_release_count_each_year.png" alt="Game releases by year chart" />
+                            <figcaption>Release counts across years</figcaption>
+                        </figure>
+                    </a>
+                </article>
+
+                <article class="analysis-card">
+                    <div>
+                        <h3 class="analysis-title">5. Game Prices by Year</h3>
+                        <p class="analysis-copy">Tracked average prices of paid titles by release year and calculated year-over-year shifts.</p>
+                        <ul class="analysis-list">
+                            <li>Included only valid prices and release dates.</li>
+                            <li>Calculated annual average paid-game price.</li>
+                            <li>Measured year-over-year percentage changes.</li>
+                        </ul>
+                        <div class="link-row">
+                            <a href="sql/5_game_prices_by_year.sql">View SQL</a>
+                            <a href="html_charts/5_game_prices_by_year.html">View Interactive Chart</a>
+                        </div>
+                        <div class="tag-row">
+                            <span class="tag">Long-term upward pricing trend</span>
+                            <span class="tag">Yearly volatility remains visible</span>
+                        </div>
+                    </div>
+                    <a class="analysis-figure" href="html_charts/5_game_prices_by_year.html">
+                        <figure>
+                            <img src="images/5_game_prices_by_year.png" alt="Game prices by year chart" />
+                            <figcaption>Average paid-game price over time</figcaption>
+                        </figure>
+                    </a>
+                </article>
+
+                <article class="analysis-card">
+                    <div>
+                        <h3 class="analysis-title">6. Most Reviewed Games</h3>
+                        <p class="analysis-copy">Ranked games by review volume and re-ranked the same set by positive review score.</p>
+                        <ul class="analysis-list">
+                            <li>Top 25 by total review count identified.</li>
+                            <li>Positive review percentage calculated.</li>
+                            <li>Comparison reveals reach vs quality tradeoffs.</li>
+                        </ul>
+                        <div class="link-row">
+                            <a href="sql/6_most_reviewed_games.sql">View SQL</a>
+                            <a href="html_charts/6_most_reviewed_games.html">View Interactive Chart</a>
+                        </div>
+                        <div class="tag-row">
+                            <span class="tag">Volume and score are separate signals</span>
+                            <span class="tag">90%+ satisfaction is achievable</span>
+                        </div>
+                    </div>
+                    <a class="analysis-figure" href="html_charts/6_most_reviewed_games.html">
+                        <figure>
+                            <img src="images/6B_sorted_by_review_score.png" alt="Most reviewed games chart" />
+                            <figcaption>Review quality within top-volume titles</figcaption>
+                        </figure>
+                    </a>
+                </article>
+
+                <article class="analysis-card">
+                    <div>
+                        <h3 class="analysis-title">7. Game Count by Developer</h3>
+                        <p class="analysis-copy">Ranked developers by number of published games to examine volume-based release strategy.</p>
+                        <ul class="analysis-list">
+                            <li>Filtered out records without developer metadata.</li>
+                            <li>Counted total titles per developer.</li>
+                            <li>Compared catalog-size strategy across publishers.</li>
+                        </ul>
+                        <div class="link-row">
+                            <a href="sql/7_game_count_by_developer.sql">View SQL</a>
+                            <a href="html_charts/7_game_count_by_dev.html">View Interactive Chart</a>
+                        </div>
+                        <div class="tag-row">
+                            <span class="tag">Catalog size does not guarantee player scale</span>
+                            <span class="tag">Volume and blockbuster strategies differ</span>
+                        </div>
+                    </div>
+                    <a class="analysis-figure" href="html_charts/7_game_count_by_dev.html">
+                        <figure>
+                            <img src="images/7_game_count_by_dev.png" alt="Game count by developer chart" />
+                            <figcaption>Top developers by number of titles</figcaption>
+                        </figure>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Strategic Recommendations</h2>
+            <div class="recommendations">
+                <article class="recommendation-item">
+                    <h3>Pricing and Monetization</h3>
+                    <p>Free-to-play remains the dominant model for reaching very high concurrent player counts. Premium pricing can still succeed when paired with strong value signals, community trust, and market positioning.</p>
+                </article>
+                <article class="recommendation-item">
+                    <h3>Genre and Positioning</h3>
+                    <p>Action, Strategy, and RPG categories attract the largest audiences. Niche categories can work, but require intentional targeting and sharper differentiation.</p>
+                </article>
+                <article class="recommendation-item">
+                    <h3>Release and Discoverability</h3>
+                    <p>As annual release volume rises, pre-launch wishlists, creator coverage, and launch-day momentum matter more than ever for visibility.</p>
+                </article>
+                <article class="recommendation-item">
+                    <h3>Quality and Reviews</h3>
+                    <p>Review count indicates reach, while positive review score indicates player satisfaction. Titles strong in both are the clearest benchmark for long-term performance.</p>
+                </article>
+                <article class="recommendation-item">
+                    <h3>Developer Portfolio Strategy</h3>
+                    <p>Volume publishing increases catalog presence, while focused development can raise per-title quality and engagement. Portfolio strategy should align with team strengths and capital runway.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Technical Details</h2>
+            <div class="details-list">
+                <article class="details-item"><h3>Database</h3><p>PostgreSQL</p></article>
+                <article class="details-item"><h3>Analysis Tools</h3><p>PostgreSQL, pgAdmin, DBeaver</p></article>
+                <article class="details-item"><h3>Data Collection</h3><p>Steam Web API with a custom Python scraper</p></article>
+                <article class="details-item"><h3>Visualization</h3><p>Microsoft Excel and custom HTML/Chart.js pages</p></article>
+            </div>
+        </section>
+
+        <footer>Data sourced from the Steam Web API. Analysis scope includes only the top 1000 games by concurrent player count in late July 2026.</footer>
+    </div>
+</body>
+</html>

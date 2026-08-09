@@ -1,0 +1,1001 @@
+appid,name,releasedate,is_free,price_usd,genre,achievement_count,developer,publisher,player_count,review_score,review_score_desc,total_positive,total_negative,total_reviews
+730,Counter-Strike 2,"Aug 21, 2012",True,,Free To Play,1,Valve,Valve,1069883,8,Very Positive,2222734,353025,2575759
+570,Dota 2,"Jul 9, 2013",True,,Free To Play,,Valve,Valve,705245,8,Very Positive,733097,99999,833096
+1623730,Palworld,"Jul 9, 2026",False,29.99,RPG,75,Pocketpair,Pocketpair,641309,9,Overwhelmingly Positive,175716,8174,183890
+578080,PUBG: BATTLEGROUNDS,"Dec 21, 2017",True,,Free To Play,37,PUBG Corporation,"KRAFTON, Inc.",275556,5,Mixed,296924,151099,448023
+3678970,TBH: Task Bar Hero,"May 27, 2026",True,,Free To Play,56,Nugem Studio,Nugem Studio,234374,5,Mixed,4306,2689,6995
+2676230,FiveM,,False,,,,,,171838,8,Very Positive,98,4,102
+3419430,Bongo Cat,"Mar 5, 2025",True,,Free To Play,28,Marcel Zurawka,Irox Games,161822,9,Overwhelmingly Positive,26821,955,27776
+252490,Rust,"Feb 8, 2018",False,39.99,RPG,102,Facepunch Studios,Facepunch Studios,137474,8,Very Positive,540008,86774,626782
+3405690,EA SPORTS FC™ 26,"Sep 25, 2025",False,89.99,Sports,43,EA Canada,Electronic Arts,126730,5,Mixed,13693,13585,27278
+250900,The Binding of Isaac: Rebirth,"Nov 4, 2014",False,14.99,Action,641,"Nicalis, Inc.","Nicalis, Inc.",97795,9,Overwhelmingly Positive,166336,5060,171396
+271590,Grand Theft Auto V Legacy,"Apr 13, 2015",False,,Adventure,77,Rockstar North,Rockstar Games,89897,8,Very Positive,539852,105428,645280
+1172470,Apex Legends™,"Nov 4, 2020",True,,Free To Play,12,Respawn,Electronic Arts,82358,6,Mostly Positive,341829,104400,446229
+2767030,Marvel Rivals,"Dec 5, 2024",True,,Free To Play,49,NetEase Games,NetEase Games,86292,6,Mostly Positive,224486,66269,290755
+3240220,Grand Theft Auto V Enhanced,"Mar 4, 2025",False,29.99,Racing,77,Rockstar North,Rockstar Games,80142,6,Mostly Positive,59804,15258,75062
+381210,Dead by Daylight,"Jun 14, 2016",False,19.99,Action,303,Behaviour Interactive Inc.,Behaviour Interactive Inc.,72787,6,Mostly Positive,290087,79176,369263
+431960,Wallpaper Engine,"Nov 16, 2018",False,4.99,Utilities,17,Wallpaper Engine Team,Wallpaper Engine Team,67312,9,Overwhelmingly Positive,246955,5173,252128
+230410,Warframe,"Mar 25, 2013",True,,Free To Play,193,Digital Extremes,Digital Extremes,65746,8,Very Positive,273514,24218,297732
+413150,Stardew Valley,"Feb 26, 2016",False,14.99,Simulation,49,ConcernedApe,ConcernedApe,59392,9,Overwhelmingly Positive,456868,5325,462193
+322170,Geometry Dash,"Dec 22, 2014",False,4.99,Indie,547,RobTop Games,RobTop Games,61549,8,Very Positive,290225,20030,310255
+2868840,Slay the Spire 2,"Mar 5, 2026",False,24.99,Early Access,,Mega Crit,Mega Crit,59167,8,Very Positive,65333,5666,70999
+2507950,Delta Force,"Dec 4, 2024",True,,Free To Play,53,Team Jade,TiMi Studio Group,56127,5,Mixed,44311,23187,67498
+440,Team Fortress 2,"Oct 10, 2007",True,,Free To Play,520,Valve,Valve,59187,8,Very Positive,664231,74295,738526
+359550,Tom Clancy's Rainbow Six Siege,"Dec 1, 2015",True,,Free To Play,48,Ubisoft Montreal,Ubisoft,58825,8,Very Positive,653412,141775,795187
+236390,War Thunder,"Aug 15, 2013",True,,Free To Play,91,Gaijin Entertainment,Gaijin Network Ltd,56360,6,Mostly Positive,231117,89350,320467
+1086940,Baldur's Gate 3,"Aug 3, 2023",False,59.99,Strategy,54,Larian Studios,Larian Studios,54369,9,Overwhelmingly Positive,483967,15918,499885
+221100,DayZ,"Dec 13, 2018",False,49.99,Massively Multiplayer,13,Bohemia Interactive,Bohemia Interactive,53734,6,Mostly Positive,155330,54731,210061
+2694490,Path of Exile 2,"Dec 6, 2024",False,29.99,Early Access,,Grinding Gear Games,Grinding Gear Games,52181,6,Mostly Positive,98999,32199,131198
+1091500,Cyberpunk 2077,"Dec 9, 2020",False,59.99,RPG,57,CD PROJEKT RED,CD PROJEKT RED,51936,8,Very Positive,363797,46022,409819
+1422450,Deadlock,To be announced,False,,Action,,Valve,Valve,,0,No user reviews,0,0,0
+3751950,Assassin's Creed Black Flag Resynced,"Jul 9, 2026",False,59.99,Adventure,49,Ubisoft Singapore,Ubisoft,50655,8,Very Positive,8226,1814,10040
+2357570,Overwatch®,"Aug 10, 2023",True,,Free To Play,164,"Blizzard Entertainment, Inc.","Blizzard Entertainment, Inc.",49388,5,Mixed,65949,98085,164034
+438100,VRChat,"Feb 1, 2017",True,,Early Access,,VRChat Inc.,VRChat Inc.,46796,6,Mostly Positive,125560,50121,175681
+227300,Euro Truck Simulator 2,"Oct 12, 2012",False,19.99,Simulation,106,SCS Software,SCS Software,47323,9,Overwhelmingly Positive,179914,4664,184578
+394360,Hearts of Iron IV,"Jun 6, 2016",False,49.99,Strategy,293,Paradox Development Studio,Paradox Interactive,46308,8,Very Positive,147982,16023,164005
+4704690,MECCHA CHAMELEON,"Jun 9, 2026",False,5.99,Casual,,lemorion_1224,lemorion_1224,46090,8,Very Positive,36591,3585,40176
+2300320,Farming Simulator 25,"Nov 12, 2024",False,29.99,Simulation,45,GIANTS Software,GIANTS Software,44059,8,Very Positive,16969,2814,19783
+1366800,Crosshair X,"Aug 17, 2020",False,1.99,Utilities,17,CenterPoint Gaming,CenterPoint Gaming,42598,8,Very Positive,22336,1408,23744
+3551340,Football Manager 26,"Nov 4, 2025",False,59.99,Strategy,44,Sports Interactive,SEGA,42516,4,Mostly Negative,5387,9197,14584
+2807960,Battlefield™ 6,"Oct 10, 2025",False,69.99,Action,53,Battlefield Studios,Electronic Arts,43836,5,Mixed,119195,56599,175794
+1085660,Destiny 2,"Oct 1, 2019",True,,Free To Play,23,Bungie,Bungie,42647,6,Mostly Positive,308029,79953,387982
+1174180,Red Dead Redemption 2,"Dec 5, 2019",False,59.99,Adventure,51,Rockstar Games,Rockstar Games,37535,8,Very Positive,299142,26239,325381
+2399830,ARK: Survival Ascended,"Oct 25, 2023",False,44.99,Early Access,32,Studio Wildcard,Studio Wildcard,36829,5,Mixed,37747,25385,63132
+1808500,ARC Raiders,"Oct 30, 2025",False,39.99,Action,50,Embark Studios,Embark Studios,37500,8,Very Positive,204067,43862,247929
+4000,Garry's Mod,"Nov 29, 2006",False,9.99,Simulation,29,Facepunch Studios,Valve,34822,9,Overwhelmingly Positive,594969,18143,613112
+251570,7 Days to Die,"Jul 25, 2024",False,44.99,Strategy,43,The Fun Pimps,The Fun Pimps Entertainment LLC,34229,8,Very Positive,157186,27545,184731
+1938090,Call of Duty®,"Oct 27, 2022",False,,Action,157,Treyarch,Activision,34002,5,Mixed,224443,155353,379796
+108600,Project Zomboid,"Nov 8, 2013",False,19.99,Early Access,,The Indie Stone,The Indie Stone,33099,8,Very Positive,186119,12687,198806
+218620,PAYDAY 2,"Aug 13, 2013",False,9.99,RPG,1328,OVERKILL - a Starbreeze Studio.,Starbreeze Entertainment,32425,8,Very Positive,234056,35973,270029
+1222670,The Sims™ 4,"Jun 18, 2020",True,,Free To Play,,Maxis,Electronic Arts,33017,8,Very Positive,91562,13790,105352
+105600,Terraria,"May 16, 2011",False,9.99,RPG,137,Re-Logic,Re-Logic,31085,9,Overwhelmingly Positive,716605,18657,735262
+294100,RimWorld,"Oct 17, 2018",False,34.99,Strategy,,Ludeon Studios,Ludeon Studios,31237,9,Overwhelmingly Positive,138291,2900,141191
+2073620,Arena Breakout: Infinite,"Sep 15, 2025",True,,Free To Play,33,Morefun Studios,Morefun Studios,31895,6,Mostly Positive,23025,6934,29959
+1245620,ELDEN RING,"Feb 24, 2022",False,59.99,RPG,42,"FromSoftware, Inc.","FromSoftware, Inc.",31403,8,Very Positive,532881,34146,567027
+881020,Granblue Fantasy: Relink,"Jan 31, 2024",False,39.99,RPG,96,"Cygames, Inc.","Cygames, Inc.",29538,8,Very Positive,12319,997,13316
+489830,The Elder Scrolls V: Skyrim Special Edition,"Oct 27, 2016",False,39.99,RPG,75,Bethesda Game Studios,Bethesda Softworks,30870,8,Very Positive,201165,17002,218167
+289070,Sid Meier’s Civilization® VI,"Oct 20, 2016",False,59.99,Strategy,320,Firaxis Games,2K,29477,8,Very Positive,126804,22835,149639
+3241660,R.E.P.O.,"Feb 26, 2025",False,9.99,Early Access,,semiwork,semiwork,30019,9,Overwhelmingly Positive,165108,5599,170707
+1142710,Total War: WARHAMMER III,"Feb 16, 2022",False,59.99,Strategy,138,CREATIVE ASSEMBLY,SEGA,29024,6,Mostly Positive,59260,25133,84393
+2483190,Forza Horizon 6,"May 18, 2026",False,69.99,Sports,57,Playground Games,Xbox Game Studios,28886,8,Very Positive,34867,5784,40651
+553850,HELLDIVERS™ 2,"Feb 8, 2024",False,39.99,Action,38,Arrowhead Game Studios,PlayStation Publishing LLC,28478,8,Very Positive,652815,162703,815518
+261550,Mount & Blade II: Bannerlord,"Oct 25, 2022",False,49.99,Strategy,50,TaleWorlds Entertainment,TaleWorlds Entertainment,27300,8,Very Positive,99542,15185,114727
+1281930,tModLoader,"May 16, 2020",True,,Free To Play,,TML Team,Re-Logic,26895,9,Overwhelmingly Positive,195912,4958,200870
+284160,BeamNG.drive,"May 29, 2015",False,24.99,Early Access,5,BeamNG,BeamNG,27404,9,Overwhelmingly Positive,215183,5110,220293
+322330,Don't Starve Together,"Apr 21, 2016",False,14.99,Strategy,,Klei Entertainment,Klei Entertainment,24424,9,Overwhelmingly Positive,124100,6200,130300
+1973530,Limbus Company,"Feb 26, 2023",True,,Free To Play,,ProjectMoon,ProjectMoon,24672,8,Very Positive,44701,3406,48107
+892970,Valheim,"Feb 2, 2021",False,19.99,Early Access,,Iron Gate AB,Coffee Stain Publishing,26198,8,Very Positive,284420,16588,301008
+1665460,eFootball™,"Sep 29, 2021",True,,Free To Play,,KONAMI,KONAMI,24979,5,Mixed,14295,14937,29232
+526870,Satisfactory,"Sep 10, 2024",False,39.99,Strategy,44,Coffee Stain Studios,Coffee Stain Publishing,25440,9,Overwhelmingly Positive,156466,4094,160560
+1203220,NARAKA: BLADEPOINT,"Aug 11, 2021",True,,Free To Play,40,24 Entertainment,NetEase Games ,21656,8,Very Positive,19208,4447,23655
+1158310,Crusader Kings III,"Sep 1, 2020",False,49.99,Strategy,188,Paradox Development Studio,Paradox Interactive,24202,8,Very Positive,61162,6828,67990
+1905180,OBS Studio,"Mar 21, 2022",True,,Video Production,,OBS Project,OBS Project,22595,9,Overwhelmingly Positive,11438,526,11964
+550,Left 4 Dead 2,"Nov 16, 2009",False,9.99,Action,101,Valve,Valve,23160,9,Overwhelmingly Positive,308517,8041,316558
+3932890,Escape from Tarkov,"Nov 15, 2025",False,49.99,Simulation,84,Battlestate Games,Battlestate Games,21235,5,Mixed,8069,5030,13099
+346110,ARK: Survival Evolved,"Aug 27, 2017",False,14.99,RPG,32,Studio Wildcard,Studio Wildcard,21295,6,Mostly Positive,265168,66446,331614
+427520,Factorio,"Aug 14, 2020",False,35.00,Strategy,88,Wube Software LTD.,Wube Software LTD.,22049,9,Overwhelmingly Positive,142226,2527,144753
+1818450,STALZONE,"Dec 9, 2022",True,,Free To Play,17,EXBO,EXBO,19854,5,Mixed,10822,5461,16283
+252950,Rocket League®,"Jul 6, 2015",False,,Sports,88,Psyonix LLC,Psyonix LLC,21874,8,Very Positive,259756,42115,301871
+292030,The Witcher 3: Wild Hunt,"May 18, 2015",False,39.99,RPG,78,CD PROJEKT RED,CD PROJEKT RED,20976,9,Overwhelmingly Positive,249132,8220,257352
+594650,Hunt: Showdown 1896,"Aug 27, 2019",False,39.99,Action,36,Crytek,Crytek,20300,6,Mostly Positive,90316,28297,118613
+582660,Black Desert,"May 24, 2017",False,9.99,Strategy,,Pearl Abyss,Pearl Abyss,19855,6,Mostly Positive,36165,15018,51183
+813780,Age of Empires II: Definitive Edition,"Nov 14, 2019",False,34.99,Strategy,357,World's Edge,Xbox Game Studios,19452,8,Very Positive,65839,3522,69361
+39210,FINAL FANTASY XIV Online,"Feb 18, 2014",False,19.99,RPG,,Square Enix,Square Enix,19322,8,Very Positive,57613,8595,66208
+1771300,Kingdom Come: Deliverance II,"Feb 4, 2025",False,59.99,RPG,83,Warhorse Studios,Deep Silver,18765,8,Very Positive,77295,5882,83177
+3472040,NBA 2K26,"Sep 4, 2025",False,69.99,Sports,48,Visual Concepts,2K,17763,6,Mostly Positive,10810,4246,15056
+2252570,Football Manager 2024,"Nov 6, 2023",False,,Strategy,100,Sports Interactive,SEGA,18044,8,Very Positive,10656,853,11509
+629520,Soundpad,"Sep 30, 2017",False,4.99,Utilities,,Leppsoft,Leppsoft,16940,9,Overwhelmingly Positive,28841,1350,30191
+2073850,THE FINALS,"Dec 7, 2023",True,,Free To Play,50,Embark Studios,Embark Studios,17460,8,Very Positive,125109,30141,155250
+3513350,Wuthering Waves,"Apr 28, 2025",True,,Free To Play,,KURO GAMES,KURO GAMES,16659,8,Very Positive,24921,3207,28128
+1974050,Torchlight: Infinite,"May 9, 2023",True,,Free To Play,43,XD,XD,16447,5,Mixed,5012,3090,8102
+376210,The Isle,"Dec 1, 2015",False,19.99,Early Access,,Afterthought LLC,Afterthought LLC,16386,6,Mostly Positive,50007,14798,64805
+1874880,Arma Reforger,"Nov 16, 2023",False,39.99,Strategy,24,Bohemia Interactive,Bohemia Interactive,16332,6,Mostly Positive,26097,7048,33145
+2183900,"Warhammer 40,000: Space Marine 2","Sep 9, 2024",False,59.99,RPG,50,Saber Interactive,Focus Entertainment,15693,8,Very Positive,105581,16267,121848
+8930,Sid Meier's Civilization® V,"Sep 21, 2010",False,29.99,Strategy,286,Firaxis Games,2K,15458,9,Overwhelmingly Positive,124198,5719,129917
+2344520,Diablo® IV,"Oct 17, 2023",False,49.99,RPG,45,"Blizzard Entertainment, Inc.","Blizzard Entertainment, Inc.",14919,5,Mixed,17395,7979,25374
+766570,Russian Fishing 4,"Nov 10, 2021",True,,Free To Play,145,FishSoft LLC,FishSoft LLC,14197,6,Mostly Positive,5914,1535,7449
+2622380,ELDEN RING NIGHTREIGN,"May 29, 2025",False,39.99,RPG,37,"FromSoftware, Inc.","FromSoftware, Inc.",14035,8,Very Positive,83148,12530,95678
+3527290,PEAK,"Jun 16, 2025",False,7.99,Indie,54,Team PEAK,Aggro Crab,14584,9,Overwhelmingly Positive,156813,7380,164193
+1361210,"Warhammer 40,000: Darktide","Nov 30, 2022",False,39.99,RPG,36,Fatshark,Fatshark,14609,6,Mostly Positive,68276,22115,90391
+393380,Squad,"Sep 23, 2020",False,39.99,Strategy,,Offworld,Offworld,14337,8,Very Positive,91416,19364,110780
+3767850,SpiritVale,"Jul 15, 2026",False,14.99,Early Access,,Baikun Interactive,Baikun Interactive,13373,6,Mostly Positive,736,297,1033
+2139460,Once Human,"Jul 9, 2024",True,,Free To Play,,Starry Studio,Starry Studio,13541,6,Mostly Positive,68705,17244,85949
+281990,Stellaris,"May 9, 2016",False,49.99,Strategy,219,Paradox Development Studio,Paradox Interactive,13672,8,Very Positive,90544,14929,105473
+1304930,The Outlast Trials,"Mar 5, 2024",False,39.99,Indie,27,Red Barrels,Red Barrels,13880,8,Very Positive,48151,3083,51234
+3564740,Where Winds Meet,"Nov 14, 2025",True,,Free To Play,61,Everstone Studio,NetEase Games,13257,8,Very Positive,54167,8218,62385
+377160,Fallout 4,"Nov 9, 2015",False,19.99,RPG,84,Bethesda Game Studios,Bethesda Softworks,13626,8,Very Positive,208434,51941,260375
+4025700,Heartopia,"Jan 16, 2026",True,,Free To Play,,XD,XD,12956,5,Mixed,4485,3077,7562
+365670,Blender,"Apr 24, 2015",True,,Video Production,,Blender Foundation,Blender Foundation,13006,9,Overwhelmingly Positive,39708,1619,41327
+3321460,Crimson Desert,"Mar 19, 2026",False,69.99,Adventure,34,Pearl Abyss,Pearl Abyss,12923,8,Very Positive,65809,10102,75911
+304930,Unturned,"Jul 7, 2017",True,,Free To Play,95,Smartly Dressed Games,Smartly Dressed Games,13467,8,Very Positive,200583,20468,221051
+2246340,Monster Hunter Wilds,"Feb 27, 2025",False,69.99,RPG,50,"CAPCOM Co., Ltd.","CAPCOM Co., Ltd.",12230,5,Mixed,80982,38245,119227
+1671210,DELTARUNE,"Jun 4, 2025",False,24.99,RPG,,tobyfox,tobyfox,13142,9,Overwhelmingly Positive,83851,1434,85285
+1326470,Sons Of The Forest,"Feb 22, 2024",False,29.99,Simulation,32,Endnight Games Ltd,Newnight ,12936,8,Very Positive,116645,15488,132133
+3164500,Schedule I,"Mar 24, 2025",False,19.99,Early Access,13,TVGS,TVGS,12570,9,Overwhelmingly Positive,210925,4538,215463
+306130,The Elder Scrolls® Online,"May 22, 2017",False,19.99,RPG,,ZeniMax Online Studios,Bethesda Softworks,12224,8,Very Positive,70384,17222,87606
+244210,Assetto Corsa,"Dec 19, 2014",False,19.99,Sports,709,Kunos Simulazioni,505 Games,12434,8,Very Positive,70541,5106,75647
+582010,Monster Hunter: World,"Aug 8, 2018",False,29.99,Action,100,"CAPCOM Co., Ltd.","CAPCOM Co., Ltd.",11129,8,Very Positive,157202,13788,170990
+1297900,Gothic 1 Remake,"Jun 5, 2026",False,49.99,RPG,42,Alkimia Interactive,Alkimia Interactive,12417,8,Very Positive,8311,1463,9774
+739630,Phasmophobia,"Sep 18, 2020",False,19.99,Early Access,54,Kinetic Games,Kinetic Games,12102,8,Very Positive,413548,24940,438488
+10,Counter-Strike,"Nov 1, 2000",False,9.99,Action,,Valve,Valve,11820,9,Overwhelmingly Positive,60167,1661,61828
+291550,Brawlhalla,"Oct 17, 2017",True,,Free To Play,65,Blue Mammoth Games,Ubisoft,11833,6,Mostly Positive,138075,38670,176745
+236850,Europa Universalis IV,"Aug 13, 2013",False,49.99,Strategy,373,Paradox Development Studio,Paradox Interactive,11543,8,Very Positive,60180,8732,68912
+2763740,Revolution Idle,"May 1, 2025",True,,Free To Play,670,Oni Gaming,Oni Gaming,11352,8,Very Positive,6038,964,7002
+1431300,SAND: Raiders of Sophie,"Jun 22, 2026",False,24.99,Early Access,20,Hologryph,tinyBuild,11431,5,Mixed,3811,3478,7289
+1364780,Street Fighter™ 6,"Jun 1, 2023",False,39.99,Adventure,43,"CAPCOM Co., Ltd.","CAPCOM Co., Ltd.",9798,8,Very Positive,25228,4854,30082
+949230,Cities: Skylines II,"Oct 24, 2023",False,49.99,Simulation,44,Iceflake Studios,Paradox Interactive,10955,5,Mixed,25200,20000,45200
+945360,Among Us,"Nov 16, 2018",False,4.99,Casual,33,Innersloth,Innersloth,11429,8,Very Positive,395331,34301,429632
+513710,SCUM,"Jun 17, 2025",False,44.99,Massively Multiplayer,69,Gamepires,Gamepires,10622,6,Mostly Positive,34512,12608,47120
+3450310,Europa Universalis V,"Nov 4, 2025",False,59.99,Strategy,75,Paradox Tinto,Paradox Interactive,10844,5,Mixed,11087,4803,15890
+1623660,MIR4,"Aug 25, 2021",True,,Free To Play,,Wemade Next,Wemade,10442,5,Mixed,2809,1385,4194
+275850,No Man's Sky,"Aug 12, 2016",False,59.99,Adventure,27,Hello Games,Hello Games,10560,8,Very Positive,192561,38780,231341
+4425970,Guildrun Demo,"Jul 16, 2026",True,,Strategy,,Leyline,Leyline,10540,8,Very Positive,318,19,337
+1449850,Yu-Gi-Oh! Master Duel,"Jan 18, 2022",True,,Free To Play,11,KONAMI,KONAMI,11218,6,Mostly Positive,35414,13067,48481
+1952920,Strikers Club,"Jul 17, 2026",True,,Early Access,20,Oddshot Games,Oddshot Games,10841,8,Very Positive,464,114,578
+3659280,Off The Grid,"Jul 17, 2025",True,,Free To Play,,Gunzilla Games,Gunzilla Games,10444,5,Mixed,851,522,1373
+1466860,Age of Empires IV: Anniversary Edition,"Oct 28, 2021",False,39.99,Strategy,175,World's Edge,Xbox Game Studios,10020,8,Very Positive,30866,5128,35994
+440900,Conan Exiles Enhanced,"May 8, 2018",False,39.99,Strategy,36,Funcom,Funcom,10099,6,Mostly Positive,45217,11856,57073
+1325860,VTube Studio,"Mar 12, 2021",True,,Video Production,,DenchiSoft,DenchiSoft,8978,8,Very Positive,3103,243,3346
+761890,Albion Online,"May 16, 2018",True,,Free To Play,154,Sandbox Interactive GmbH,Sandbox Interactive GmbH,9995,6,Mostly Positive,20240,6889,27129
+457140,Oxygen Not Included,"Jul 30, 2019",False,24.99,Simulation,51,Klei Entertainment,Klei Entertainment,9352,9,Overwhelmingly Positive,49950,2163,52113
+2141910,Magic: The Gathering Arena,"May 23, 2023",True,,Free To Play,,Wizards of the Coast,Wizards of the Coast,9999,5,Mixed,12700,8918,21618
+1454400,Cookie Clicker,"Sep 1, 2021",False,4.99,Strategy,637,Orteil,Playsaurus,9785,9,Overwhelmingly Positive,54632,2022,56654
+367520,Hollow Knight,"Feb 24, 2017",False,14.99,Indie,63,Team Cherry,Team Cherry,9546,9,Overwhelmingly Positive,200706,6344,207050
+1203620,Enshrouded,"Jan 24, 2024",False,29.99,Early Access,52,Keen Games GmbH,Keen Games GmbH,10033,8,Very Positive,46905,6941,53846
+1030300,Hollow Knight: Silksong,"Sep 4, 2025",False,19.99,Indie,52,Team Cherry,Team Cherry,9427,8,Very Positive,147586,10750,158336
+1295660,Sid Meier's Civilization VII,"Feb 10, 2025",False,99.99,Strategy,37,Firaxis Games,2K,9550,5,Mixed,18127,17363,35490
+960090,Bloons TD 6,"Dec 17, 2018",False,13.99,Strategy,156,Ninja Kiwi,Ninja Kiwi,9477,9,Overwhelmingly Positive,250058,6989,257047
+2016590,Dark and Darker,"Jun 7, 2024",True,,Early Access,,IRONMACE,IRONMACE,8930,5,Mixed,31472,15451,46923
+1144200,Ready or Not,"Dec 13, 2023",False,49.99,Indie,66,VOID Interactive,VOID Interactive,9444,6,Mostly Positive,143817,45171,188988
+2186680,"Warhammer 40,000: Rogue Trader","Dec 7, 2023",False,49.99,Strategy,133,Owlcat Games,Owlcat Games,9254,8,Very Positive,22640,3495,26135
+1476970,IdleOn,"Nov 6, 2025",True,,Free To Play,276,Lavaflame2,Lavaflame2,8955,6,Mostly Positive,16316,5066,21382
+2050650,Resident Evil 4,"Mar 23, 2023",False,39.99,Adventure,46,"CAPCOM Co., Ltd.","CAPCOM Co., Ltd.",8619,9,Overwhelmingly Positive,91238,3386,94624
+2709570,Supermarket Together,"Aug 9, 2024",True,,Free To Play,51,DeadDevsTellNoLies,DeadDevsTellNoLies,8885,8,Very Positive,32118,1820,33938
+1868140,DAVE THE DIVER,"Jun 28, 2023",False,19.99,Simulation,43,MINTROCKET,MINTROCKET,7995,9,Overwhelmingly Positive,53314,1935,55249
+4333400,RedM,,False,,,,,,9196,0,4 user reviews,3,1,4
+107410,Arma 3,"Sep 12, 2013",False,29.99,Strategy,123,Bohemia Interactive,Bohemia Interactive,8903,8,Very Positive,126374,12097,138471
+2426960,Summoners War,"Jan 7, 2024",True,,Free To Play,,Com2uS,Com2uS,8351,5,Mixed,2658,1328,3986
+1248130,Farming Simulator 22,"Nov 21, 2021",False,19.99,Simulation,45,Giants Software,Giants Software,8732,8,Very Positive,30093,2461,32554
+4465480,Counter-Strike:Global Offensive,"Aug 21, 2012",True,,Free To Play,,Valve,Valve,8532,9,Overwhelmingly Positive,11796,343,12139
+648800,Raft,"Jun 20, 2022",False,19.99,Simulation,104,Redbeet Interactive,Axolot Games,8078,8,Very Positive,141436,9681,151117
+1283970,YoloMouse - Cursor Changer,"May 1, 2020",False,4.99,Game Development,,Dragonrise Games,Dragonrise Games,8149,8,Very Positive,1479,111,1590
+216150,MapleStory,"Aug 9, 2012",True,,Free To Play,0,NEXON Korea Corporation,Nexon America Inc.,8367,5,Mixed,7961,5360,13321
+2379780,Balatro,"Feb 20, 2024",False,14.99,Strategy,31,LocalThunk,Playstack,8383,9,Overwhelmingly Positive,118298,2331,120629
+238960,Path of Exile,"Oct 23, 2013",True,,Free To Play,127,Grinding Gear Games,Grinding Gear Games,8355,8,Very Positive,126349,15621,141970
+270880,American Truck Simulator,"Feb 2, 2016",False,19.99,Simulation,130,SCS Software,SCS Software,8323,9,Overwhelmingly Positive,105820,3153,108973
+3224770,Umamusume: Pretty Derby,"Jun 24, 2025",True,,Free To Play,20,"Cygames, Inc.","Cygames, Inc.",7820,8,Very Positive,38081,2655,40736
+2429640,Throne and Liberty,"Oct 1, 2024",True,,Free To Play,48,NC,Amazon Game Studios,7802,5,Mixed,20389,12155,32544
+3041230,Windrose,"Apr 14, 2026",False,29.99,Early Access,,Kraken Express,Kraken Express,8512,8,Very Positive,26589,3358,29947
+2923300,Banana,"Apr 23, 2024",True,,Free To Play,76,Sky,Banana Game,7995,6,Mostly Positive,16885,4533,21418
+4162040,Zenless Zone Zero,"Jun 16, 2026",True,,Free To Play,,COGNOSPHERE PTE. LTD.,COGNOSPHERE PTE. LTD.,7896,8,Very Positive,3983,473,4456
+255710,Cities: Skylines,"Mar 10, 2015",False,29.99,Strategy,135,Colossal Order,Paradox Interactive,7759,8,Very Positive,118558,9370,127928
+1943950,Escape the Backrooms,"Oct 23, 2025",False,9.99,Indie,34,Fancy Games,Secret Mode,7922,8,Very Positive,47353,6161,53514
+1687950,Persona 5 Royal,"Oct 20, 2022",False,59.99,RPG,53,ATLUS,SEGA,7502,9,Overwhelmingly Positive,41474,1488,42962
+1407200,World of Tanks,"Apr 28, 2021",True,,Free To Play,60,Wargaming Group Limited,Wargaming Group Limited,7462,6,Mostly Positive,18424,6554,24978
+3105440,Heroes of Might and Magic: Olden Era,"Apr 30, 2026",False,39.99,Early Access,22,Unfrozen,Hooded Horse,7574,8,Very Positive,5861,865,6726
+1151340,Fallout 76,"Apr 14, 2020",False,39.99,RPG,72,Bethesda Game Studios,Bethesda Softworks,7228,6,Mostly Positive,59794,23001,82795
+1942280,Brotato,"Jun 23, 2023",False,4.99,Free To Play,179,Blobfish,Blobfish,7013,9,Overwhelmingly Positive,31878,1183,33061
+3059520,F1® 25,"May 30, 2025",False,49.99,Sports,46,Codemasters,Electronic Arts,7133,8,Very Positive,9532,1424,10956
+2138720,REMATCH,"Jun 19, 2025",False,39.99,Sports,37,Sloclap,Sloclap,7402,5,Mixed,14516,6437,20953
+1599340,Lost Ark,"Feb 11, 2022",True,,Free To Play,156,Smilegate RPG,Amazon Game Studios,6852,5,Mixed,70543,34459,105002
+703080,Planet Zoo,"Nov 5, 2019",False,44.99,Strategy,38,Frontier Developments,Frontier Developments,6957,8,Very Positive,44860,4401,49261
+447040,Watch_Dogs® 2,"Nov 28, 2016",False,49.99,Adventure,55,Ubisoft,Ubisoft,6656,8,Very Positive,22987,5095,28082
+2707930,Palia,"Mar 25, 2024",True,,Free To Play,52,Singularity 6 Corporation,Singularity 6 Corporation,7087,8,Very Positive,23507,2919,26426
+1172710,Dune: Awakening,"Jun 10, 2025",False,49.99,RPG,72,Funcom,Funcom,6931,6,Mostly Positive,37773,15164,52937
+4128580,BidKing,"Apr 15, 2026",False,2.99,Strategy,28,MindSurge Network & Games,Elegoose Games,6119,4,Mostly Negative,28,94,122
+1903340,Clair Obscur: Expedition 33,"Apr 24, 2025",False,59.99,RPG,55,Sandfall Interactive,Kepler Interactive,6931,9,Overwhelmingly Positive,132279,4698,136977
+3595230,Call of Duty®: Modern Warfare® II,"Oct 22, 2022",False,69.99,Action,24,Infinity Ward,Activision,6635,5,Mixed,3627,4974,8601
+1272160,The Life and Suffering of Sir Brante,"Mar 4, 2021",True,19.99,Strategy,89,Sever,101XP,6469,8,Very Positive,3044,370,3414
+990080,Hogwarts Legacy,"Feb 10, 2023",False,59.99,RPG,45,Avalanche Software,Warner Bros. Games,6788,8,Very Positive,163849,16221,180070
+1172620,Sea of Thieves: 2026 Edition,"Jun 3, 2020",False,39.99,Adventure,293,Rare Ltd,Xbox Game Studios,6754,8,Very Positive,148541,19108,167649
+431730,Aseprite,"Feb 22, 2016",False,19.99,Game Development,,Igara Studio,Igara Studio,6548,9,Overwhelmingly Positive,16133,149,16282
+2669320,EA SPORTS FC™ 25,"Sep 26, 2024",False,,Sports,39,EA Canada,Electronic Arts,6381,5,Mixed,17119,15137,32256
+286160,Tabletop Simulator,"Jun 5, 2015",False,19.99,Strategy,26,Berserk Games,Berserk Games,6883,9,Overwhelmingly Positive,47320,1913,49233
+444200,World of Tanks Blitz,"Nov 9, 2016",True,,Free To Play,,Wargaming Group Limited,Wargaming Group Limited,6237,6,Mostly Positive,18194,6307,24501
+552990,World of Warships,"Nov 15, 2017",True,,Free To Play,43,Wargaming Group Limited,Wargaming Group Limited,6043,8,Very Positive,39273,9782,49055
+1363080,Manor Lords,"Apr 26, 2024",False,39.99,Early Access,11,Slavic Magic,Hooded Horse,6423,8,Very Positive,38101,5705,43806
+1284210,Guild Wars 2®,"Aug 23, 2022",True,,Free To Play,,ArenaNet®,ArenaNet®,6442,8,Very Positive,16381,2129,18510
+2250040,Crosshair V2,"Jan 26, 2023",True,,Utilities,,CenterPoint Gaming,CenterPoint Gaming,6339,8,Very Positive,4511,499,5010
+4210580,Ore Factory Squad ⛏️,"Jul 16, 2026",False,12.99,Simulation,35,threeW,PlayWay S.A.,6407,8,Very Positive,203,23,226
+12210,Grand Theft Auto IV: The Complete Edition,"Mar 24, 2020",False,19.99,Adventure,55,Rockstar North,Rockstar Games,6293,8,Very Positive,66116,15257,81373
+529340,Victoria 3,"Oct 25, 2022",False,49.99,Strategy,141,Paradox Development Studio,Paradox Interactive,6170,5,Mixed,19174,8902,28076
+435150,Divinity: Original Sin 2 - Definitive Edition,"Sep 14, 2017",False,44.99,Strategy,97,Larian Studios,Larian Studios,6267,9,Overwhelmingly Positive,90355,4393,94748
+4508340,NTE: Neverness to Everness,"Jul 7, 2026",True,,Free To Play,,Hotta Studio,Perfect World Games,6076,8,Very Positive,1304,211,1515
+1643320,S.T.A.L.K.E.R. 2: Heart of Chornobyl,"Nov 20, 2024",False,59.99,RPG,58,GSC Game World,GSC Game World (worldwide),6181,6,Mostly Positive,42224,13109,55333
+1604030,V Rising,"May 8, 2024",False,34.99,Massively Multiplayer,49,Stunlock Studios,Stunlock Studios,6222,8,Very Positive,59448,6937,66385
+2358720,Black Myth: Wukong,"Aug 19, 2024",False,59.99,RPG,81,Game Science,Game Science,5293,8,Very Positive,80231,5219,85450
+646570,Slay the Spire,"Jan 23, 2019",False,24.99,Strategy,46,Mega Crit,Mega Crit,5799,9,Overwhelmingly Positive,88965,2337,91302
+233860,Kenshi,"Dec 6, 2018",False,29.99,Strategy,0,Lo-Fi Games,Lo-Fi Games,6036,9,Overwhelmingly Positive,53153,2752,55905
+311210,Call of Duty®: Black Ops III,"Nov 5, 2015",False,59.99,Adventure,98,Treyarch,Activision,6607,8,Very Positive,144757,20428,165185
+1551360,Forza Horizon 5,"Nov 8, 2021",False,59.99,Sports,164,Playground Games,Xbox Game Studios,5785,8,Very Positive,86464,11316,97780
+242760,The Forest,"Apr 30, 2018",False,19.99,Simulation,45,Endnight Games Ltd,Endnight Games Ltd,6170,9,Overwhelmingly Positive,201085,10010,211095
+1049590,Eternal Return,"Jul 19, 2023",True,,,,Nimble Neuron,Nimble Neuron,4512,8,Very Positive,10056,2408,12464
+700330,SCP: Secret Laboratory,"Dec 29, 2017",True,,Free To Play,52,Northwood Studios,Northwood Studios,5735,8,Very Positive,84028,7185,91213
+1426210,It Takes Two,"Mar 25, 2021",False,39.99,Adventure,20,Hazelight Studios,Electronic Arts,5168,9,Overwhelmingly Positive,57127,2598,59725
+1285190,Borderlands 4,"Sep 11, 2025",False,69.99,RPG,52,Gearbox Software,2K,6037,5,Mixed,34515,22534,57049
+214950,Total War: ROME II - Emperor Edition,"Sep 2, 2013",False,59.99,Strategy,188,CREATIVE ASSEMBLY,SEGA,5876,8,Very Positive,40514,7056,47570
+3199170,Blood Strike,"Mar 13, 2025",True,,Free To Play,,NetEase Games,NetEase Games,5721,6,Mostly Positive,4903,1447,6350
+632360,Risk of Rain 2,"Aug 11, 2020",False,24.99,Indie,171,Hopoo Games,Gearbox Publishing,5898,9,Overwhelmingly Positive,226390,11493,237883
+2537590,Microsoft Flight Simulator 2024,"Nov 19, 2024",False,69.99,Simulation,27,Asobo Studio,Xbox Game Studios,5792,5,Mixed,7193,5513,12706
+379430,Kingdom Come: Deliverance,"Feb 13, 2018",False,29.99,RPG,82,Warhorse Studios,Warhorse Studios,5770,8,Very Positive,69016,13143,82159
+1812620,DSX,"Jun 24, 2022",False,7.99,Utilities,35,Paliverse,Paliverse,5662,5,Mixed,2157,1108,3265
+812140,Assassin's Creed® Odyssey,"Oct 5, 2018",False,59.99,RPG,93,Ubisoft Quebec,Ubisoft,5562,8,Very Positive,55400,6641,62041
+1778820,TEKKEN 8,"Jan 25, 2024",False,39.99,Action,47,Bandai Namco Studios Inc.,Bandai Namco Entertainment,5572,5,Mixed,24320,18794,43114
+977400,Cell to Singularity - Evolution Never Ends,"Nov 3, 2021",True,,Free To Play,43,Computer Lunch,Computer Lunch,5409,8,Very Positive,9483,1542,11025
+583950,Artifact,"Nov 28, 2018",True,,Strategy,,Valve,Valve,5560,5,Mixed,5648,4105,9753
+2437170,SMITE 2,"Aug 27, 2024",True,,Early Access,27,Titan Forge Games,Hi-Rez Studios,5877,5,Mixed,7970,6819,14789
+1374490,RuneScape: Dragonwilds,"Apr 15, 2025",False,29.99,Early Access,48,Jagex Ltd,Jagex Ltd,5824,8,Very Positive,18785,4138,22923
+1238840,Battlefield™ 1,"Jun 11, 2020",False,39.99,Massively Multiplayer,50,DICE,Electronic Arts,5393,8,Very Positive,45395,7190,52585
+359320,Elite Dangerous,"Apr 2, 2015",False,19.99,Strategy,,Frontier Developments,Frontier Developments,5502,6,Mostly Positive,54034,15766,69800
+4197610,Librarian: Tidy Up the Arcane Library!,"Apr 30, 2026",False,5.99,Simulation,12,ArtRising,ArtRising,5547,8,Very Positive,13367,845,14212
+380600,Fishing Planet,"Aug 28, 2017",True,,Free To Play,17,Fishing Planet LLC,Fishing Planet LLC,5358,8,Very Positive,24284,4494,28778
+1145350,Hades II,"Sep 25, 2025",False,29.99,RPG,50,Supergiant Games,Supergiant Games,5274,9,Overwhelmingly Positive,66657,2204,68861
+392160,X4: Foundations,"Nov 30, 2018",False,49.99,Strategy,172,Egosoft,Egosoft,5345,6,Mostly Positive,12699,3341,16040
+1465360,SnowRunner,"May 17, 2021",False,29.99,Simulation,37,Saber Interactive,Focus Entertainment,5338,8,Very Positive,20062,2519,22581
+3892270,Gamble With Your Friends,"May 1, 2026",False,7.99,Simulation,55,TEAM GWYF,TENSTACK,5632,8,Very Positive,10297,1314,11611
+1118200,People Playground,"Jul 23, 2019",False,9.99,Simulation,17,mestiez,Studio Minus,5222,9,Overwhelmingly Positive,182890,2391,185281
+2161700,Persona 3 Reload,"Feb 1, 2024",False,59.99,Strategy,56,ATLUS,SEGA,5087,9,Overwhelmingly Positive,27383,1049,28432
+2968420,PowerWash Simulator 2,"Oct 23, 2025",False,24.99,Simulation,60,FuturLab,FuturLab,5233,8,Very Positive,7067,592,7659
+2209900,Moonlight Peaks,"Jul 6, 2026",False,34.99,Simulation,59,Little Chicken,XSEED Games,5323,8,Very Positive,872,106,978
+1401590,Disney Dreamlight Valley,"Dec 5, 2023",False,39.99,Simulation,15,Gameloft,Gameloft,5159,8,Very Positive,15850,1510,17360
+1962700,Subnautica 2,"May 14, 2026",False,29.99,Early Access,,Unknown Worlds Entertainment,Unknown Worlds Entertainment,5325,8,Very Positive,70122,5102,75224
+219990,Grim Dawn,"Feb 25, 2016",False,24.99,RPG,234,Crate Entertainment,Crate Entertainment,4895,8,Very Positive,46759,2494,49253
+602960,Barotrauma,"Mar 13, 2023",False,39.99,Strategy,76,FakeFish,Daedalic Entertainment,4983,8,Very Positive,39492,2126,41618
+1446780,MONSTER HUNTER RISE,"Jan 12, 2022",False,39.99,Action,100,"CAPCOM Co., Ltd.","CAPCOM Co., Ltd.",4401,8,Very Positive,43181,6908,50089
+4380490,Cat Mail Co.,"Jul 9, 2026",False,14.99,Simulation,17,Maracas Studio,Maracas Studio,5087,8,Very Positive,1636,92,1728
+8500,EVE Online,"Dec 15, 2010",True,,Free To Play,,Fenris Creations,Fenris Creations,4921,6,Mostly Positive,16733,6261,22994
+1617400,The Bazaar,"Aug 13, 2025",False,19.99,Strategy,,Tempo,Tempo,4512,6,Mostly Positive,4701,1244,5945
+3557620,Blue Archive,"Jul 3, 2025",True,,Free To Play,,NEXON Games,NEXON Korea,4599,8,Very Positive,8616,673,9289
+686060,Mewgenics,"Feb 10, 2026",False,29.99,Strategy,281,Edmund McMillen,Edmund McMillen,5091,8,Very Positive,26833,2558,29391
+1568590,Goose Goose Duck,"Oct 3, 2021",True,,Free To Play,38,"Gaggle Studios, Inc.","Gaggle Studios, Inc.",4535,8,Very Positive,11863,1314,13177
+3159330,Assassin’s Creed Shadows,"Mar 19, 2025",False,69.99,RPG,75,Ubisoft Quebec,Ubisoft,4700,6,Mostly Positive,12383,3662,16045
+239140,Dying Light,"Jan 26, 2015",False,24.99,RPG,78,Techland,Techland,4875,8,Very Positive,127284,7655,134939
+1062090,Timberborn,"Mar 12, 2026",False,34.99,Strategy,59,Mechanistry,Mechanistry,4969,9,Overwhelmingly Positive,24046,993,25039
+548430,Deep Rock Galactic,"May 13, 2020",False,29.99,Action,69,Ghost Ship Games,Coffee Stain Publishing,4997,9,Overwhelmingly Positive,209836,5125,214961
+2471100,Unnamed Space Idle,"Jul 27, 2023",True,,Early Access,317,Sylv,Jdog Corp,4759,8,Very Positive,2640,218,2858
+534380,Dying Light 2 Stay Human: Reloaded Edition,"Feb 3, 2022",False,59.99,RPG,65,Techland,Techland,4738,6,Mostly Positive,66439,19591,86030
+993090,Lossless Scaling,"Dec 28, 2018",False,6.99,Utilities,,THS,THS,4616,8,Very Positive,15456,1088,16544
+2221490,Tom Clancy’s The Division® 2,"Jan 12, 2023",False,29.99,RPG,67,Ubisoft,Ubisoft,4859,6,Mostly Positive,14836,3986,18822
+1659040,HITMAN World of Assassination,"Jan 20, 2022",False,29.99,Adventure,83,IO Interactive A/S,IO Interactive A/S,4733,8,Very Positive,30410,4286,34696
+1149460,ICARUS,"Dec 3, 2021",False,34.99,Simulation,171,RocketWerkz,RocketWerkz,4833,6,Mostly Positive,27854,8695,36549
+714010,Aimlabs,"Jun 16, 2023",True,,Free To Play,100,Statespace,Statespace,4319,8,Very Positive,59862,6100,65962
+4747510,BOMBANANA! Demo,"Jun 15, 2026",True,,Strategy,,Lefto Studio,Lefto Studio,4915,9,Overwhelmingly Positive,985,20,1005
+400750,Call to Arms - Gates of Hell: Ostfront,"Jun 11, 2021",False,34.99,Strategy,414,Barbedwire Studios,Digitalmindsoft,4619,8,Very Positive,11780,1907,13687
+1716740,Starfield,"Sep 5, 2023",False,49.99,RPG,82,Bethesda Game Studios,Bethesda Softworks,4777,5,Mixed,66355,51825,118180
+3679080,The Seven Deadly Sins: Origin,"Mar 16, 2026",True,,Free To Play,,Netmarble F&C,Netmarble,4552,5,Mixed,2453,1706,4159
+518790,theHunter: Call of the Wild™,"Feb 16, 2017",False,19.99,Sports,160,Expansive Worlds,Avalanche Studios,4628,8,Very Positive,66973,7608,74581
+2215430,Ghost of Tsushima DIRECTOR'S CUT,"May 16, 2024",False,59.99,Adventure,77,Sucker Punch Productions,PlayStation Publishing LLC,4619,8,Very Positive,48297,3150,51447
+2322010,God of War Ragnarök,"Sep 19, 2024",False,59.99,RPG,48,Santa Monica Studio,PlayStation Publishing LLC,4613,8,Very Positive,18943,2216,21159
+1009850,OVR Advanced Settings,"Apr 14, 2020",False,7.99,Utilities,,OVRAS Team,OVRAS Team,4500,8,Very Positive,3987,327,4314
+1286830,STAR WARS™: The Old Republic™,"Jul 21, 2020",True,,Free To Play,191,Broadsword,Electronic Arts,4784,8,Very Positive,47275,5146,52421
+220200,Kerbal Space Program,"Apr 27, 2015",False,39.99,Simulation,,Squad,Private Division,4735,9,Overwhelmingly Positive,95619,4156,99775
+814380,Sekiro™: Shadows Die Twice - GOTY Edition,"Mar 21, 2019",False,59.99,Adventure,34,"FromSoftware, Inc.",Activision (Excluding Japan and Asia),4287,8,Very Positive,94315,6174,100489
+22380,Fallout: New Vegas,"Oct 19, 2010",False,9.99,RPG,75,Obsidian Entertainment,Bethesda Softworks,4778,9,Overwhelmingly Positive,199047,7831,206878
+2325290,Sky: Children of the Light,"Apr 10, 2024",True,,Early Access,,thatgamecompany,thatgamecompany,3991,8,Very Positive,10032,1574,11606
+686810,Hell Let Loose,"Jul 27, 2021",False,69.99,Strategy,195,Expression Games,Team17,4874,8,Very Positive,71795,16240,88035
+374320,DARK SOULS™ III,"Apr 11, 2016",False,59.99,Action,43,"FromSoftware, Inc.","FromSoftware, Inc.",4480,8,Very Positive,156696,10041,166737
+815370,Green Hell,"Sep 5, 2019",False,27.99,Simulation,68,Creepy Jar,Creepy Jar,4142,8,Very Positive,29360,5252,34612
+2074920,The First Descendant,"Jun 30, 2024",True,,Free To Play,24,"NEXON Games Co., Ltd.",NEXON,4221,5,Mixed,32370,18181,50551
+2749950,Esports Manager 2026,"Jul 6, 2026",False,19.99,Strategy,21,Neurona Games,indie.io,4262,5,Mixed,346,162,508
+2584990,Shadowverse: Worlds Beyond,"Jun 14, 2025",True,,Free To Play,27,"Cygames, Inc.","Cygames, Inc.",3739,4,Mostly Negative,2448,4045,6493
+427410,Abiotic Factor,"Jul 22, 2025",False,34.99,Simulation,53,Deep Field Games,Playstack,4515,9,Overwhelmingly Positive,35823,1306,37129
+2244210,Echoes of Aincrad,"Jul 9, 2026",False,69.99,RPG,52,Game Studio Inc.,Bandai Namco Entertainment Inc.,4199,5,Mixed,1136,990,2126
+2670630,Supermarket Simulator,"Jun 19, 2025",False,19.99,Simulation,15,Nokta Games,Nokta Games,4282,8,Very Positive,33123,2782,35905
+1284190,The Planet Crafter,"Apr 10, 2024",False,23.99,Adventure,55,Miju Games,Miju Games,4481,9,Overwhelmingly Positive,37581,1566,39147
+3808690,Pathogenic,"Jul 16, 2026",False,9.99,Simulation,41,Aberrant Labs,Slug Disco,4194,9,Overwhelmingly Positive,655,11,666
+4700,Total War: MEDIEVAL II – Definitive Edition,"Nov 15, 2006",False,24.99,Strategy,,CREATIVE ASSEMBLY,SEGA,4398,9,Overwhelmingly Positive,20689,929,21618
+2051620,Enlisted,"Jul 16, 2024",True,,Free To Play,60,Darkflow Software,Gaijin Network Ltd,4301,6,Mostly Positive,15189,4258,19447
+1145360,Hades,"Sep 17, 2020",False,24.99,RPG,49,Supergiant Games,Supergiant Games,4289,9,Overwhelmingly Positive,150526,2451,152977
+838350,The Scroll of Taiwu : Beyond The Dome,"Jun 16, 2026",False,29.99,Strategy,176,ConchShip Games,ConchShip Games,3427,6,Mostly Positive,697,277,974
+232090,Killing Floor 2,"Nov 18, 2016",False,29.99,Action,307,Tripwire Interactive,Tripwire Interactive,3862,8,Very Positive,55191,7919,63110
+1222140,Detroit: Become Human,"Jun 18, 2020",False,39.99,Adventure,48,Quantic Dream,Quantic Dream,4111,9,Overwhelmingly Positive,62681,3167,65848
+264710,Subnautica,"Jan 23, 2018",False,29.99,Indie,17,Unknown Worlds Entertainment,Unknown Worlds Entertainment,4162,9,Overwhelmingly Positive,201663,6401,208064
+933110,Age of Empires III: Definitive Edition,"Oct 15, 2020",True,,Free To Play,88,World's Edge,Xbox Game Studios,4192,8,Very Positive,15880,2875,18755
+3405340,Megabonk,"Sep 18, 2025",False,9.99,Indie,139,vedinad,vedinad,4307,8,Very Positive,56649,3546,60195
+2399420,Le Mans Ultimate,"Jul 22, 2025",False,39.99,Sports,44,Studio 397,Studio 397,4300,6,Mostly Positive,6277,1818,8095
+1677280,Company of Heroes 3,"Feb 23, 2023",False,59.99,Strategy,24,Relic Entertainment,Relic Entertainment,3922,5,Mixed,11862,8000,19862
+4032350,EA SPORTS™ College Football 27,"Jul 9, 2026",False,69.99,Sports,22,Tiburon,Electronic Arts,4256,4,Mostly Negative,639,1013,1652
+3017860,DOOM: The Dark Ages,"May 14, 2025",False,69.99,Action,38,id Software,Bethesda Softworks,4069,8,Very Positive,22404,3563,25967
+3764200,Resident Evil Requiem,"Feb 26, 2026",False,69.99,Adventure,49,"CAPCOM Co., Ltd.","CAPCOM Co., Ltd.",3956,9,Overwhelmingly Positive,75925,2693,78618
+784150,Workers & Resources: Soviet Republic,"Jun 20, 2024",False,39.99,Strategy,17,3Division,Hooded Horse,3915,8,Very Positive,8258,947,9205
+1258080,Shop Titans,"May 5, 2020",True,,Free To Play,94,"Kabam Games, Inc.","Kabam Games, Inc.",3852,6,Mostly Positive,4821,1456,6277
+1328670,Mass Effect™ Legendary Edition,"May 14, 2021",False,59.99,RPG,127,BioWare,Electronic Arts,4015,8,Very Positive,40183,3805,43988
+1604270,Broken Arrow,"Jun 19, 2025",False,49.99,Strategy,67,Steel Balalaika,Slitherine Ltd.,3900,5,Mixed,7185,5151,12336
+244850,Space Engineers,"Feb 28, 2019",False,19.99,Strategy,30,Keen Software House,Keen Software House,3990,8,Very Positive,77694,9616,87310
+934700,Dead Island 2,"Apr 22, 2024",False,49.99,Adventure,59,Dambuster Studios,Deep Silver,3767,6,Mostly Positive,9726,2998,12724
+2001120,Split Fiction,"Mar 6, 2025",False,49.99,Adventure,20,Hazelight Studios,Electronic Arts,3665,9,Overwhelmingly Positive,37383,1580,38963
+1066780,Transport Fever 2,"Dec 11, 2019",False,39.99,Strategy,61,Urban Games,Good Shepherd Entertainment,3840,8,Very Positive,10815,1296,12111
+3949040,RV There Yet?,"Oct 21, 2025",False,7.99,Indie,96,Nuggets Entertainment,Nuggets Entertainment,4296,8,Very Positive,31713,3554,35267
+976730,Halo: The Master Chief Collection,"Dec 3, 2019",False,39.99,Action,700,343 Industries,Xbox Game Studios,4225,8,Very Positive,164197,14990,179187
+3065800,Marathon,"Mar 5, 2026",False,39.99,Action,14,Bungie,Bungie,4069,8,Very Positive,38521,9349,47870
+454650,DRAGON BALL XENOVERSE 2,"Oct 27, 2016",False,19.99,Massively Multiplayer,61,QLOC,Bandai Namco Entertainment,4012,8,Very Positive,22163,2793,24956
+1229490,ULTRAKILL,"Sep 3, 2020",False,29.99,Early Access,0,"Arsi ""Hakita"" Patala",New Blood Interactive,3910,9,Overwhelmingly Positive,163709,3992,167701
+1812450,Bellwright,"Apr 23, 2024",False,29.99,Early Access,41,Donkey Crew,Donkey Crew,3872,6,Mostly Positive,8548,2213,10761
+304390,FOR HONOR™,"Feb 13, 2017",False,29.99,Action,60,Ubisoft Montreal,Ubisoft,3919,5,Mixed,57151,26005,83156
+1593500,God of War,"Jan 14, 2022",False,49.99,RPG,37,Santa Monica Studio,PlayStation Publishing LLC,3830,9,Overwhelmingly Positive,77980,2808,80788
+1817070,Marvel’s Spider-Man Remastered,"Aug 12, 2022",False,59.99,Casual,78,Insomniac Games,PlayStation Publishing LLC,3770,9,Overwhelmingly Positive,69078,2585,71663
+505460,Foxhole,"Sep 28, 2022",False,29.99,Strategy,,Siege Camp,Siege Camp,3718,6,Mostly Positive,25476,7008,32484
+268500,XCOM® 2,"Feb 4, 2016",False,19.99,Strategy,88,Firaxis Games,2K,3748,8,Very Positive,52332,9006,61338
+2909400,FINAL FANTASY VII REBIRTH,"Jan 23, 2025",False,49.99,RPG,61,Square Enix,Square Enix,3714,6,Mostly Positive,12332,3242,15574
+2569760,The Mound: Omen of Cthulhu,"Jul 15, 2026",False,29.99,Adventure,25,ACE Team,Nacon,3928,5,Mixed,878,400,1278
+1167630,Teardown,"Apr 21, 2022",False,29.99,Strategy,27,Tuxedo Labs,Tuxedo Labs,3662,9,Overwhelmingly Positive,76594,3627,80221
+1190970,House Flipper 2,"Dec 14, 2023",False,39.99,Simulation,60,Frozen District,Frozen District,3705,8,Very Positive,9464,1494,10958
+1129580,Medieval Dynasty,"Sep 23, 2021",False,34.99,Simulation,44,Render Cube,Toplitz Productions,3697,8,Very Positive,19805,2466,22271
+240,Counter-Strike: Source,"Nov 1, 2004",False,9.99,Action,147,Valve,Valve,3689,9,Overwhelmingly Positive,63414,2610,66024
+268910,Cuphead,"Sep 29, 2017",False,19.99,Indie,42,Studio MDHR Entertainment Inc.,Studio MDHR Entertainment Inc.,3677,9,Overwhelmingly Positive,70346,2884,73230
+387990,Scrap Mechanic,"Jan 19, 2016",False,19.99,Early Access,34,Axolot Games,Axolot Games,3618,8,Very Positive,46602,4837,51439
+2479810,Gray Zone Warfare,"Apr 30, 2024",False,39.99,Early Access,,"MADFINGER Games, a.s.","MADFINGER Games, a.s.",3646,6,Mostly Positive,37981,13040,51021
+805550,Assetto Corsa Competizione,"May 29, 2019",False,39.99,Sports,,Kunos Simulazioni,505 Games,3595,8,Very Positive,18186,1486,19672
+391540,Undertale,"Sep 15, 2015",False,9.99,RPG,,tobyfox,tobyfox,3649,9,Overwhelmingly Positive,179090,6497,185587
+2948190,World of Sea Battle,"Oct 21, 2025",True,,Early Access,64,Thera Interactive,Thera Interactive,3510,6,Mostly Positive,2266,865,3131
+1677740,Stumble Guys,"Oct 7, 2021",True,,Free To Play,36,Scopely,Scopely,3522,8,Very Positive,27384,5641,33025
+3024040,Stronghold Crusader: Definitive Edition,"Jul 15, 2025",False,19.99,Strategy,41,Firefly Studios,Firefly Studios,3670,8,Very Positive,3541,355,3896
+1482520,Space Station 14 Playtest,"Dec 18, 2020",False,,,,,,3540,8,Very Positive,1383,203,1586
+4564320,With Your Coworker,"Jun 18, 2026",False,0.99,Casual,18,搖滾冰塊,Mango Party,3484,6,Mostly Positive,123,31,154
+2208920,Assassin's Creed Valhalla,"Dec 6, 2022",False,59.99,RPG,92,Ubisoft Montreal,Ubisoft,3516,5,Mixed,10889,5143,16032
+298110,Far Cry® 4,"Nov 17, 2014",False,29.99,Adventure,57,"Ubisoft Montreal, Red Storm, Shanghai, Toronto, Kiev",Ubisoft,3434,8,Very Positive,21427,4977,26404
+1158160,Coral Island,"Nov 14, 2023",False,29.99,Strategy,51,Stairway Games,Balor Games,3492,8,Very Positive,15965,1861,17826
+1621690,Core Keeper,"Aug 27, 2024",False,19.99,Simulation,55,Pugstorm,Fireshine Games,3439,8,Very Positive,29384,1644,31028
+1794680,Vampire Survivors,"Oct 20, 2022",False,4.99,RPG,243,poncle,poncle,3342,9,Overwhelmingly Positive,133055,2145,135200
+1920960,VPet-Simulator,"Aug 13, 2023",True,,Free To Play,75,LB Game,LB Game,3249,9,Overwhelmingly Positive,3486,173,3659
+1250410,Microsoft Flight Simulator (2020) 40th Anniversary Edition,"Aug 17, 2020",False,59.99,Simulation,43,Asobo Studio,Xbox Game Studios,3450,6,Mostly Positive,35687,10157,45844
+1607250,MY HERO ULTRA RUMBLE,"Sep 28, 2023",True,,Free To Play,15,Byking Inc.,Bandai Namco Entertainment,3397,5,Mixed,8512,4184,12696
+1147690,NGU IDLE,"Oct 1, 2019",True,,Free To Play,61,4G,4G,3380,9,Overwhelmingly Positive,10318,461,10779
+3768760,007 First Light,"May 26, 2026",False,69.99,Adventure,37,IO Interactive A/S,IO Interactive A/S,3406,8,Very Positive,19551,1945,21496
+400040,ShareX,"Oct 2, 2015",True,,Web Publishing,,ShareX Team,ShareX Team,3295,8,Very Positive,2609,146,2755
+1118520,Paralives,"May 25, 2026",False,39.99,Early Access,,Alex Massé and team,Paralives Studio,3405,8,Very Positive,12774,1241,14015
+1966720,Lethal Company,"Oct 23, 2023",False,9.99,Early Access,,Zeekerss,Zeekerss,3478,9,Overwhelmingly Positive,335796,9076,344872
+371970,Barony,"Jun 23, 2015",False,19.99,RPG,301,Turning Wheel LLC,Turning Wheel LLC,3402,8,Very Positive,12639,1267,13906
+48700,Mount & Blade: Warband,"Mar 31, 2010",False,19.99,RPG,80,TaleWorlds Entertainment,TaleWorlds Entertainment,3235,9,Overwhelmingly Positive,66912,1638,68550
+962130,Grounded,"Sep 27, 2022",False,39.99,Adventure,45,Obsidian Entertainment,Xbox Game Studios,3295,8,Very Positive,46409,4123,50532
+2536520,Diablo II: Resurrected – Infernal Edition,"Feb 11, 2026",False,39.99,Strategy,43,"Blizzard Entertainment, Inc.","Blizzard Entertainment, Inc.",3184,8,Very Positive,3015,466,3481
+3301060,Desktop Mate,"Jan 7, 2025",True,,Utilities,,infiniteloop,infiniteloop,3176,5,Mixed,3150,2040,5190
+1267910,Melvor Idle,"Nov 18, 2021",False,9.99,RPG,86,Games by Malcs,Jagex Ltd,3154,8,Very Positive,8533,730,9263
+2651280,Marvel's Spider-Man 2,"Jan 30, 2025",False,59.99,Adventure,43,Insomniac Games,PlayStation Publishing LLC,3170,8,Very Positive,16630,3526,20156
+1934680,Age of Mythology: Retold,"Sep 4, 2024",False,29.99,Strategy,132,World's Edge,Xbox Game Studios,3266,8,Very Positive,10227,1151,11378
+1783560,The Last Caretaker,"Nov 6, 2025",False,34.99,Early Access,15,Channel37 Ltd,Channel37 Ltd,3228,8,Very Positive,6933,1197,8130
+1477830,HudSight - crosshair overlay,"Jan 5, 2021",False,7.99,Video Production,8,Eduard Kozadaev,Eduard Kozadaev,3069,8,Very Positive,1553,232,1785
+1184370,Pathfinder: Wrath of the Righteous - Enhanced Edition,"Sep 2, 2021",False,19.99,Strategy,153,Owlcat Games,META Publishing,3177,8,Very Positive,19618,4192,23810
+3489700,Stellar Blade™,"Jun 11, 2025",False,59.99,RPG,45,SHIFT UP Corporation,PlayStation Publishing LLC (excluding China),3095,9,Overwhelmingly Positive,21579,1062,22641
+552520,Far Cry® 5,"Mar 26, 2018",False,59.99,Adventure,72,Ubisoft Montreal,Ubisoft,3129,8,Very Positive,60683,14533,75216
+3595270,Call of Duty®: Modern Warfare® III,"Nov 10, 2023",False,69.99,Action,39,Sledgehammer Games,Activision,3098,5,Mixed,4305,5874,10179
+1260320,Party Animals,"Sep 20, 2023",False,19.99,Indie,116,Recreate Games,Source Technology,3004,8,Very Positive,19446,2441,21887
+1313140,Cult of the Lamb,"Aug 11, 2022",False,24.99,Strategy,57,Massive Monster,Devolver Digital,3074,9,Overwhelmingly Positive,66243,2430,68673
+3861430,Bongo Waifu,"Apr 27, 2026",True,,Free To Play,11,Ramen Cat Studio,Hide Games,3010,8,Very Positive,168,24,192
+2936290,The Life and Suffering of Prince Jerian,"Jul 20, 2026",False,24.99,RPG,79,Schisma Games,101XP,3037,6,Mostly Positive,35,9,44
+1259420,Days Gone,"May 17, 2021",False,39.99,Adventure,67,Bend Studio,PlayStation Publishing LLC,2974,8,Very Positive,45709,3912,49621
+1891700,Tap Ninja - Idle game,"Mar 17, 2022",True,,Free To Play,160,Broken Glass,Broken Glass,2963,6,Mostly Positive,2198,598,2796
+4069520,Super Battle Golf,"Feb 19, 2026",False,7.99,Sports,50,Brimstone,Oro Interactive,3130,8,Very Positive,7599,543,8142
+2881650,Content Warning,"Apr 1, 2024",False,7.99,Indie,48,Zorro,Evil Landfall?,3127,8,Very Positive,69828,4442,74270
+2420110,Horizon Forbidden West™ Complete Edition,"Mar 21, 2024",False,59.99,RPG,80,Guerrilla,PlayStation Publishing LLC,2977,8,Very Positive,12966,1754,14720
+779340,Total War: THREE KINGDOMS,"May 23, 2019",False,39.99,Strategy,99,CREATIVE ASSEMBLY,SEGA,2813,8,Very Positive,19391,3646,23037
+883710,Resident Evil 2,"Jan 24, 2019",False,39.99,Action,44,"CAPCOM Co., Ltd.","CAPCOM Co., Ltd.",2934,9,Overwhelmingly Positive,76762,2489,79251
+3280350,DEATH STRANDING 2: ON THE BEACH,"Mar 19, 2026",False,69.99,Adventure,55,KOJIMA PRODUCTIONS,PlayStation Publishing LLC,2903,8,Very Positive,7359,404,7763
+365360,Battle Brothers,"Mar 24, 2017",False,29.99,Strategy,101,Overhype Studios,Hooded Horse,2912,8,Very Positive,14963,1792,16755
+3672400,Farever,"May 6, 2026",False,19.99,Early Access,13,Shiro Games,Shiro Games,2971,6,Mostly Positive,3685,1299,4984
+570940,DARK SOULS™: REMASTERED,"May 23, 2018",False,39.99,Action,41,QLOC,"FromSoftware, Inc.",2909,8,Very Positive,62625,5233,67858
+221380,Age of Empires II (Retired),"Apr 9, 2013",False,19.99,Strategy,294,Skybox Labs,Xbox Game Studios,2940,9,Overwhelmingly Positive,42958,2118,45076
+10500,Total War: EMPIRE – Definitive Edition,"Mar 4, 2009",False,24.99,Strategy,30,CREATIVE ASSEMBLY,SEGA,2937,8,Very Positive,19433,2079,21512
+3478870,GeoGuessr Steam Edition,"May 8, 2025",True,,Early Access,45,GeoGuessr,GeoGuessr,2909,5,Mixed,4905,3224,8129
+2352620,Fellowship,"Oct 16, 2025",False,24.99,Early Access,,Chief Rebel,Coffee Stain Publishing,2893,6,Mostly Positive,8558,2423,10981
+3164330,Infinity Nikki,"Apr 28, 2025",True,,Free To Play,34,Infold Games,Infold Games,2831,5,Mixed,2922,2363,5285
+3413340,Wallpaper Play,"Apr 11, 2025",True,,Utilities,10,Mark,Mark,2817,6,Mostly Positive,290,83,373
+655500,MX Bikes,"Oct 7, 2019",False,34.99,Early Access,,PiBoSo,PiBoSo,2921,8,Very Positive,24982,1479,26461
+1336490,Against the Storm,"Dec 8, 2023",False,29.99,Strategy,80,Eremite Games,Hooded Horse,2814,8,Very Positive,19854,1092,20946
+881100,Noita,"Oct 15, 2020",False,19.99,Simulation,14,Nolla Games,Nolla Games,2830,9,Overwhelmingly Positive,49450,2318,51768
+1594320,Captain of Industry,"May 31, 2022",False,34.99,Early Access,,MaFi Games,MaFi Games,2830,8,Very Positive,5236,710,5946
+1238810,Battlefield™ V,"Oct 22, 2020",False,49.99,Action,21,DICE,Electronic Arts,2701,6,Mostly Positive,30298,12498,42796
+3198850,Play Together,"Jan 13, 2025",True,,,36,"HAEGIN Co.,Ltd.","HAEGIN Co.,Ltd.",2692,6,Mostly Positive,524,177,701
+2567870,Chained Together,"Jun 19, 2024",False,4.99,Simulation,16,Anegar Games,Secret Mode,2667,8,Very Positive,21881,2175,24056
+824270,KovaaK's,"Apr 3, 2018",False,9.99,Simulation,1,KovaaK Games,KovaaK Games,2722,8,Very Positive,23293,1542,24835
+1669000,Age of Wonders 4,"May 2, 2023",False,49.99,Strategy,114,Triumph Studios,Paradox Interactive,2797,8,Very Positive,11362,2518,13880
+1462040,FINAL FANTASY VII REMAKE INTERGRADE,"Jun 17, 2022",False,39.99,RPG,63,Square Enix,Square Enix,2745,8,Very Positive,20348,3169,23517
+262060,Darkest Dungeon®,"Jan 19, 2016",False,24.99,Strategy,120,Red Hook Studios,Red Hook Studios,2707,8,Very Positive,59061,5972,65033
+231430,Company of Heroes 2,"Jun 25, 2013",False,19.99,Strategy,452,Relic Entertainment,Relic Entertainment,2732,8,Very Positive,36354,7567,43921
+1343400,RuneScape ®,"Oct 14, 2020",True,,Free To Play,20,Jagex Ltd,Jagex Ltd,2749,8,Very Positive,17692,3999,21691
+2531310,The Last of Us™ Part II Remastered,"Apr 3, 2025",False,49.99,Adventure,45,Naughty Dog LLC,PlayStation Publishing LLC,2701,8,Very Positive,17566,1736,19302
+916440,Anno 1800,"Apr 16, 2019",False,59.99,Strategy,112,Ubisoft Mainz,Ubisoft,2692,6,Mostly Positive,9940,2724,12664
+1546320,Your Chronicle,"Apr 4, 2021",True,,Free To Play,65,Samurai Games,Samurai Games,2618,8,Very Positive,1180,292,1472
+3712080,Funnel Runners,"Jul 16, 2026",False,14.99,Early Access,35,Supernova Studios LLC,Supernova Studios LLC,2716,8,Very Positive,723,123,846
+325610,Total War: ATTILA,"Feb 17, 2015",False,44.99,Strategy,118,CREATIVE ASSEMBLY,SEGA,2625,8,Very Positive,14708,3666,18374
+613100,House Flipper,"May 17, 2018",False,24.99,Free To Play,96,Empyrean,Frozen District,2667,8,Very Positive,50036,3067,53103
+1904540,Football Manager 2023,"Nov 8, 2022",False,,Sports,100,Sports Interactive,SEGA,2687,8,Very Positive,6986,898,7884
+835570,Conqueror's Blade,"Apr 5, 2020",True,,Free To Play,48,Booming Tech,Poros Interactive,2569,6,Mostly Positive,4983,1847,6830
+552500,Warhammer: Vermintide 2,"Mar 8, 2018",False,29.99,RPG,26,Fatshark,Fatshark,2609,8,Very Positive,61700,7123,68823
+2456740,inZOI,"Mar 27, 2025",False,39.99,Early Access,,inZOI Studio,"KRAFTON, Inc.",2592,6,Mostly Positive,11584,3010,14594
+305620,The Long Dark,"Aug 1, 2017",False,19.99,Strategy,87,Hinterland Studio Inc.,Hinterland Studio Inc.,2484,8,Very Positive,40437,5722,46159
+208650,Batman™: Arkham Knight,"Jun 23, 2015",False,19.99,Adventure,113,Rocksteady Studios,WB Games,2597,8,Very Positive,65074,9081,74155
+1128810,RISK: Global Domination,"Feb 19, 2020",True,,Free To Play,55,SMG Studio,SMG Studio,2603,6,Mostly Positive,16610,4961,21571
+632810,Soundpad Demo,"Oct 3, 2017",True,,Utilities,,Leppsoft,Leppsoft,2508,8,Very Positive,142,12,154
+34330,Total War: SHOGUN 2,,False,,,106,The Creative Assembly,SEGA,2506,8,Very Positive,32617,2647,35264
+508440,Totally Accurate Battle Simulator,"Apr 1, 2021",False,19.99,Strategy,64,Landfall,Landfall,2515,9,Overwhelmingly Positive,87213,1736,88949
+2141730,Backrooms: Escape Together,"Oct 18, 2022",False,9.99,Early Access,22,Triiodide Studios,Triiodide Studios,2599,8,Very Positive,15386,1771,17157
+504230,Celeste,"Jan 25, 2018",False,19.99,Indie,32,Maddy Makes Games Inc.,Maddy Makes Games Inc.,2474,9,Overwhelmingly Positive,66001,1792,67793
+2432860,MENACE,"Feb 5, 2026",False,39.99,Early Access,15,Overhype Studios,Hooded Horse,2521,8,Very Positive,7743,689,8432
+728880,Overcooked! 2,"Aug 7, 2018",False,48.49,Indie,54,Ghost Town Games Ltd.,Team17,2361,8,Very Positive,17986,1197,19183
+3008130,Dying Light: The Beast,"Sep 18, 2025",False,59.99,RPG,42,Techland,Techland,2469,8,Very Positive,25549,3488,29037
+1805110,Solarpunk™,"Jun 8, 2026",False,22.99,Simulation,24,Cyberwave,rokaplay,2474,8,Very Positive,1463,335,1798
+585420,Trailmakers,"Sep 18, 2019",False,24.99,Simulation,22,Flashbulb,Flashbulb,2457,8,Very Positive,24091,1952,26043
+2552430,KINGDOM HEARTS -HD 1.5+2.5 ReMIX-,"Jun 13, 2024",False,49.99,RPG,197,Square Enix,Square Enix,2500,8,Very Positive,7020,1152,8172
+1371980,No Rest for the Wicked,"Apr 18, 2024",False,39.99,Early Access,,Moon Studios GmbH,Moon Studios GmbH,2429,8,Very Positive,27723,4543,32266
+1824220,Chivalry 2,"Jun 12, 2022",False,39.99,Massively Multiplayer,41,Torn Banner Studios,Tripwire Presents,2488,8,Very Positive,24106,5997,30103
+2688950,Planet Coaster 2,"Nov 6, 2024",False,64.99,Strategy,36,Frontier Developments,Frontier Developments,2459,6,Mostly Positive,6652,2362,9014
+620,Portal 2,"Apr 18, 2011",False,9.99,Adventure,51,Valve,Valve,2469,9,Overwhelmingly Positive,207343,2441,209784
+2225070,Trackmania,"Feb 2, 2023",True,,Racing,,Nadeo,Ubisoft,2424,6,Mostly Positive,11180,2975,14155
+1888930,The Last of Us™ Part I,"Mar 28, 2023",False,59.99,Adventure,29,Naughty Dog LLC,PlayStation Publishing LLC,2391,8,Very Positive,36282,7463,43745
+2397300,Half Sword,"Jan 30, 2026",False,24.99,Early Access,,Half Sword Games,Game Seer Publishing,2383,6,Mostly Positive,14890,5677,20567
+404790,Godot Engine,"Feb 23, 2016",True,,Game Development,,Godot Engine,Godot Engine,2317,9,Overwhelmingly Positive,5141,196,5337
+49520,Borderlands 2,"Sep 17, 2012",False,19.99,RPG,75,Gearbox Software,2K,2351,8,Very Positive,161044,17408,178452
+2808930,Lust Goddess,"Feb 21, 2024",True,,Free To Play,72,Pochemu LTD,Pochemu LTD,2275,5,Mixed,1673,1775,3448
+1466060,Tainted Grail: The Fall of Avalon,"May 23, 2025",False,44.99,RPG,65,Questline,Awaken Realms,2347,8,Very Positive,17199,2362,19561
+220,Half-Life 2,"Nov 16, 2004",False,9.99,Action,69,Valve,Valve,2238,9,Overwhelmingly Positive,119138,3226,122364
+1527950,Wartales,"Apr 12, 2023",False,34.99,Strategy,235,Shiro Games,Shiro Games,2315,8,Very Positive,12361,2339,14700
+312520,Rain World,"Mar 28, 2017",False,24.99,Indie,47,Videocult,Akupara Games,2219,8,Very Positive,34108,1974,36082
+599140,Graveyard Keeper,"Aug 15, 2018",False,19.99,Simulation,125,Lazy Bear Games,tinyBuild,2295,8,Very Positive,19971,4195,24166
+1601570,The Alters,"Jun 13, 2025",False,34.99,Adventure,63,11 bit studios,11 bit studios,2301,8,Very Positive,6236,766,7002
+2958130,Jurassic World Evolution 3,"Oct 21, 2025",False,59.99,Strategy,45,Frontier Developments,Frontier Developments,2316,8,Very Positive,7332,468,7800
+588430,Fallout Shelter,"Mar 29, 2017",True,,Free To Play,35,Bethesda Game Studios,Bethesda Softworks,2238,8,Very Positive,28010,4794,32804
+4643090,The NOexistenceN of Lilith,"Jul 16, 2026",False,1.99,Simulation,18,Nino Games, Nino Games,2200,8,Very Positive,289,5,294
+1044720,Farthest Frontier,"Oct 23, 2025",False,34.99,Strategy,74,Crate Entertainment,Crate Entertainment,2198,8,Very Positive,9776,1514,11290
+1468810,鬼谷八荒 Tale of Immortal,"May 26, 2023",False,19.99,Simulation,169,鬼谷工作室,鬼谷工作室,2059,6,Mostly Positive,3116,830,3946
+2661300,Grounded 2,"Jul 29, 2025",False,29.99,Early Access,,Obsidian Entertainment,Xbox Game Studios,2246,8,Very Positive,11332,1923,13255
+412220,DDNet,"Aug 17, 2020",True,,Free To Play,,DDNet Team,DDNet Team,2200,8,Very Positive,2554,304,2858
+3167020,Escape From Duckov,"Oct 16, 2025",False,17.99,RPG,55,Team Soda,bilibili,2070,8,Very Positive,10075,717,10792
+1173510,XSOverlay,"Mar 3, 2020",False,9.99,Early Access,11,Xiexe,Xiexe,2164,8,Very Positive,1122,185,1307
+2142790,Fields of Mistria,"Aug 5, 2024",False,13.99,Early Access,,NPC Studio,NPC Studio,2249,9,Overwhelmingly Positive,22631,471,23102
+3556750,"Warhammer 40,000: Dawn of War - Definitive Edition","Aug 14, 2025",False,29.99,Strategy,109,Relic Entertainment,Relic Entertainment ,2183,8,Very Positive,5790,897,6687
+1547000,Grand Theft Auto: San Andreas – The Definitive Edition,"Jan 19, 2023",False,59.99,Adventure,35,Rockstar Games,Rockstar Games,2104,6,Mostly Positive,3816,1101,4917
+1190000,Car Mechanic Simulator 2021,"Aug 11, 2021",False,24.99,Simulation,46,Red Dot Games,PlayWay S.A.,2091,9,Overwhelmingly Positive,16705,777,17482
+1366540,Dyson Sphere Program,"Jan 20, 2021",False,19.99,Early Access,128,Youthcat Studio,Gamirror Games,2069,9,Overwhelmingly Positive,24432,996,25428
+3981100,Leaf it Alone,"Oct 30, 2025",False,5.99,Simulation,18,Eternity,Eternity,2169,9,Overwhelmingly Positive,2620,105,2725
+495420,State of Decay 2: Juggernaut Edition,"Mar 13, 2020",False,29.99,Simulation,153,Undead Labs,Xbox Game Studios,2051,8,Very Positive,21512,3881,25393
+363970,Clicker Heroes,"May 13, 2015",True,,Free To Play,111,Playsaurus,Playsaurus,2085,8,Very Positive,25281,3346,28627
+397540,Borderlands 3,"Mar 13, 2020",False,59.99,RPG,81,Gearbox Software,2K,2084,8,Very Positive,61808,14871,76679
+3276050,SpaceCraft,"Jun 11, 2026",False,29.99,Early Access,,Shiro Games,Shiro Games,2051,5,Mixed,796,393,1189
+1197260,The Perfect Tower II,"Nov 30, 2025",True,,Free To Play,74,Fire Sword Studios,Fire Sword Studios,2065,8,Very Positive,2774,466,3240
+2679460,Metaphor: ReFantazio,"Oct 10, 2024",False,69.99,RPG,44,ATLUS,SEGA,2019,8,Very Positive,18013,1422,19435
+516750,My Summer Car,"Jan 8, 2025",False,14.99,Simulation,77,Amistech Games,Amistech Games,1983,8,Very Positive,36867,2638,39505
+627690,Idle Champions of the Forgotten Realms,"Mar 25, 2020",True,,Free To Play,837,Codename Entertainment Inc.,Codename Entertainment Inc.,2035,6,Mostly Positive,7292,2225,9517
+1569580,Blue Prince,"Apr 10, 2025",False,29.99,Strategy,16,Dogubomb,Raw Fury,2080,8,Very Positive,13584,2178,15762
+2445690,Lost Castle 2,"Jun 10, 2026",False,17.99,RPG,85,Hunter Studio,Hunter Studio,1858,8,Very Positive,1083,120,1203
+701160,Kingdom Two Crowns,"Dec 11, 2018",False,19.99,Strategy,46,Stumpy🐙Squid,Raw Fury,1952,8,Very Positive,11619,1393,13012
+3354750,skate.,"Sep 16, 2025",True,,Early Access,21,Full Circle,Electronic Arts,2045,5,Mixed,38473,21798,60271
+632470,Disco Elysium - The Final Cut,"Oct 15, 2019",False,39.99,RPG,45,ZA/UM,ZA/UM,2005,8,Very Positive,57891,4916,62807
+2646460,Soulmask,"Apr 9, 2026",False,29.99,Free To Play,120,CampFire Studio,Qooland Games,1986,6,Mostly Positive,6432,1983,8415
+573090,Stormworks: Build and Rescue,"Sep 17, 2020",False,24.99,Simulation,,Geometa,Geometa,2054,8,Very Positive,40661,4324,44985
+3948120,Scritchy Scratchy,"Mar 18, 2026",False,6.99,Simulation,34,Lunch Money Games,Funday Games,2008,9,Overwhelmingly Positive,6894,322,7216
+1282100,REMNANT II®,"Jul 25, 2023",False,49.99,RPG,65,Gunfire Games,Arc Games,2100,8,Very Positive,31939,5809,37748
+356190,Middle-earth™: Shadow of War™,"Oct 9, 2017",False,49.99,RPG,72,Monolith Productions,WB Games,2070,8,Very Positive,43475,5907,49382
+3590,Plants vs. Zombies GOTY Edition,"May 5, 2009",False,4.99,Strategy,21,"PopCap Games, Inc.","PopCap Games, Inc.",1979,9,Overwhelmingly Positive,45970,847,46817
+466560,Northgard: Definitive Edition,"Mar 7, 2018",False,34.99,Strategy,289,Shiro Games,Shiro Games,2060,8,Very Positive,24722,4665,29387
+985810,GrandChase,"Jul 27, 2021",True,,Free To Play,,KOG,KOG,1986,5,Mixed,3382,1871,5253
+1013320,Firestone – Idle Clicker Online RPG,"Apr 1, 2024",True,,Free To Play,75,Holyday Studios,Holyday Studios,2013,6,Mostly Positive,1763,714,2477
+3070070,TCG Card Shop Simulator,"Sep 15, 2024",False,19.99,Early Access,45,OPNeon Games,OPNeon Games,1971,9,Overwhelmingly Positive,33657,983,34640
+1447430,小黑盒加速器,"May 24, 2021",True,,Game Development,,Qing Feng Beijing Technology,Qing Feng Beijing Technology,1879,6,Mostly Positive,50,16,66
+880940,Pummel Party,"Sep 20, 2018",False,14.99,Indie,31,Rebuilt Games,Rebuilt Games,2064,8,Very Positive,16145,2272,18417
+552100,Brick Rigs,"Jul 14, 2023",False,19.99,Simulation,,Fluppisoft GmbH,Fluppisoft GmbH,1959,9,Overwhelmingly Positive,28995,1492,30487
+1984270,Digimon Story Time Stranger,"Oct 2, 2025",False,69.99,RPG,46,Media.Vision Inc.,Bandai Namco Entertainment Inc.,1946,8,Very Positive,9834,690,10524
+3844970,Burglin' Gnomes,"Jun 10, 2026",False,9.99,Adventure,,Fobri,Fobri,2057,8,Very Positive,1938,354,2292
+389430,Knight Online,"Jan 25, 2016",True,,RPG,,Noah System,NTTGame,1959,4,Mostly Negative,649,1151,1800
+1324780,Easy Red 2,"Jan 6, 2022",False,8.99,Strategy,36,Marco Amadei,Corvostudio di Amadei Marco,1932,8,Very Positive,5831,605,6436
+1196590,Resident Evil Village,"May 6, 2021",False,39.99,Action,56,"CAPCOM Co., Ltd.","CAPCOM Co., Ltd.",1966,8,Very Positive,60892,3250,64142
+569610,Distant Space,"Dec 20, 2016",False,0.99,Indie,44,PixelMouse,PixelMouse,1942,6,Mostly Positive,953,286,1239
+3274580,Anno 117: Pax Romana,"Nov 12, 2025",False,59.99,Strategy,59,Ubisoft Mainz,Ubisoft,1955,5,Mixed,3601,1878,5479
+2799860,INAZUMA ELEVEN: Victory Road,"Nov 13, 2025",False,69.99,Sports,52,LEVEL5 Inc.,LEVEL5 Inc.,1905,8,Very Positive,1954,160,2114
+448470,Bacteria,"Mar 23, 2016",False,0.99,Indie,6,Sometimes You,Sometimes You,1691,5,Mixed,84,75,159
+2054970,Dragon's Dogma 2,"Mar 21, 2024",False,39.99,RPG,54,"CAPCOM Co., Ltd.","CAPCOM Co., Ltd.",1918,5,Mixed,39853,20011,59864
+335300,DARK SOULS™ II: Scholar of the First Sin,"Apr 1, 2015",False,39.99,RPG,38,"FromSoftware, Inc.",Bandai Namco Entertainment,1954,8,Very Positive,43612,9325,52937
+767560,War Robots,"Apr 4, 2018",True,,Free To Play,,MY.GAMES,MY.GAMES,1882,5,Mixed,7467,5002,12469
+601150,Devil May Cry 5,"Mar 7, 2019",False,29.99,Action,55,"CAPCOM Co., Ltd.","CAPCOM Co., Ltd.",1889,9,Overwhelmingly Positive,49531,2462,51993
+1206560,WorldBox - God Simulator,"Dec 2, 2021",False,19.99,Early Access,54,Maxim Karpenko,Maxim Karpenko,1936,9,Overwhelmingly Positive,31579,1280,32859
+582160,Assassin's Creed® Origins,"Oct 26, 2017",False,59.99,RPG,67,Ubisoft Montreal,Ubisoft,1904,8,Very Positive,32261,5955,38216
+3511030,Mini Cozy Room: Lo-Fi,"Mar 30, 2025",False,4.99,Indie,14,Tesseract Studio,Tesseract Studio,1782,9,Overwhelmingly Positive,647,26,673
+1627720,Lies of P,"Sep 18, 2023",False,59.99,RPG,53,NEOWIZ,NEOWIZ,1863,8,Very Positive,33852,2431,36283
+246620,Plague Inc: Evolved,"Feb 18, 2016",False,14.99,Strategy,250,Ndemic Creations,Ndemic Creations,1879,8,Very Positive,28109,1873,29982
+588650,Dead Cells,"Aug 6, 2018",False,24.99,Indie,121,Motion Twin,Motion Twin,1808,9,Overwhelmingly Positive,49326,1830,51156
+2840770,Avatar: Frontiers of Pandora™,"Jun 17, 2024",False,29.99,Adventure,52,Massive Entertainment – A Ubisoft Studio,Ubisoft,1882,6,Mostly Positive,6944,1916,8860
+327070,Gloria Victis: Medieval MMORPG,"Jun 17, 2026",True,,Free To Play,79,gamigo US,gamigo US,1836,5,Mixed,4017,1967,5984
+1766060,HumanitZ,"Feb 6, 2026",False,19.99,RPG,23,Yodubzz Studios,indie.io,1827,6,Mostly Positive,3814,1369,5183
+1256670,Library Of Ruina,"Aug 10, 2021",False,29.99,Strategy,76,ProjectMoon,ProjectMoon,1814,9,Overwhelmingly Positive,15453,603,16056
+1384160,GUILTY GEAR -STRIVE-,"Jun 11, 2021",False,39.99,Action,39,Arc System Works,Arc System Works,1868,8,Very Positive,41799,4003,45802
+2081880,Kathana,"Aug 8, 2025",True,,Early Access,,Gameolic Development Studio,Gameolic Development Studio,1814,6,Mostly Positive,260,68,328
+1029780,Going Medieval,"Mar 17, 2026",False,29.99,Strategy,94,Foxy Voxel,Mythwright,1830,8,Very Positive,9018,1153,10171
+787860,Farming Simulator 19,"Nov 19, 2018",False,17.99,Simulation,23,Giants Software,Giants Software,1805,8,Very Positive,26069,1705,27774
+2231380,Tom Clancy's Ghost Recon® Breakpoint,"Jan 23, 2023",False,59.99,Adventure,50,Ubisoft Paris,Ubisoft,1804,6,Mostly Positive,14731,5503,20234
+784080,MechWarrior 5: Mercenaries,"May 26, 2021",False,29.99,Simulation,19,Piranha Games Inc.,Piranha Games Inc.,1854,8,Very Positive,10803,1862,12665
+1237950,STAR WARS™ Battlefront™ II,"Jun 11, 2020",False,39.99,Adventure,43,DICE,Electronic Arts,1799,8,Very Positive,51513,7402,58915
+2642680,Half Sword Tech Demo,"Oct 13, 2023",True,,Simulation,,Half Sword Games,Game Seer Publishing,1795,5,Mixed,1096,561,1657
+287700,METAL GEAR SOLID V: THE PHANTOM PAIN,"Sep 1, 2015",False,29.99,Adventure,42,KONAMI,KONAMI,1767,8,Very Positive,55307,5061,60368
+1293830,Forza Horizon 4,"Mar 9, 2021",False,,Racing,178,Playground Games,Xbox Game Studios,1720,8,Very Positive,51877,6164,58041
+1997040,MARVEL SNAP,"Aug 22, 2023",True,,Free To Play,,"Second Dinner Studios, Inc.",,1774,5,Mixed,13504,6486,19990
+2732960,Command & Conquer™ Generals Zero Hour,"Mar 7, 2024",False,,Free To Play,,EA Pacific,Electronic Arts,1806,8,Very Positive,3416,304,3720
+297000,Heroes® of Might & Magic® III - HD Edition,"Jan 28, 2015",False,14.99,Strategy,13,Dotemu,Ubisoft Entertainment,1799,6,Mostly Positive,6267,1852,8119
+8800,Civilization IV: Beyond the Sword,"Jul 24, 2007",False,9.99,Strategy,,Firaxis Games,2K,1786,9,Overwhelmingly Positive,3537,133,3670
+391220,Rise of the Tomb Raider™,"Feb 9, 2016",False,29.99,Adventure,143,Crystal Dynamics,Crystal Dynamics,1741,8,Very Positive,38182,3089,41271
+961200,Predecessor,"Aug 20, 2024",True,,Free To Play,,Omeda Studios,Omeda Studios,1813,6,Mostly Positive,8844,3480,12324
+976310,Mortal Kombat 11,"Apr 23, 2019",False,49.99,Action,58,NetherRealm Studios,Warner Bros. Games,1726,8,Very Positive,31359,5001,36360
+280680,Krita,"Jun 10, 2014",False,9.99,Photo Editing,,Krita Team,Krita Team,1733,9,Overwhelmingly Positive,3576,122,3698
+1222680,Need for Speed™ Heat,"Jun 4, 2020",False,69.99,Sports,42,Ghost Games,Electronic Arts,1714,8,Very Positive,51909,9525,61434
+2185060,Two Point Museum,"Mar 4, 2025",False,29.99,Strategy,49,Two Point Studios,SEGA,1753,9,Overwhelmingly Positive,5799,268,6067
+4128400,eBaseball™: PRO SPIRIT,"Mar 4, 2026",True,,Free To Play,32,KONAMI,KONAMI,1647,6,Mostly Positive,404,118,522
+1910680,Orb of Creation,"Jun 23, 2026",False,11.99,Strategy,50,MarpleGames,MarpleGames,1734,8,Very Positive,1572,262,1834
+1774580,STAR WARS Jedi: Survivor™,"Apr 27, 2023",False,69.99,Adventure,53,Respawn,Electronic Arts,1741,5,Mixed,36930,16438,53368
+1113000,Persona 4 Golden,"Jun 13, 2020",False,19.99,RPG,50,ATLUS,SEGA,1711,9,Overwhelmingly Positive,51789,1454,53243
+1170950,Mortal Online 2,"Jan 25, 2022",False,39.99,RPG,187,Star Vault AB,Star Vault AB,1734,5,Mixed,5885,3849,9734
+203770,Crusader Kings II,"Feb 14, 2012",True,,Free To Play,161,Paradox Development Studio,Paradox Interactive,1730,8,Very Positive,43442,4298,47740
+2071280,Ravenswatch,"Sep 26, 2024",False,24.99,Adventure,45,Passtech Games,Nacon,1764,8,Very Positive,8805,1493,10298
+2897580,Idle Hero TD - Tower Defense,"May 3, 2024",True,,Early Access,45,Swell Games LLC,Swell Games LLC,1685,8,Very Positive,713,156,869
+1282270,Strinova,"Nov 21, 2024",True,,Free To Play,,iDreamSky,iDreamSky,1675,6,Mostly Positive,8536,2480,11016
+1029690,Sniper Elite 5,"May 25, 2022",False,49.99,Adventure,71,Rebellion,Rebellion,1693,8,Very Positive,11304,2195,13499
+2538150,OyasumiVR - VR Sleeping Utilities,"Sep 13, 2023",True,,Utilities,5,Raphiiko,Raphiiko,1719,8,Very Positive,222,7,229
+2878980,NBA 2K25,"Oct 28, 2024",False,69.99,Sports,46,Visual Concepts,2K,1644,5,Mixed,10521,6189,16710
+32470,STAR WARS™ Empire at War - Gold Pack,"May 25, 2010",False,19.99,Strategy,,Petroglyph,LucasArts,1714,9,Overwhelmingly Positive,29847,698,30545
+3213850,gogh: Focus with Your Avatar,"Apr 30, 2025",False,11.99,Free To Play,78,ambr,ambr,1633,8,Very Positive,1113,75,1188
+4568400,Nomad Drive Demo,"Jun 15, 2026",True,,Simulation,,Indie Devil,Indie Devil,1531,6,Mostly Positive,199,66,265
+460930,Tom Clancy's Ghost Recon® Wildlands,"Mar 6, 2017",False,49.99,Adventure,57,Ubisoft Paris,Ubisoft,1697,6,Mostly Positive,34364,9126,43490
+438040,Shakes and Fidget,"Feb 24, 2016",True,,Free To Play,,Playa Games GmbH,Playa Games GmbH,1655,8,Very Positive,5409,1020,6429
+1449560,Metro Exodus,"Feb 14, 2020",False,29.99,Action,68,4A Games,Deep Silver,1656,8,Very Positive,11675,1324,12999
+72850,The Elder Scrolls V: Skyrim,"Nov 10, 2011",False,19.99,RPG,75,Bethesda Game Studios,Bethesda Softworks,1684,8,Very Positive,161808,12207,174015
+2904000,The Spell Brigade,"Apr 29, 2026",False,12.99,Free To Play,119,Bolt Blaster Games,Bolt Blaster Games,1665,8,Very Positive,4930,722,5652
+361420,ASTRONEER,"Feb 5, 2019",False,29.99,Indie,56,System Era Softworks,System Era Softworks,1708,8,Very Positive,57737,5373,63110
+669330,Mechabellum,"Sep 26, 2024",False,14.99,Strategy,,Game River,Dreamhaven,1700,8,Very Positive,8827,1629,10456
+2369390,Far Cry® 6,"May 11, 2023",False,59.99,Adventure,99,Ubisoft Toronto,Ubisoft,1672,5,Mixed,9096,4444,13540
+3910,Sid Meier's Civilization® III Complete,"Oct 25, 2006",False,4.99,Strategy,,Firaxis Games,2K,1663,8,Very Positive,4685,488,5173
+782330,DOOM Eternal,"Mar 19, 2020",False,29.99,Action,50,id Software,Bethesda Softworks,1706,8,Very Positive,121988,12077,134065
+4731620,Fortune Mill,"Jun 2, 2026",False,7.99,Simulation,51,Lavaflame2,Lavaflame2,1649,8,Very Positive,1431,304,1735
+286690,Metro 2033 Redux,"Aug 25, 2014",False,19.99,Action,49,4A Games,Deep Silver,1620,8,Very Positive,31846,3968,35814
+4576510,Casualties: Unknown Demo,"Apr 20, 2026",True,,Simulation,,Orsoniks,Oro Interactive,1639,9,Overwhelmingly Positive,3480,131,3611
+4384550,Call of Duty®: Black Ops 6,"Nov 1, 2024",False,69.99,Action,44,Treyarch,Activision,1715,5,Mixed,3833,5555,9388
+1133870,Space Engineers 2,"Jan 27, 2025",False,29.99,Early Access,,Keen Software House,Keen Software House,1676,6,Mostly Positive,2609,882,3491
+1787090,MyDockFinder,"Nov 25, 2021",False,4.99,Utilities,12,MyDockFinder,MyDockFinder,1593,8,Very Positive,749,137,886
+568220,Lobotomy Corporation | Monster Management Simulation,"Apr 9, 2018",False,24.99,Simulation,,ProjectMoon,ProjectMoon,1568,8,Very Positive,14790,1022,15812
+3819640,Megastore Simulator,"Feb 2, 2026",False,13.99,Early Access,17,Yolo Games Studio,Yolo Games Studio,1632,8,Very Positive,852,56,908
+386180,Crossout,"Jul 26, 2017",True,,Free To Play,193,Targem Games,Gaijin Network Ltd,1616,5,Mixed,15326,7050,22376
+2623190,The Elder Scrolls IV: Oblivion Remastered,"Apr 22, 2025",False,49.99,RPG,60,Bethesda Game Studios,Bethesda Softworks,1682,6,Mostly Positive,42177,12106,54283
+1850570,DEATH STRANDING DIRECTOR'S CUT,"Mar 30, 2022",False,39.99,Adventure,63,KOJIMA PRODUCTIONS, 505 Games,1593,8,Very Positive,22991,2296,25287
+2113850,Spirit City: Lofi Sessions,"Apr 8, 2024",False,11.99,Simulation,34,Mooncube Games,Mooncube Games,1577,9,Overwhelmingly Positive,9648,200,9848
+2186320,Ages of Conflict: World War Simulator,"Feb 17, 2023",False,6.99,Early Access,11,JoySpark Games,JoySpark Games,1535,9,Overwhelmingly Positive,5714,169,5883
+1290000,PowerWash Simulator,"Jul 14, 2022",False,24.99,Simulation,100,FuturLab,FuturLab,1633,9,Overwhelmingly Positive,42625,1190,43815
+1876890,Wandering Sword,"Sep 14, 2023",False,24.99,Strategy,110,The Swordman Studio,Spiral Up Games,1396,9,Overwhelmingly Positive,2313,116,2429
+753640,Outer Wilds,"Jun 18, 2020",False,24.99,Adventure,31,Mobius Digital,Annapurna Interactive,1634,9,Overwhelmingly Positive,56881,2918,59799
+412020,Metro Exodus,"Feb 14, 2020",False,29.99,Action,68,4A Games,Deep Silver,1544,8,Very Positive,34571,5169,39740
+3400960,Oaken Tower,"Apr 28, 2026",False,9.99,Early Access,33,Bocary Studios,Alibi Games,1600,8,Very Positive,1320,75,1395
+39510,Gothic II: Gold Edition,"Nov 29, 2005",False,19.99,RPG,,Piranha Bytes,THQ Nordic,1563,8,Very Positive,3086,376,3462
+1971870,Mortal Kombat 1,"Sep 19, 2023",False,49.99,Action,50,NetherRealm Studios,Warner Bros. Games,1664,6,Mostly Positive,16828,7026,23854
+1162750,Songs of Syx,"Sep 21, 2020",False,24.99,Early Access,34,Gamatron AB,Gamatron AB,1546,8,Very Positive,6112,364,6476
+2000950,Call of Duty®: Modern Warfare®,"Mar 8, 2023",False,59.99,Action,27,Infinity Ward,Activision,1560,8,Very Positive,12915,2909,15824
+2424010,Parcel Simulator,"Jun 20, 2025",False,17.99,Simulation,38,Dansan Digital,Dansan Digital,1641,8,Very Positive,1440,107,1547
+1127400,Mindustry,"Sep 26, 2019",False,9.99,Strategy,87,AnukenDev,AnukenDev,1499,8,Very Positive,10465,561,11026
+3959890,Tap Tap Loot,"Apr 13, 2026",False,6.99,RPG,53,Turtle Knight Games,Irox Games,1482,8,Very Positive,238,35,273
+2377930,Destiny of Immortal,"Jul 7, 2026",False,11.99,Early Access,66,LeiYun Games,2P Games,1322,7,Positive,12,0,12
+1631270,StarRupture,"Jan 6, 2026",False,19.99,Early Access,,Creepy Jar,Creepy Jar,1511,8,Very Positive,5925,1284,7209
+4119420,Evitania Online - Idle RPG,"Apr 7, 2026",True,,Early Access,,Disruptive Blast,Disruptive Blast,1490,5,Mixed,261,127,388
+418370,Resident Evil 7 Biohazard,"Jan 23, 2017",False,19.99,Adventure,58,"CAPCOM Co., Ltd.","CAPCOM Co., Ltd.",1475,8,Very Positive,42296,2418,44714
+1286220,Sea Power : Naval Combat in the Missile Age,"Nov 12, 2024",False,49.99,Early Access,,Triassic Games,MicroProse Software,1503,8,Very Positive,3452,373,3825
+1569040,Football Manager 2022,"Nov 9, 2021",False,,Sports,98,Sports Interactive,SEGA,1547,8,Very Positive,8243,545,8788
+4244510,Pratfall,"Apr 20, 2026",False,7.99,Indie,35,Quad Head,Quad Head,1551,8,Very Positive,769,90,859
+1913370,OPERATOR,"Aug 1, 2023",False,19.99,Early Access,26,VECTOR INTERACTIVE PTY LTD,VECTOR INTERACTIVE PTY LTD,1483,8,Very Positive,5188,828,6016
+1240440,Halo Infinite,"Nov 15, 2021",True,,Free To Play,144,343 Industries,Xbox Game Studios,1478,5,Mixed,94754,44137,138891
+1693980,Dead Space,"Jan 27, 2023",False,59.99,Adventure,47,Motive,Electronic Arts,1515,8,Very Positive,31013,3586,34599
+637090,BATTLETECH,"Apr 24, 2018",False,39.99,Strategy,128,Harebrained Schemes,Paradox Interactive,1539,8,Very Positive,22436,3837,26273
+1040200,Crime Scene Cleaner,"Aug 14, 2024",False,29.99,Simulation,80,President Studio,President Studio,1493,9,Overwhelmingly Positive,15730,266,15996
+2229850,Command & Conquer Red Alert™ 2 and Yuri’s Revenge™,"Mar 7, 2024",False,,Strategy,,Westwood Pacific,Electronic Arts,1478,9,Overwhelmingly Positive,4075,204,4279
+431240,Golf With Your Friends,"May 19, 2020",False,14.99,Sports,83,Blacklight Interactive,Team17,1660,8,Very Positive,47449,6365,53814
+1273400,Construction Simulator,"Sep 20, 2022",False,24.99,Simulation,33,weltenbauer. Software Entwicklung GmbH,astragon Entertainment,1490,6,Mostly Positive,3464,1026,4490
+3936530,Pro Cycling Manager 26,"Jun 15, 2026",False,39.99,Sports,64,Cyanide Studio,Nacon,1540,5,Mixed,12,16,28
+2321470,Deep Rock Galactic: Survivor,"Sep 17, 2025",False,12.99,Action,300,Funday Games,Ghost Ship Publishing,1451,8,Very Positive,21564,3107,24671
+2385530,PGA TOUR 2K25,"Feb 27, 2025",False,59.99,Sports,35,HB Studios,2K,1434,5,Mixed,2851,1296,4147
+3061570,Persona5: The Phantom X,"Jun 25, 2025",True,,Free To Play,,ATLUS,SEGA,1459,5,Mixed,4269,4503,8772
+544810,KARDS - The WW2 Card Game,"Apr 15, 2020",True,,Free To Play,,1939 Games,1939 Games,1285,8,Very Positive,8379,1998,10377
+842980,Dungeon Crusher: Soul Hunters,"Oct 30, 2024",True,,Free To Play,100,Towards Mars Limited,Towards Mars Limited,1425,5,Mixed,37,30,67
+1068820,OVR Toolkit - Desktop Overlay,"Jun 28, 2019",False,9.99,Utilities,,Curtis English,VoxelLoop Software Limited,1459,8,Very Positive,2441,362,2803
+601510,Yu-Gi-Oh! Duel Links,"Nov 16, 2017",True,,Free To Play,20,KONAMI,KONAMI,1454,8,Very Positive,16666,3697,20363
+313650,Time Mysteries 2: The Ancient Spectres,"Jul 31, 2014",False,14.99,Casual,11,Artifex Mundi,Artifex Mundi,1383,5,Mixed,162,113,275
+1535560,Farmer Against Potatoes Idle,"Sep 5, 2024",True,,Simulation,168,Oni Gaming,Oni Gaming,1404,8,Very Positive,4343,246,4589
+2551020,One-armed robber,"Dec 15, 2023",True,,Free To Play,43,Duhndal,Duhndal,1405,8,Very Positive,19321,2011,21332
+21690,Resident Evil 5,"Sep 15, 2009",False,19.99,Adventure,70,Capcom,Capcom,1467,8,Very Positive,22233,4078,26311
+243470,Watch_Dogs™,"May 26, 2014",False,19.99,Adventure,49,Ubisoft,Ubisoft,1397,6,Mostly Positive,15484,5058,20542
+1343370,Old School RuneScape,"Feb 24, 2021",True,,Free To Play,20,Jagex Ltd,Jagex Ltd,1440,8,Very Positive,14706,3209,17915
+2124120,SULFUR,"Oct 28, 2024",False,24.99,Early Access,129,Perfect Random,Perfect Random,1397,8,Very Positive,5148,569,5717
+34030,Total War: NAPOLEON – Definitive Edition,"Feb 25, 2010",False,24.99,Strategy,71,CREATIVE ASSEMBLY,SEGA,1420,8,Very Positive,13534,1310,14844
+581320,Insurgency: Sandstorm,"Dec 12, 2018",False,29.99,Action,35,New World Interactive,Focus Entertainment,1447,8,Very Positive,63505,10728,74233
+625960,Stoneshard,"Feb 6, 2020",False,24.99,Early Access,74,Ink Stains Games,HypeTrain Digital,1388,6,Mostly Positive,8772,3087,11859
+1211020,Wobbly Life,"Sep 18, 2025",False,24.99,Simulation,68,RubberBandGames,RubberBandGames,1324,9,Overwhelmingly Positive,18790,552,19342
+1659420,UNCHARTED™: Legacy of Thieves Collection,"Oct 19, 2022",False,49.99,Adventure,101,Naughty Dog LLC,PlayStation Publishing LLC,1431,8,Very Positive,13217,1523,14740
+2104890,RoadCraft,"May 20, 2025",False,39.99,Simulation,44,Saber Interactive,Focus Entertainment,1428,6,Mostly Positive,5768,2122,7890
+242050,Assassin’s Creed® IV Black Flag™,,False,39.99,Adventure,60,Ubisoft Montreal,Ubisoft,1405,8,Very Positive,28751,4633,33384
+1353300,Idle Slayer,"Dec 21, 2020",True,,Free To Play,651,Pablo Leban,Pablo Leban,1398,6,Mostly Positive,3296,889,4185
+2418520,Farm Together 2,"May 30, 2025",False,25.99,Simulation,109,Milkstone Studios,Milkstone Studios,1366,8,Very Positive,2195,143,2338
+885970,Total War: ROME REMASTERED,"Apr 29, 2021",False,29.99,Strategy,192,Creative Assembly,SEGA,1399,6,Mostly Positive,6704,1952,8656
+1419170,My Singing Monsters,"Mar 24, 2021",True,,Free To Play,,Big Blue Bubble,Big Blue Bubble,1311,8,Very Positive,29784,1748,31532
+3124540,Far Far West,"Apr 28, 2026",False,19.99,Early Access,,Evil Raptor,Fireshine Games,1467,9,Overwhelmingly Positive,21413,710,22123
+1501750,Lords of the Fallen,"Oct 13, 2023",False,29.99,RPG,77,CI Games,CI Games,1395,6,Mostly Positive,20338,7662,28000
+312060,FINAL FANTASY XIV Online Free Trial,"Nov 5, 2014",True,,RPG,,Square Enix,Square Enix,1395,5,Mixed,754,552,1306
+3058630,Assetto Corsa EVO,"Jan 16, 2025",False,39.99,Early Access,,KUNOS Simulazioni,505 Games,1404,5,Mixed,5513,4784,10297
+2592160,Dispatch,"Oct 22, 2025",False,29.99,Strategy,36,AdHoc Studio,AdHoc Studio,1423,9,Overwhelmingly Positive,108278,2685,110963
+47890,The Sims™ 3,"Jan 27, 2011",False,19.99,Simulation,,The Sims Studio,Electronic Arts,1357,8,Very Positive,19542,2925,22467
+2784470,9 Kings,"May 23, 2025",False,19.99,Early Access,54,Sad Socket,Hooded Horse,1329,8,Very Positive,9554,750,10304
+9900,Star Trek Online,"Jan 31, 2012",True,,Free To Play,,Cryptic Studios,Arc Games,1321,6,Mostly Positive,13276,3483,16759
+2281730,Combat Master: Season 5,"Apr 21, 2023",True,,Free To Play,,Alfa Bravo Inc,Alfa Bravo Inc,1319,8,Very Positive,22008,3077,25085
+2753000,GOALS,"Jun 4, 2026",True,,Free To Play,,GOALS ,GOALS ,1398,4,Mostly Negative,825,1393,2218
+4018020,Angels Online Global,"Jun 17, 2026",True,,Free To Play,,"USERJOY Technology Co.,Ltd.","USERJOY Technology Co.,Ltd.",1337,5,Mixed,92,59,151
+221040,Resident Evil 6,"Mar 21, 2013",False,19.99,Adventure,70,Capcom,Capcom,1331,6,Mostly Positive,15983,6422,22405
+4368350,Silly Linguine Cat Simulator Deluxe Online,"Mar 27, 2026",True,,Free To Play,172,Brody Seyranian,Brody Seyranian,1345,9,Overwhelmingly Positive,1526,23,1549
+212910,Call of Duty: Black Ops II - Zombies,,False,,,50,,,1344,9,Overwhelmingly Positive,13373,613,13986
+335240,Transformice,"Jan 30, 2015",True,,Massively Multiplayer,14,Atelier 801,Atelier 801,1376,8,Very Positive,7523,1241,8764
+1533390,Gorilla Tag,"Jan 1, 2023",False,19.99,Casual,,Another Axiom Inc.,Another Axiom Inc.,1378,8,Very Positive,69556,6672,76228
+1859910,Legend of Mortal,"Jun 14, 2024",False,19.99,Strategy,20,Obb Studio Inc.,Paras Games,1173,8,Very Positive,446,42,488
+1066890,Automobilista 2,"Jun 30, 2020",False,39.99,Sports,,Reiza Studios,Reiza Studios,1371,8,Very Positive,6537,699,7236
+203160,Tomb Raider Game of the Year,"Mar 4, 2013",False,19.99,Adventure,50,Crystal Dynamics,Crystal Dynamics,1303,8,Very Positive,75969,4613,80582
+2080690,Sunkenland,"Aug 25, 2023",False,19.99,Early Access,107,Vector3 Studio,Vector3 Studio,1314,8,Very Positive,8734,1671,10405
+3195790,White Knuckle,"Apr 17, 2025",False,16.99,Early Access,62,Dark Machine Games,DreadXP,1365,9,Overwhelmingly Positive,9404,180,9584
+1815780,Asphalt Legends ,"Aug 2, 2022",True,,Free To Play,42,Gameloft,Gameloft,1274,8,Very Positive,6178,1536,7714
+2072560,DRAGON BALL GEKISHIN SQUADRA,"Sep 9, 2025",True,,Free To Play,23,"GANBARION Co., Ltd.",Bandai Namco Entertainment,1330,5,Mixed,3448,1995,5443
+3553500,SIGame,"Mar 22, 2025",True,,Free To Play,,Vladimir Khil,Vladimir Khil,1376,8,Very Positive,209,33,242
+1517290,Battlefield™ 2042,"Nov 19, 2021",False,59.99,Casual,34,DICE,Electronic Arts,1299,5,Mixed,59515,73690,133205
+3548580,Chill with You : Lo-Fi Story,"Nov 16, 2025",False,11.99,Indie,23,Nestopi Inc.,Nestopi Inc.,1265,9,Overwhelmingly Positive,1341,35,1376
+212680,FTL: Faster Than Light,"Sep 14, 2012",False,9.99,Strategy,51,Subset Games,Subset Games,1278,9,Overwhelmingly Positive,56397,2594,58991
+386360,SMITE®,"Sep 8, 2015",True,,Free To Play,319,Titan Forge Games,Hi-Rez Studios,1327,6,Mostly Positive,52303,15644,67947
+1645820,SurrounDead,"Jun 24, 2022",False,11.99,Early Access,21,Zurvivor,PlaySurrounDead,1332,8,Very Positive,15332,1537,16869
+200260,Batman: Arkham City - Game of the Year Edition,"Sep 7, 2012",False,19.99,Adventure,64,Rocksteady Studios,WB Games,1314,9,Overwhelmingly Positive,35330,1388,36718
+2195120,Go-Go Town!,"Jul 16, 2026",False,27.99,Strategy,56,Prideful Sloth,Prideful Sloth,1271,9,Overwhelmingly Positive,1058,42,1100
+3606890,Upload Labs,"Oct 3, 2025",True,,Free To Play,35,EnigmaDev Studios,EnigmaDev Studios,1293,8,Very Positive,4085,421,4506
+2943650,FragPunk,"Mar 6, 2025",True,,Free To Play,,Bad Guitar Studio,NetEase Games,1273,6,Mostly Positive,17957,5908,23865
+346900,AdVenture Capitalist,"Mar 30, 2015",True,,Free To Play,31,Hyper Hippo Games,Hyper Hippo Games,1302,8,Very Positive,33047,5344,38391
+699130,World War Z,"Sep 21, 2021",False,29.99,Action,35,Saber Interactive Inc,Saber Interactive Inc,1227,8,Very Positive,8016,1451,9467
+233450,Prison Architect,"Oct 6, 2015",False,29.99,Strategy,18,Introversion Software,Paradox Interactive,1255,8,Very Positive,36290,4722,41012
+1721470,Poppy Playtime,"Oct 12, 2021",True,,Indie,100,Mob Entertainment,Mob Entertainment,1300,8,Very Positive,54212,7277,61489
+212500,The Lord of the Rings Online™,"Jun 6, 2012",True,,Free To Play,,Standing Stone Games,Daybreak Game Company LLC,1274,8,Very Positive,11699,2728,14427
+3187030,Satisfactory Modeler,"Sep 17, 2024",True,,Free To Play,,David Price,David Price,1279,9,Overwhelmingly Positive,1559,36,1595
+2698940,The Crew Motorfest,"Apr 18, 2024",False,69.99,Racing,50,Ubisoft Ivory Tower,Ubisoft,1256,6,Mostly Positive,8115,2244,10359
+663090,Granado Espada,"Oct 15, 2017",True,,Free To Play,,"IMCGAMES Co.,Ltd.","IMCGAMES Co.,Ltd.",1228,5,Mixed,442,228,670
+2294660,The Quinfall,"Feb 6, 2026",False,9.99,Massively Multiplayer,81,Vawraek Technology Inc.,Vawraek Technology Inc.,1234,5,Mixed,1882,1680,3562
+2124490,SILENT HILL 2,"Oct 7, 2024",False,69.99,Adventure,43,Bloober Team SA,KONAMI,1257,8,Very Positive,32105,1826,33931
+3217240,Soccer Manager 2026,"Oct 23, 2024",True,,Free To Play,24,Invincibles Studio Ltd,Invincibles Studio Ltd,1236,6,Mostly Positive,488,185,673
+202990,Call of Duty®: Black Ops II,"Nov 12, 2012",False,39.99,Action,35,Treyarch,Activision,1289,8,Very Positive,6492,607,7099
+3156770,Witchfire,"Sep 23, 2024",False,39.99,Early Access,36,The Astronauts,The Astronauts,1216,8,Very Positive,10509,963,11472
+1857950,VEIN,"Oct 24, 2025",False,19.99,Early Access,,Ramjet Studios,Ramjet Studios,1250,8,Very Positive,7554,847,8401
+631510,Devil May Cry HD Collection,"Mar 13, 2018",False,29.99,Action,99,"CAPCOM Co., Ltd.","CAPCOM Co., Ltd.",1240,8,Very Positive,10626,751,11377
+1888160,ARMORED CORE™ VI FIRES OF RUBICON™,"Aug 24, 2023",False,59.99,Action,30,"FromSoftware, Inc.","FromSoftware, Inc.",1176,8,Very Positive,48162,3270,51432
+3552140,Retro Rewind - Video Store Simulator,"Mar 17, 2026",False,19.90,Simulation,18,Blood Pact Studios,Blood Pact Studios,1235,9,Overwhelmingly Positive,6867,313,7180
+433340,Slime Rancher,"Aug 1, 2017",False,19.99,Simulation,57,Monomi Park,Monomi Park,1183,9,Overwhelmingly Positive,73561,1443,75004
+4510830,Myth of Empires: Throne,"Apr 16, 2026",True,,Free To Play,,Angela Game,Celestial Star Publishing,1185,5,Mixed,128,98,226
+1238860,Battlefield 4™,"Jun 11, 2020",False,39.99,Action,67,DICE,Electronic Arts,1209,8,Very Positive,28781,5474,34255
+477160,Human Fall Flat,"Jul 22, 2016",False,19.99,Simulation,151,No Brakes Games,Curve Games,1174,9,Overwhelmingly Positive,42290,2181,44471
+2333480,RAID: Shadow Legends,"Jan 9, 2024",True,,Free To Play,,Plarium Global Ltd,Plarium Global Ltd,1188,5,Mixed,825,566,1391
+489630,"Warhammer 40,000: Gladius - Relics of War","Jul 12, 2018",False,39.99,Strategy,166,Proxy Studios,Slitherine Ltd.,1226,6,Mostly Positive,7828,1961,9789
+200210,Realm of the Mad God Exalt,"Feb 20, 2012",True,,Free To Play,167,Wild Shadow Studios,Deca Live Operations GmbH,1232,8,Very Positive,26433,6284,32717
+1506830,FIFA 22,"Oct 1, 2021",False,,Sports,37,EA Canada & EA Romania,Electronic Arts,1212,8,Very Positive,31440,7764,39204
+1119730,"Ranch Simulator: Build, Hunt, Farm","Nov 3, 2023",False,24.99,Simulation,39,Toxic Dog,Excalibur Games,1239,6,Mostly Positive,10604,3155,13759
+1805320,Romestead,"May 25, 2026",False,13.99,Early Access,,Beartwigs,Three Friends,1181,8,Very Positive,1070,111,1181
+1154030,Titan Quest II,"Aug 1, 2025",False,34.99,Early Access,,Grimlore Games,THQ Nordic,1203,8,Very Positive,6198,1303,7501
+220240,Far Cry 3,"Dec 4, 2012",False,19.99,Adventure,44,"Ubisoft Montreal, Massive Entertainment, and Ubisoft Shanghai",Ubisoft,1149,8,Very Positive,39657,7430,47087
+1811260,EA SPORTS™ FIFA 23,"Sep 30, 2022",False,,Sports,39,EA Canada,Electronic Arts,1186,5,Mixed,25715,17177,42892
+1172380,STAR WARS Jedi: Fallen Order™,"Nov 14, 2019",False,39.99,Adventure,39,Respawn Entertainment,Electronic Arts,1194,8,Very Positive,82161,10146,92307
+228200,Company of Heroes,"Sep 11, 2006",False,19.99,Strategy,0,Relic Entertainment,Relic Entertainment,1218,8,Very Positive,7496,423,7919
+252530,OMSI 2: Steam Edition,"Dec 11, 2013",False,29.99,Simulation,,MR-Software GbR,Aerosoft GmbH,1198,8,Very Positive,3129,634,3763
+3641000,The Incident at Galley House,"Jul 14, 2026",False,19.99,Adventure,15,William Rous,Evil Trout Inc.,1167,9,Overwhelmingly Positive,886,17,903
+1369670,Motor Town: Behind The Wheel,"Dec 17, 2021",False,19.99,Early Access,25,P3 Games,P3 Games,1205,8,Very Positive,5435,382,5817
+1657630,Slime Rancher 2,"Sep 23, 2025",False,29.99,Simulation,27,Monomi Park,Monomi Park,1172,8,Very Positive,25567,1573,27140
+373420,Divinity: Original Sin - Enhanced Edition,"Oct 27, 2015",False,39.99,Strategy,54,Larian Studios,Larian Studios,1188,8,Very Positive,12570,1814,14384
+234140,Mad Max,"Sep 1, 2015",False,19.99,Adventure,49,Avalanche Studios,Warner Bros. Games,1158,8,Very Positive,37652,3379,41031
+379720,DOOM,"May 12, 2016",False,19.99,Action,54,id Software,Bethesda Softworks,1176,9,Overwhelmingly Positive,113427,5313,118740
+752590,A Plague Tale: Innocence,"May 14, 2019",False,39.99,Adventure,35,Asobo Studio,Focus Entertainment,1145,8,Very Positive,23168,1749,24917
+2427700,Backpack Battles,"Jun 13, 2025",False,14.99,Strategy,230,PlayWithFurcifer,IndieArk,1165,8,Very Positive,5399,418,5817
+635260,CarX Drift Racing Online,"Nov 17, 2017",False,16.99,Sports,36,"CarX Technologies, LLC","CarX Technologies, LLC",1179,9,Overwhelmingly Positive,40832,2077,42909
+1599600,PlateUp!,"Aug 4, 2022",False,19.99,Strategy,26,It's happening,Yogscast Games,1137,9,Overwhelmingly Positive,17336,644,17980
+1840,Source Filmmaker,"Jul 10, 2012",True,,Video Production,,Valve,Valve,1133,8,Very Positive,27379,2111,29490
+228380,Wreckfest,"Jun 14, 2018",False,29.99,Sports,20,Bugbear,THQ Nordic,1177,8,Very Positive,21107,2962,24069
+705210,Cube Racer,"Oct 30, 2017",True,,Racing,24,Simon Blasen,Simon Blasen,1110,8,Very Positive,499,45,544
+205100,Dishonored,"Oct 8, 2012",False,9.99,Adventure,80,Arkane Studios,Bethesda Softworks,1163,9,Overwhelmingly Positive,49209,1268,50477
+494840,UBOAT,"Aug 2, 2024",False,29.99,Strategy,51,Deep Water Studio,PlayWay S.A.,1139,8,Very Positive,10352,1825,12177
+1237970,Titanfall® 2,"Jun 18, 2020",False,29.99,Action,50,Respawn Entertainment,Electronic Arts,1120,9,Overwhelmingly Positive,104108,4843,108951
+1809540,Nine Sols,"May 28, 2024",False,29.99,Indie,35,RedCandleGames,RedCandleGames,1127,9,Overwhelmingly Positive,20676,969,21645
+3656800,Train Sim World® 6,"Sep 30, 2025",False,49.99,Simulation,19,Dovetail Games,Dovetail Games - TSW,1132,6,Mostly Positive,1049,401,1450
+1583320,Pro Soccer Online,"Dec 5, 2025",False,4.99,Sports,8,Skywall Studios LLC,Skywall Studios LLC,1108,8,Very Positive,3436,852,4288
+360430,Mafia III: Definitive Edition,"May 19, 2020",False,29.99,Adventure,85,Hangar 13,2K,1092,5,Mixed,14967,10083,25050
+1399720,Antimatter Dimensions,"Dec 17, 2022",True,,Strategy,100,Hevipelle,Hevipelle,1115,8,Very Positive,3014,278,3292
+493520,GTFO,"Dec 9, 2021",False,39.99,Action,57,10 Chambers,10 Chambers,1071,8,Very Positive,31088,5426,36514
+2835570,Buckshot Roulette,"Apr 4, 2024",False,2.99,Simulation,16,Mike Klubnika,CRITICAL REFLEX,1180,9,Overwhelmingly Positive,38387,1625,40012
+3142050,Warborne Above Ashes,"Sep 18, 2025",True,,Free To Play,,Qooland Games,Qooland Games,1154,5,Mixed,390,574,964
+3750430,Mystina : Remaster Online,"Nov 19, 2025",True,,Free To Play,31,雷爵網絡科技股份有限公司,雷爵網絡科技股份有限公司,1103,0,1 user reviews,0,1,1
+444090,Paladins®,"May 8, 2018",True,,Free To Play,58,Evil Mojo Games,Hi-Rez Studios,1167,8,Very Positive,104699,22815,127514
+750920,Shadow of the Tomb Raider: Definitive Edition,"Sep 14, 2018",False,39.99,Adventure,99,Eidos-Montréal,Crystal Dynamics,1113,8,Very Positive,25381,4688,30069
+1465460,Infection Free Zone,"Apr 11, 2024",False,24.99,Early Access,33,Jutsu Games,Games Operators,1120,8,Very Positive,6229,1104,7333
+1676840,For The King II,"Nov 2, 2023",False,24.99,Strategy,126,IronOak Games,Curve Games,1190,6,Mostly Positive,5286,1407,6693
+544730,Catan Universe,"Apr 25, 2017",True,,Strategy,21,Client/Frontend: Endava  / Backend: SuperNimbus,USM,1097,5,Mixed,5371,6140,11511
+1757300,Jump Space,"Sep 19, 2025",False,19.99,Early Access,15,Keepsake Games,Keepsake Games,1188,8,Very Positive,7529,1101,8630
+690830,Foundation,"Jan 31, 2025",False,34.99,Strategy,45,Polymorph Games,Polymorph Games,1127,8,Very Positive,10035,1599,11634
+466170,Idling to Rule the Gods,"May 27, 2016",True,,Free To Play,77,Shugasu GmbH,Shugasu GmbH,1094,8,Very Positive,1403,264,1667
+287390,Metro: Last Light Redux,"Aug 25, 2014",False,19.99,Action,49,4A Games,Deep Silver,1075,8,Very Positive,21070,2735,23805
+594570,Total War: WARHAMMER II,"Sep 28, 2017",False,59.99,Strategy,152,CREATIVE ASSEMBLY,SEGA,1112,8,Very Positive,63836,4598,68434
+877280,SAO Utils 2: Progressive,"Nov 5, 2022",True,,Utilities,,Joshua Chen,Studio GPBeta,1011,8,Very Positive,147,29,176
+1449690,The Walking Dead: The Telltale Definitive Series,"Oct 29, 2020",False,49.99,Adventure,23,Skybound Games,Skybound Games,1122,9,Overwhelmingly Positive,16770,449,17219
+1995520,Pax Dei,"Oct 16, 2025",False,29.99,Simulation,,Mainframe Industries,Mainframe Industries,1093,5,Mixed,3734,3129,6863
+1272080,PAYDAY 3,"Sep 21, 2023",False,29.99,RPG,22,Starbreeze Studios,Starbreeze Entertainment,1090,5,Mixed,17884,23121,41005
+211820,Starbound,"Jul 22, 2016",False,14.99,RPG,51,Chucklefish,Chucklefish,1089,8,Very Positive,65745,8740,74485
+329110,Gems of War - Puzzle RPG,"Nov 20, 2014",True,,Free To Play,165,Infinity Plus 2,505 Games,1049,6,Mostly Positive,3656,1189,4845
+952060,Resident Evil 3,"Apr 2, 2020",False,39.99,Action,32,"CAPCOM Co., Ltd.","CAPCOM Co., Ltd.",1087,8,Very Positive,36250,7905,44155
+70,Half-Life,"Nov 19, 1998",False,9.99,Action,,Valve,Valve,1085,9,Overwhelmingly Positive,76411,2769,79180
+311690,Enter the Gungeon,"Apr 5, 2016",False,14.99,Indie,54,Dodge Roll,Devolver Digital,1133,9,Overwhelmingly Positive,42132,2142,44274
+1605850,ZeroSpace,"Jul 20, 2026",False,39.99,Early Access,1,Starlance Studios,Starlance Studios,1254,7,Positive,18,2,20
+774361,Blasphemous,"Sep 10, 2019",False,24.99,Indie,45,The Game Kitchen,Team17,1086,8,Very Positive,21406,2495,23901
+1611600,WARNO,"May 23, 2024",False,39.99,Strategy,49,Eugen Systems,Eugen Systems,1069,8,Very Positive,7518,1746,9264
+665300,Stream Avatars,"Jul 26, 2017",False,14.99,Web Publishing,,Travis Miller,Travis Miller,1067,9,Overwhelmingly Positive,1344,67,1411
+2014780,X-Plane 12,"Dec 17, 2022",False,59.99,Simulation,,Laminar Research,Laminar Research,1052,8,Very Positive,2707,409,3116
+307950,Caliber,"Apr 12, 2023",True,,Free To Play,87,1C Game Studios,FOR-GAMES CR LTD,1026,6,Mostly Positive,3906,1618,5524
+2515020,FINAL FANTASY XVI,"Sep 17, 2024",False,49.99,RPG,69,Square Enix,Square Enix,1100,6,Mostly Positive,12964,3279,16243
+2918150,ONE PIECE Bounty Rush,"Sep 23, 2024",True,,Free To Play,12,SEGA,Bandai Namco Entertainment Inc.,1039,6,Mostly Positive,1835,767,2602
+2444750,Shape of Dreams,"Sep 10, 2025",False,24.99,RPG,85,Lizard Smoothie,NEOWIZ,1021,9,Overwhelmingly Positive,7592,396,7988
+383120,Empyrion - Galactic Survival,"Aug 5, 2020",False,19.99,Strategy,8,Eleon Game Studios,Eleon Game Studios,1087,6,Mostly Positive,16569,4520,21089
+1625450,Muck,"Jun 5, 2021",True,,Indie,49,Dani,Dani,1021,8,Very Positive,96196,6278,102474
+2524890,Pixel Gun 3D: PC Edition,"Apr 2, 2024",True,,Free To Play,16,Cubic Games Studio,Cubic Games Studio,1056,5,Mixed,14643,8633,23276
+1084600,My Time at Sandrock,"Nov 2, 2023",False,39.99,Simulation,60,Pathea Games,Pathea Games,1047,8,Very Positive,10582,695,11277
+1092790,Inscryption,"Oct 19, 2021",False,19.99,Strategy,40,Daniel Mullins Games,Devolver Digital,1024,9,Overwhelmingly Positive,81067,2657,83724
+492720,Tropico 6,"Mar 29, 2019",False,39.99,Strategy,40,Limbic Entertainment,Kalypso Media,1078,8,Very Positive,11698,1814,13512
+2114740,Blasphemous 2,"Aug 24, 2023",False,29.99,Indie,60,The Game Kitchen,Team17,1067,8,Very Positive,6307,689,6996
+3052450,Morimens,"Aug 1, 2024",True,,Free To Play,33,B.I.A.V. Studio,B.I.A.V. Studio,1006,8,Very Positive,1514,190,1704
+4056970,Live Wallpaper,"Nov 9, 2025",True,,Utilities,,Fionnshare,Fionnshare,1051,5,Mixed,122,58,180
+2215200,LEGO® Batman™: Legacy of the Dark Knight,"May 22, 2026",False,69.99,Adventure,52,TT Games,Warner Bros. Games,1060,9,Overwhelmingly Positive,8201,369,8570
+289650,Assassin's Creed® Unity,"Nov 11, 2014",False,29.99,Adventure,57,Ubisoft,Ubisoft,1055,6,Mostly Positive,21166,6916,28082
+848450,Subnautica: Below Zero,"May 13, 2021",False,29.99,Indie,13,Unknown Worlds Entertainment,Unknown Worlds Entertainment,1083,8,Very Positive,53579,6368,59947
+2668510,Red Dead Redemption,"Oct 29, 2024",False,49.99,Action,51,Rockstar Games,Rockstar Games,1056,8,Very Positive,10946,928,11874
+16900,GROUND BRANCH,"Jul 16, 2026",False,29.99,Simulation,,BlackFoot Studios,MicroProse Software,1102,8,Very Positive,14187,2335,16522
+780310,The Riftbreaker,"Oct 14, 2021",False,29.99,Strategy,54,EXOR Studios,EXOR Studios,1055,8,Very Positive,9240,958,10198
+9420,Supreme Commander: Forged Alliance,"Sep 28, 2011",False,12.99,Strategy,,Gas Powered Games,Square Enix,1039,9,Overwhelmingly Positive,8543,278,8821
+3526710,Everything is Crab: The Animal Evolution Roguelite,"May 8, 2026",False,9.99,Strategy,40,Odd Dreams Digital,Secret Mode,1050,8,Very Positive,2791,392,3183
+3953520,MU: Dark Epoch,"Oct 16, 2025",True,,Free To Play,,37GAMES,37GAMES,973,5,Mixed,122,102,224
+975370,Dwarf Fortress,"Dec 6, 2022",False,29.99,Strategy,,Bay 12 Games,Kitfox Games,1035,8,Very Positive,24466,1331,25797
+397900,Business Tour - Board Game with Online Multiplayer(大富翁),"Jul 27, 2017",True,,Free To Play,19,8Floor,8Floor,1051,5,Mixed,9926,7893,17819
+3092660,Reverse: 1999,"Oct 8, 2024",True,,Free To Play,,"BLUEPOCH GAMES CO., LIMITED","BLUEPOCH GAMES CO., LIMITED",967,8,Very Positive,3097,203,3300
+219740,Don't Starve,"Apr 23, 2013",False,9.99,Simulation,,Klei Entertainment,Klei Entertainment,1015,9,Overwhelmingly Positive,38883,1527,40410
+3314070,The Sims™ 2 Legacy Collection,"Jan 31, 2025",False,29.99,Simulation,,MAXIS,Electronic Arts,1034,6,Mostly Positive,2156,856,3012
+4148240,Road to Empress Ⅱ,"Jun 8, 2026",False,18.00,Simulation,57, New One Studio, New One Studio,886,6,Mostly Positive,320,97,417
+668580,Atomic Heart,"Feb 20, 2023",False,59.99,RPG,82,Mundfish,Focus Entertainment,1029,6,Mostly Positive,13092,3797,16889
+359870,FINAL FANTASY X/X-2 HD Remaster,"May 12, 2016",False,29.99,RPG,69,Square Enix,Square Enix,1056,8,Very Positive,11637,1514,13151
+589290,Holdfast: Nations At War,"Mar 5, 2020",False,19.99,Strategy,38,Anvil Game Studios,Anvil Game Studios,1106,8,Very Positive,18637,1951,20588
+1100600,Football Manager 2020,"Nov 19, 2019",False,,Sports,97,Sports Interactive,SEGA,1026,8,Very Positive,10781,1087,11868
+1922560,Plants vs. Zombies™ Garden Warfare 2: Deluxe Edition,"May 16, 2022",False,29.99,Strategy,63,PopCap,Electronic Arts,1004,8,Very Positive,21931,2213,24144
+204360,Castle Crashers®,"Sep 26, 2012",False,14.99,RPG,12,The Behemoth,The Behemoth,1041,9,Overwhelmingly Positive,57628,1888,59516
+4045750,Out of the Park Baseball 27,"Mar 13, 2026",False,49.99,Strategy,201,Out of the Park Developments,Out of the Park Developments,997,8,Very Positive,283,54,337
+415960,Energy Cycle,"Jan 13, 2016",False,2.99,Indie,9,Sometimes You,Sometimes You,1000,5,Mixed,74,47,121
+2162800,shapez 2 - Factory,"Apr 23, 2026",False,29.99,Strategy,83,tobspr Games,tobspr Games,1006,9,Overwhelmingly Positive,9032,250,9282
+2591280,F1® Manager 2024,"Jul 23, 2024",False,44.99,Strategy,30,Frontier Developments,Frontier Developments,971,8,Very Positive,2278,531,2809
+1263850,Football Manager 2021,"Nov 24, 2020",False,,Sports,98,Sports Interactive,SEGA,1005,8,Very Positive,8938,544,9482
+1189490,觅长生,"Jan 12, 2023",False,14.99,Strategy,68,Chalcedony Network,Chalcedony Network,868,8,Very Positive,385,21,406
+3314790,CloverPit,"Sep 26, 2025",False,9.99,Strategy,30,Panik Arcade,Future Friends Games,985,8,Very Positive,11582,1260,12842
+3265700,Vampire Crawlers: The Turbo Wildcard from Vampire Survivors,"Apr 21, 2026",False,9.99,Strategy,161,poncle,poncle,975,8,Very Positive,7878,416,8294
+304050,Trove,"Jul 9, 2015",True,,Free To Play,19,gamigo US Inc.,gamigo US Inc.,950,6,Mostly Positive,32475,9835,42310
+3681810,Blue Protocol: Star Resonance,"Oct 9, 2025",True,,Free To Play,14,Shanghai Bokura Network Technology Co.Ltd,A Plus,945,5,Mixed,5539,5812,11351
+1817190,Marvel’s Spider-Man: Miles Morales,"Nov 18, 2022",False,49.99,Adventure,50,Insomniac Games,PlayStation Publishing LLC,960,8,Very Positive,25785,1749,27534
+475150,Titan Quest Anniversary Edition,"Aug 31, 2016",False,19.99,RPG,115,Iron Lore Entertainment,THQ Nordic,991,8,Very Positive,10244,1334,11578
+1259970,eFootball PES 2021 SEASON UPDATE,"Sep 15, 2020",False,,Sports,,Konami Digital Entertainment,Konami Digital Entertainment,939,6,Mostly Positive,6460,1690,8150
+645630,Car Mechanic Simulator 2018,"Jul 28, 2017",False,19.99,Simulation,60,Red Dot Games,PlayWay S.A.,981,8,Very Positive,21719,2494,24213
+1940340,Darkest Dungeon® II,"May 8, 2023",False,39.99,Strategy,121,Red Hook Studios,Red Hook Studios,970,6,Mostly Positive,9877,3125,13002
+1046930,Dota Underlords,"Jun 20, 2019",True,,Free To Play,,Valve,Valve,923,8,Very Positive,28224,5290,33514
+1332010,Stray,"Jul 19, 2022",False,29.99,Indie,24,BlueTwelve Studio,Annapurna Interactive,987,9,Overwhelmingly Positive,86550,2332,88882
+1432860,Sun Haven,"Mar 10, 2023",False,24.99,Simulation,190,Pixel Sprout Studios,Pixel Sprout Studios,968,8,Very Positive,13053,2451,15504
+2062430,BALL x PIT,"Oct 15, 2025",False,14.99,Indie,63,Kenny Sun and Friends,Devolver Digital,980,9,Overwhelmingly Positive,15191,669,15860
+109600,Neverwinter,"Dec 5, 2013",True,,Free To Play,,Cryptic Studios,Arc Games,942,6,Mostly Positive,14109,4770,18879
+1030840,Mafia: Definitive Edition,"Sep 24, 2020",False,39.99,Adventure,43,Hangar 13,2K,933,8,Very Positive,31100,4576,35676
+3357650,PRAGMATA,"Apr 16, 2026",False,59.99,Adventure,35,"CAPCOM Co., Ltd.","CAPCOM Co., Ltd.",960,9,Overwhelmingly Positive,21081,607,21688
+312660,Sniper Elite 4,"Feb 13, 2017",False,59.99,Adventure,85,Rebellion,Rebellion,929,8,Very Positive,17430,1756,19186
+1898300,ASKA,"Jun 20, 2024",False,24.99,Early Access,39,Sand Sailor Studio,Thunderful Publishing,960,8,Very Positive,5077,1259,6336
+225540,Just Cause™ 3,"Nov 30, 2015",False,19.99,Adventure,66,Avalanche Studios,Square Enix,929,8,Very Positive,49387,8592,57979
+2828860,The Forever Winter,"Sep 24, 2024",False,29.99,Early Access,,Fun Dog Studios,Fun Dog Studios,932,5,Mixed,12436,5587,18023
+1418630,Dread Hunger,"Jan 26, 2022",False,,Indie,26,Dread Hunger Team,Digital Confectioners,844,6,Mostly Positive,1846,753,2599
+266840,Age of Mythology: Extended Edition,"May 8, 2014",False,29.99,Strategy,70,SkyBox Labs,Xbox Game Studios,917,8,Very Positive,14867,1348,16215
+1062520,Dinkum,"Apr 22, 2025",False,19.99,Simulation,25,James Bendon,"KRAFTON, Inc.",881,8,Very Positive,17312,1279,18591
+872410,ROMANCE OF THE THREE KINGDOMS XIV,"Jan 15, 2020",False,59.99,Simulation,47,"KOEI TECMO GAMES CO., LTD.","KOEI TECMO GAMES CO., LTD.",831,5,Mixed,466,255,721
+1213210,Command & Conquer™ Remastered Collection,"Jun 5, 2020",False,19.99,Strategy,33,Petroglyph,Electronic Arts,898,8,Very Positive,18239,1629,19868
+1244460,Jurassic World Evolution 2,"Nov 9, 2021",False,69.99,Strategy,54,Frontier Developments,Frontier Developments,876,8,Very Positive,21167,2234,23401
+524220,NieR:Automata™,"Mar 17, 2017",False,39.99,RPG,47,Square Enix,Square Enix,873,8,Very Positive,57618,6368,63986
+640820,Pathfinder: Kingmaker — Enhanced Plus Edition,"Sep 25, 2018",False,19.99,RPG,74,Owlcat Games,Knights Peak,865,6,Mostly Positive,16962,5229,22191
+2605790,Deep Rock Galactic: Rogue Core,"May 20, 2026",False,29.99,Early Access,23,Ghost Ship Games,Ghost Ship Publishing,873,6,Mostly Positive,5404,2223,7627
+2680010,The First Berserker: Khazan,"Mar 27, 2025",False,59.99,RPG,57,Neople,NEXON,882,8,Very Positive,12929,948,13877
+1782210,Crab Game,"Oct 29, 2021",True,,Racing,,Dani,Dani,829,8,Very Positive,76318,6798,83116
+1875830,Shin Megami Tensei V: Vengeance,"Jun 13, 2024",False,59.99,RPG,48,ATLUS,SEGA,862,8,Very Positive,5038,283,5321
+1151640,Horizon Zero Dawn™ Complete Edition,"Aug 7, 2020",False,,RPG,79,Guerrilla,PlayStation Publishing LLC,847,8,Very Positive,58971,6950,65921
+20900,The Witcher: Enhanced Edition Director's Cut,"Sep 19, 2008",False,9.99,RPG,,CD PROJEKT RED,CD PROJEKT RED,902,8,Very Positive,24571,4035,28606
+3117820,Sultan's Game,"Mar 30, 2025",False,24.99,Strategy,15,Double Cross,2P Games,775,8,Very Positive,1340,95,1435
+389730,TEKKEN 7,"Jun 1, 2017",False,39.99,Sports,42,BANDAI NAMCO Studios Inc.,BANDAI NAMCO Entertainment,809,8,Very Positive,39562,4133,43695
+2119830,MISERY,"Oct 23, 2025",False,12.99,Simulation,38,Platypus Entertainment,Ytopia,838,8,Very Positive,7977,1811,9788
+899770,Last Epoch,"Feb 21, 2024",False,34.99,RPG,,Eleventh Hour Games,Eleventh Hour Games,810,8,Very Positive,52824,12858,65682
+2452280,Mecha BREAK,"Jul 1, 2025",True,,Free To Play,61,Amazing Seasun Games,Amazing Seasun Games,788,6,Mostly Positive,8239,3350,11589
+535930,Two Point Hospital,"Aug 29, 2018",False,29.99,Simulation,61,Two Point Studios,SEGA,770,8,Very Positive,15208,1292,16500
+403640,Dishonored 2,"Nov 11, 2016",False,29.99,Action,50,Arkane Studios,Bethesda Softworks,825,8,Very Positive,25808,3662,29470
+1790600,DRAGON BALL: Sparking! ZERO,"Oct 10, 2024",False,69.99,Action,50,"Spike Chunsoft Co., Ltd.",Bandai Namco Entertainment,807,8,Very Positive,31434,4838,36272
+2742830,Monster Train 2,"May 21, 2025",False,24.99,Strategy,59,Shiny Shoe,Big Fan Games,777,9,Overwhelmingly Positive,5274,253,5527
+209000,Batman™: Arkham Origins,"Oct 24, 2013",False,19.99,Adventure,60,WB Games Montreal,Warner Bros. Interactive Entertainment,811,8,Very Positive,27149,3470,30619
+1217060,Gunfire Reborn,"Nov 17, 2021",False,19.99,RPG,134,Gunfire Reborn Studio,Duoyi Games,800,9,Overwhelmingly Positive,41875,1821,43696
+2336220,Feed the Cups,"Feb 20, 2024",False,15.99,Early Access,65,Vambear Games,IndieArk,722,8,Very Positive,233,48,281
+4300500,IRON NEST: Heavy Turret Simulator Demo,"Jun 15, 2026",True,,Free To Play,,Nick Nieuwoudt,Nick Nieuwoudt,859,9,Overwhelmingly Positive,3782,30,3812
+1601580,Frostpunk 2,"Sep 20, 2024",False,44.99,Strategy,79,11 bit studios,11 bit studios,817,6,Mostly Positive,9055,2458,11513
+1404210,Red Dead Online,"Dec 1, 2020",False,19.99,Adventure,,Rockstar Games,Rockstar Games,842,8,Very Positive,29328,6602,35930
+1274570,DEVOUR,"Jan 28, 2021",False,9.99,Indie,131,Straight Back Games,Straight Back Games,735,8,Very Positive,24455,2693,27148
+2135150,Elin,"Nov 1, 2024",False,19.99,Early Access,34,Lafrontier,Lafrontier,746,9,Overwhelmingly Positive,3695,187,3882
+1331550,Big Ambitions,"Mar 10, 2023",False,25.99,Early Access,99,Hovgaard Games,Hovgaard Games,782,8,Very Positive,5212,457,5669
+2622000,Astral Party ,"Feb 28, 2024",True,,Strategy,,STAR ENGINE PROJECT,Neverland Entertainment,661,6,Mostly Positive,1387,432,1819
+2349820,Hero's Land,"May 17, 2023",True,,Free To Play,37,钢之直男工作室,Orienjoy,750,5,Mixed,980,487,1467
+3097560,Liar's Bar,"Oct 2, 2024",False,6.99,Early Access,,Curve Animation,Curve Animation,762,8,Very Positive,15841,2005,17846
+3609080,StarSavior,"Dec 10, 2025",True,,Free To Play,,Studiobside,Studiobside,750,6,Mostly Positive,865,340,1205
+1690940,DELTARUNE Demo,"Sep 17, 2021",True,,,,tobyfox,tobyfox,766,0,1 user reviews,1,0,1
+200510,XCOM: Enemy Unknown,"Oct 8, 2012",False,14.99,Strategy,85,Firaxis Games,2K,762,8,Very Positive,33037,2489,35526
+400,Portal,"Oct 10, 2007",False,9.99,Action,15,Valve,Valve,773,9,Overwhelmingly Positive,97287,1294,98581
+1845910,Dragon Age™: The Veilguard,"Oct 31, 2024",False,59.99,Strategy,52,BioWare,Electronic Arts,751,5,Mixed,21316,10010,31326
+920210,LEGO® Star Wars™: The Skywalker Saga,"Apr 5, 2022",False,49.99,Adventure,45,TT Games,Warner Bros. Games,731,8,Very Positive,28273,3562,31835
+1575940,Sins of a Solar Empire II,"Aug 15, 2024",False,49.99,Strategy,64,Ironclad Games Corporation,Stardock Entertainment,727,8,Very Positive,5031,947,5978
+1846380,Need for Speed™ Unbound,"Dec 1, 2022",False,69.99,Racing,41,Criterion Games,Electronic Arts,747,5,Mixed,15262,9667,24929
+1971650,OCTOPATH TRAVELER II,"Feb 24, 2023",False,59.99,RPG,33,Square Enix,Square Enix,700,8,Very Positive,5388,381,5769
+20920,The Witcher 2: Assassins of Kings Enhanced Edition,"Apr 16, 2012",False,19.99,RPG,52,CD PROJEKT RED,CD PROJEKT RED,732,8,Very Positive,25665,3429,29094
+924970,Back 4 Blood,"Oct 12, 2021",False,59.99,Action,93,Turtle Rock Studios,Warner Bros. Games,711,6,Mostly Positive,23923,9777,33700
+2373990,Solo Leveling: ARISE OVERDRIVE,"Nov 24, 2025",False,39.99,RPG,58,Netmarble Neo,Netmarble,726,6,Mostly Positive,2793,883,3676
+1056640,Phantasy Star Online 2 New Genesis,"Aug 5, 2020",True,,Free To Play,45,SEGA,SEGA,682,5,Mixed,12209,5770,17979
+3681010,Nioh 3,"Feb 5, 2026",False,69.99,RPG,64,"KOEI TECMO GAMES CO., LTD.","KOEI TECMO GAMES CO., LTD.",700,8,Very Positive,5025,1182,6207
+371660,Far Cry® Primal,"Feb 29, 2016",False,29.99,Adventure,55,Ubisoft,Ubisoft,703,8,Very Positive,12841,2184,15025
+3834090,YAPYAP,"Feb 3, 2026",False,9.99,Action,,Maison Bap,Maison Bap,728,8,Very Positive,3680,619,4299
+502500,ACE COMBAT™ 7: SKIES UNKNOWN,"Jan 31, 2019",False,59.99,Simulation,49,Bandai Namco Studios Inc.,Bandai Namco Entertainment,690,8,Very Positive,24213,3011,27224
+2072450,Like a Dragon: Infinite Wealth,"Jan 25, 2024",False,69.99,RPG,74,RGG Studio,SEGA,700,8,Very Positive,9272,859,10131
+493340,Planet Coaster,"Nov 17, 2016",False,44.99,Strategy,32,Frontier Developments,Frontier Developments,724,8,Very Positive,34324,3423,37747
+1562430,DREDGE,"Mar 30, 2023",False,24.99,RPG,60,Black Salt Games,Team17,717,9,Overwhelmingly Positive,35583,1406,36989
+238320,Outlast,"Sep 4, 2013",False,14.99,Indie,14,Red Barrels,Red Barrels,702,9,Overwhelmingly Positive,38233,1711,39944
+1084160,Jagged Alliance 3,"Jul 14, 2023",False,44.99,Strategy,50,Haemimont Games,THQ Nordic,725,8,Very Positive,5927,821,6748
+241930,Middle-earth™: Shadow of Mordor™,"Sep 30, 2014",False,19.99,,74,Monolith Productions,Warner Bros. Interactive Entertainment,690,8,Very Positive,45041,3940,48981
+3202030,龙胤立志传,"Mar 12, 2026",False,19.99,Strategy,40,TPP Studio,噪点游戏 SERICA GAMES,585,8,Very Positive,104,11,115
+4164420,My Winter Car,"Dec 29, 2025",False,14.99,Early Access,67,Amistech Games,Amistech Games,677,8,Very Positive,6181,405,6586
+2416450,MOUSE: P.I. For Hire,"Apr 16, 2026",False,29.99,Indie,34,Fumi Games,PlaySide,665,8,Very Positive,8358,521,8879
+2677660,Indiana Jones and the Great Circle,"Dec 8, 2024",False,69.99,Adventure,55,MachineGames,Bethesda Softworks,684,8,Very Positive,10440,1095,11535
+629760,MORDHAU,"Apr 29, 2019",False,29.99,Indie,38,Triternion,Triternion,666,8,Very Positive,58301,13871,72172
+3037410,Fish Idle 2: Underwater Mystery,"Nov 15, 2024",True,,Free To Play,30,Multicast,MulticastGames,669,5,Mixed,327,221,548
+500,Left 4 Dead,"Nov 17, 2008",False,9.99,Action,73,Valve,Valve,664,9,Overwhelmingly Positive,23578,1056,24634
+2993780,FANTASY LIFE i: The Girl Who Steals Time,"May 21, 2025",False,59.99,RPG,47,LEVEL5 Inc.,LEVEL5 Inc.,638,8,Very Positive,5704,356,6060
+307780,Mortal Kombat X,"Apr 13, 2015",False,19.99,Action,73,NetherRealm Studios,Warner Bros. Games,685,6,Mostly Positive,15904,4562,20466
+768200,Smalland: Survive the Wilds,"Feb 15, 2024",False,34.99,RPG,23,Merge Games,Maximum Entertainment,653,8,Very Positive,4508,1059,5567
+2103140,Magicraft,"Nov 1, 2024",False,15.99,RPG,15,Wave Games,bilibili,633,9,Overwhelmingly Positive,3585,152,3737
+365590,Tom Clancy’s The Division™,"Mar 7, 2016",False,29.99,RPG,60,Massive Entertainment,Ubisoft,626,6,Mostly Positive,23684,9123,32807
+1169040,Necesse,"Oct 16, 2025",False,14.99,RPG,48,Fair Games ApS,Fair Games ApS,651,8,Very Positive,13147,783,13930
+1987080,Inside the Backrooms,"Jun 20, 2022",False,6.99,Early Access,30,MrFatcat,MrFatcat,591,6,Mostly Positive,10225,2854,13079
+678950,DRAGON BALL FighterZ,"Jan 26, 2018",False,89.99,Action,35,Arc System Works,Bandai Namco Entertainment,674,8,Very Positive,33259,3328,36587
+2488370,Cash Cleaner Simulator,"May 8, 2025",False,19.99,Simulation,26,Mind Control Games,Forklift Interactive,673,8,Very Positive,3643,321,3964
+872790,Football Manager 2019,"Nov 2, 2018",False,,Sports,77,Sports Interactive,SEGA,636,8,Very Positive,3679,493,4172
+42700,Call of Duty®: Black Ops,"Nov 9, 2010",False,39.99,Action,68,Treyarch,Activision,612,8,Very Positive,22640,2555,25195
+2384580,DYNASTY WARRIORS: ORIGINS,"Jan 16, 2025",False,69.99,Strategy,56,"KOEI TECMO GAMES CO., LTD.","KOEI TECMO GAMES CO., LTD.",575,8,Very Positive,4709,395,5104
+2277560,WUCHANG: Fallen Feathers,"Jul 23, 2025",False,49.99,RPG,40,Leenzee,505 Games,447,6,Mostly Positive,5673,2051,7724
+1336980,NOBUNAGA'S AMBITION: Awakening,"Jul 20, 2022",False,59.99,Simulation,51,"KOEI TECMO GAMES CO., LTD.","KOEI TECMO GAMES CO., LTD.",593,8,Very Positive,173,37,210
+2753900,The King is Watching,"Jul 21, 2025",False,14.99,Strategy,47,Hypnohead,tinyBuild,617,8,Very Positive,3206,318,3524
+646910,The Crew™ 2,"Jun 28, 2018",False,29.99,Racing,34,Ivory Tower,Ubisoft,608,6,Mostly Positive,23804,7499,31303
+1948980,Hero's Adventure: Road to Passion,"Nov 15, 2023",False,17.99,Simulation,170,半瓶醋工作室（Half Amateur Studio）,XD,551,8,Very Positive,1911,127,2038
+319630,Life is Strange - Episode 1,"Jan 29, 2015",True,,Adventure,60,DONTNOD Entertainment,Square Enix,621,9,Overwhelmingly Positive,72976,3458,76434
+1325200,Nioh 2 – The Complete Edition,"Feb 5, 2021",False,49.99,RPG,88,"KOEI TECMO GAMES CO., LTD.","KOEI TECMO GAMES CO., LTD.",556,8,Very Positive,13661,1425,15086
+744900,Dead Frontier 2,"Jul 15, 2019",True,,Free To Play,141,Creaky Corpse Ltd,Creaky Corpse Ltd,587,6,Mostly Positive,7760,3295,11055
+2129530,REANIMAL,"Feb 13, 2026",False,39.99,Adventure,41,Tarsier Studios,THQ Nordic,615,8,Very Positive,7356,1796,9152
+274170,Hotline Miami 2: Wrong Number,"Mar 10, 2015",False,14.99,Indie,29,Dennaton Games,Devolver Digital,598,8,Very Positive,26519,2309,28828
+2947440,SILENT HILL f,"Sep 24, 2025",False,69.99,Adventure,56,NeoBards Entertainment Ltd.,KONAMI,602,8,Very Positive,11269,2590,13859
+2852190,Monster Hunter Stories 3: Twisted Reflection,"Mar 12, 2026",False,69.99,RPG,52,"CAPCOM Co., Ltd.","CAPCOM Co., Ltd.",589,8,Very Positive,2636,617,3253
+1857090,Norland,"Jul 18, 2024",False,29.99,Early Access,25,Long Jaunt,Hooded Horse,585,8,Very Positive,2623,560,3183
+1875580,Mina the Hollower,"May 28, 2026",False,19.99,Adventure,50,Yacht Club Games,Yacht Club Games,611,8,Very Positive,5267,618,5885
+939960,Far Cry® New Dawn,"Feb 15, 2019",False,39.99,Adventure,50,Ubisoft Montreal,Ubisoft,569,6,Mostly Positive,11478,3876,15354
+413410,Danganronpa: Trigger Happy Havoc,"Feb 18, 2016",False,19.99,Adventure,38,"Spike Chunsoft Co., Ltd.","Spike Chunsoft Co., Ltd.",568,9,Overwhelmingly Positive,17866,800,18666
+1063730,New World: Aeternum,"Sep 28, 2021",False,,RPG,133,Amazon Game Studios,Amazon Game Studios,596,5,Mixed,113525,56971,170496
+799600,Cosmoteer: Starship Architect & Commander,"Oct 24, 2022",False,19.99,Early Access,,Walternate Realities,Walternate Realities,573,8,Very Positive,7655,438,8093
+1928420,Farlight 84,"Sep 21, 2023",True,,Free To Play,,Farlight Games,Farlight Games,565,6,Mostly Positive,14414,5360,19774
+1371580,Myth of Empires,"Feb 21, 2024",False,29.99,,94,Angela Game,Imperium Interactive Entertainment,548,5,Mixed,2684,1156,3840
+3419520,Quarantine Zone: The Last Check,"Jan 12, 2026",False,19.99,Strategy,25,Brigada Games,Devolver Digital,523,8,Very Positive,4850,1070,5920
+242920,Banished,"Feb 18, 2014",False,19.99,Strategy,36,Shining Rock Software LLC,Shining Rock Software LLC,537,8,Very Positive,26456,2841,29297
+637650,FINAL FANTASY XV WINDOWS EDITION,"Mar 6, 2018",False,34.99,RPG,97,Square Enix,Square Enix,558,8,Very Positive,18388,3894,22282
+1057090,Ori and the Will of the Wisps,"Mar 10, 2020",False,29.99,Action,37,Moon Studios GmbH,Xbox Game Studios,524,9,Overwhelmingly Positive,31980,1048,33028
+1973710,ヘブンバーンズレッド,"Aug 10, 2022",True,,Free To Play,27,WRIGHT FLYER STUDIOS,WRIGHT FLYER STUDIOS,553,8,Very Positive,436,101,537
+323190,Frostpunk,"Apr 24, 2018",False,29.99,Strategy,115,11 bit studios,11 bit studios,1884,8,Very Positive,42777,3337,46114
+1180380,Stay Out,"Nov 27, 2019",True,,Early Access,,MOBITECH LLC,MOBITECH LLC,1796,5,Mixed,5065,3202,8267
+4800590,Supermarket Chaos,"Jun 29, 2026",False,4.99,Simulation,12,BunnyHop,BunnyHopHome,1910,8,Very Positive,674,59,733
+1201240,BLEACH Brave Souls,"Aug 17, 2020",True,,Free To Play,,KLab Inc.,KLab Inc.,1788,8,Very Positive,4833,746,5579
+644930,They Are Billions,"Jun 18, 2019",False,29.99,Strategy,34,Numantian Games,Numantian Games,1832,8,Very Positive,17061,4148,21209
+2195250,EA SPORTS FC™ 24,"Sep 28, 2023",False,,Sports,40,EA Canada,Electronic Arts,1857,5,Mixed,20915,15722,36637
+469600,Legion TD 2 - Multiplayer Tower Defense,"Oct 1, 2021",False,24.99,Strategy,78,AutoAttack Games,AutoAttack Games,1193,8,Very Positive,6823,1108,7931
+333420,Cossacks 3,"Sep 20, 2016",False,19.99,Strategy,103,GSC Game World,GSC Game World,1155,6,Mostly Positive,3310,934,4244
+2625420,Drive Beyond Horizons,"Mar 24, 2025",False,24.99,Early Access,59,Drive Beyond Horizons,Tacty Studio,1148,6,Mostly Positive,6011,1817,7828
+590830,s&box,"Apr 28, 2026",False,19.99,Strategy,,Facepunch Studios,Facepunch Studios,579,5,Mixed,3593,2417,6010
+2066020,Soulstone Survivors,"Jun 17, 2025",False,14.99,RPG,483,Game Smithing Limited,Game Smithing Limited,520,8,Very Positive,11680,1050,12730
+1124300,HUMANKIND™,"Aug 17, 2021",False,49.99,Strategy,99,AMPLITUDE Studios,AMPLITUDE Studios,536,5,Mixed,10432,4718,15150
+24200,DC Universe™ Online,"Nov 2, 2011",True,,Free To Play,202,Dimensional Ink Games,Daybreak Game Company,564,6,Mostly Positive,10042,2637,12679
+386940,Ultimate Chicken Horse,"Mar 4, 2016",False,14.99,Indie,31,Clever Endeavour Games,Clever Endeavour Games,566,9,Overwhelmingly Positive,19198,696,19894
+236110,Dungeon Defenders II,"Jun 20, 2017",True,,Free To Play,18,Chromatic Games,Chromatic Games,532,6,Mostly Positive,9905,3493,13398
+3478050,Road to Empress I,"Sep 8, 2025",False,8.49,Simulation,40, New One Studio, New One Studio,455,9,Overwhelmingly Positive,1641,71,1712
+201810,Wolfenstein: The New Order,"May 19, 2014",False,19.99,Action,50,MachineGames,Bethesda Softworks,540,8,Very Positive,30536,3263,33799
+367500,Dragon's Dogma: Dark Arisen,"Jan 15, 2016",False,29.99,RPG,59,Capcom,Capcom,556,8,Very Positive,25002,3237,28239
+1210320,Potion Craft: Alchemist Simulator,"Dec 13, 2022",False,19.99,Simulation,29,niceplay games,tinyBuild,540,8,Very Positive,17757,1293,19050
+1097150,Fall Guys,"Aug 3, 2020",False,,Sports,34,Mediatonic,,515,8,Very Positive,139064,28109,167173
+1449110,The Outer Worlds 2,"Oct 29, 2025",False,69.99,RPG,48,Obsidian Entertainment,Xbox Game Studios,549,6,Mostly Positive,4665,1603,6268
+291650,Pillars of Eternity,"Mar 26, 2015",False,29.99,RPG,48,Obsidian Entertainment,Xbox Game Studios,546,8,Very Positive,14055,2014,16069
+368260,Marvel's Midnight Suns,"Dec 1, 2022",False,59.99,Strategy,72,Firaxis Games,2K,519,8,Very Positive,13176,2825,16001
+851850,DRAGON BALL Z: KAKAROT,"Jan 16, 2020",False,19.99,RPG,42,CyberConnect2 Co. Ltd.,Bandai Namco Entertainment Inc.,526,8,Very Positive,20882,1705,22587
+972660,Spiritfarer®: Farewell Edition,"Aug 18, 2020",False,29.99,Simulation,39,Thunder Lotus,Thunder Lotus,496,8,Very Positive,20566,1088,21654
+3183280,Game of Thrones: Kingsroad,"May 21, 2025",True,,Free To Play,,Netmarble Neo,Netmarble,507,5,Mixed,2076,1284,3360
+3231090,Amarillo's Butt Slapper,"Oct 4, 2024",True,,Free To Play,7,AmarilloArts,AmarilloArts,482,8,Very Positive,2318,329,2647
+1276390,Bloons TD Battles 2,"Nov 30, 2021",True,,Free To Play,,Ninja Kiwi,Ninja Kiwi,496,8,Very Positive,20543,4041,24584
+203140,Hitman: Absolution™,"Nov 19, 2012",False,19.99,Action,47,Io-Interactive A/S,Io-Interactive A/S,504,8,Very Positive,16845,2297,19142
+392110,ENDLESS Space™ 2,"May 18, 2017",False,39.99,Strategy,115,AMPLITUDE Studios,AMPLITUDE Studios,501,8,Very Positive,10276,2277,12553
+612880,Wolfenstein II: The New Colossus,"Oct 26, 2017",False,39.99,Action,80,MachineGames,Bethesda Softworks,486,6,Mostly Positive,19148,5342,24490
+447020,Farming Simulator 17,"Oct 24, 2016",False,14.99,Simulation,17,GIANTS Software,GIANTS Software,508,8,Very Positive,7236,569,7805
+1458140,Pacific Drive,"Feb 21, 2024",False,29.99,Simulation,49,Ironwood Studios,Kepler Interactive,465,8,Very Positive,14097,2897,16994
+1433140,The Texas Chain Saw Massacre,"Aug 18, 2023",False,14.99,Indie,51,Sumo Digital,Gun Interactive,489,5,Mixed,8316,4507,12823
+218230,PlanetSide 2,"Nov 20, 2012",True,,Free To Play,,Rogue Planet Games,Daybreak Game Company,480,8,Very Positive,38629,8811,47440
+482730,Football Manager 2017,"Nov 3, 2016",False,,Sports,86,Sports Interactive,SEGA,485,5,Mixed,2193,1160,3353
+1004640,FINAL FANTASY TACTICS - The Ivalice Chronicles,"Sep 30, 2025",False,49.99,Strategy,50,Square Enix,Square Enix,460,8,Very Positive,4493,432,4925
+1592190,BONELAB,"Sep 29, 2022",False,39.99,Simulation,55,Stress Level Zero,Stress Level Zero,490,8,Very Positive,12848,3174,16022
+729040,Borderlands Game of the Year Enhanced,"Aug 31, 2023",False,29.99,RPG,80,Gearbox Software,2K,472,6,Mostly Positive,14580,3852,18432
+774171,Muse Dash,"Jun 19, 2019",False,2.99,Indie,39,peropero,hasuhasu,446,8,Very Positive,30698,1779,32477
+1475810,Ghostwire: Tokyo,"Mar 24, 2022",False,59.99,Action,66,Tango Gameworks,Bethesda Softworks,438,8,Very Positive,6746,1378,8124
+2406770,Bodycam,"Jun 7, 2024",False,33.32,Early Access,1,Reissad Studio,Reissad Studio,480,6,Mostly Positive,18636,6441,25077
+636040,Pixel Worlds: MMO Sandbox,"Jun 8, 2017",True,,Free To Play,,Social First Oy,Social First Oy,502,6,Mostly Positive,2639,1124,3763
+678960,CODE VEIN,"Sep 26, 2019",False,79.99,RPG,43,Bandai Namco Studios,Bandai Namco Entertainment,432,8,Very Positive,21735,3486,25221
+2253100,Everwind,"Mar 17, 2026",False,24.99,Early Access,10,Enjoy Studio S.A.,Bohemia Interactive,458,8,Very Positive,1465,300,1765
+1483870,Draw & Guess,"Mar 12, 2021",False,4.99,Indie,29,Acureus,Acureus,328,6,Mostly Positive,287,91,378
+617290,Remnant: From the Ashes,"Aug 19, 2019",False,39.99,RPG,50,Gunfire Games,Arc Games,474,8,Very Positive,24920,4024,28944
+2666510,Rusty's Retirement,"Apr 26, 2024",False,6.99,Strategy,71,Mister Morris Games,Mister Morris Games,414,9,Overwhelmingly Positive,6888,214,7102
+671860,BattleBit Remastered,"Jun 15, 2023",False,14.99,Early Access,,SgtOkiDoki,SgtOkiDoki,462,8,Very Positive,72161,16433,88594
+2486820,Sonic Racing: CrossWorlds,"Sep 25, 2025",False,69.99,Racing,44,Sonic Team,SEGA,435,8,Very Positive,11004,809,11813
+3167550,Tiny Pasture,"Feb 17, 2025",False,5.99,Simulation,55,CaveLiquid,Gamersky Games,411,8,Very Positive,1217,78,1295
+8870,BioShock Infinite,"Mar 25, 2013",False,29.99,Action,80,Irrational Games,2K,449,8,Very Positive,59034,5743,64777
+560130,Pillars of Eternity II: Deadfire,"May 8, 2018",False,19.99,RPG,55,Obsidian Entertainment,Versus Evil,420,8,Very Positive,9978,1288,11266
+704270,Generation Zero®,"Mar 26, 2019",False,24.99,Adventure,72,Systemic Reaction™,Avalanche Studios,423,6,Mostly Positive,19058,7010,26068
+418460,Rising Storm 2: Vietnam,"May 30, 2017",False,24.99,Strategy,132,Antimatter Games,Tripwire Interactive,464,8,Very Positive,32670,4433,37103
+859580,Imperator: Rome,"Apr 25, 2019",False,39.99,Strategy,72,Paradox Development Studio,Paradox Interactive,407,5,Mixed,11182,5390,16572
+80,Counter-Strike: Condition Zero,"Mar 1, 2004",False,9.99,Action,,Valve,Valve,439,8,Very Positive,9185,786,9971
+2201320,Date Everything!,"Jun 17, 2025",False,29.99,Simulation,42,Sassy Chap Games,Team17,424,8,Very Positive,6376,431,6807
+480490,Prey,"May 4, 2017",False,29.99,Adventure,58,Arkane Studios,Bethesda Softworks,427,8,Very Positive,28102,2544,30646
+611500,Quake Champions,"Aug 18, 2022",True,,Free To Play,52,id Software,Bethesda Softworks,416,6,Mostly Positive,14160,5787,19947
+1941540,Mafia: The Old Country,"Aug 7, 2025",False,49.99,Adventure,55,Hangar 13,2K,434,6,Mostly Positive,8956,3418,12374
+1286680,Tiny Tina's Wonderlands,"Jun 23, 2022",False,59.99,RPG,47,Gearbox Software,2K,432,6,Mostly Positive,10814,4401,15215
+2408820,Luma Island,"Nov 20, 2024",False,19.99,Simulation,120,Feel Free Games,Feel Free Games,380,8,Very Positive,3802,388,4190
+1714040,Super Auto Pets,"Sep 24, 2021",True,,Strategy,,Team Wood Games,Team Wood Games,439,8,Very Positive,22760,2220,24980
+2420510,HoloCure - Save the Fans!,"Aug 16, 2023",True,,Indie,97,KayAnimate,KayAnimate,379,9,Overwhelmingly Positive,26129,262,26391
+619820,Heroes of Hammerwatch II,"Jan 14, 2025",False,19.99,RPG,37,Crackshell,Team17,452,8,Very Positive,3859,719,4578
+2488620,F1® 24,"May 31, 2024",False,,Sports,50,Codemasters,Electronic Arts,376,6,Mostly Positive,5332,2153,7485
+794260,Outward Definitive Edition,"May 17, 2022",False,39.99,RPG,72,Nine Dots Studio,Prime Matter,451,6,Mostly Positive,14395,5426,19821
+1385380,Across the Obelisk,"Aug 16, 2022",False,19.99,Strategy,148,Dreamsite Games,Paradox Interactive,417,8,Very Positive,7738,1772,9510
+224260,No More Room in Hell,"Oct 31, 2013",True,,Free To Play,115,No More Room in Hell Team,Lever Games,389,8,Very Positive,27077,3332,30409
+2217000,Rivals of Aether II,"Oct 23, 2024",False,29.99,Indie,71,Aether Studios,Aether Studios,411,6,Mostly Positive,6938,1757,8695
+488790,South Park™: The Fractured But Whole™,"Oct 16, 2017",False,29.99,RPG,35,Ubisoft San Francisco,Ubisoft,400,8,Very Positive,14730,3048,17778
+10180,Call of Duty®: Modern Warfare® 2 (2009),"Nov 11, 2009",False,19.99,Action,50,Infinity Ward,Activision,425,8,Very Positive,25315,2399,27714
+3205720,Schedule I: Free Sample,"Dec 9, 2024",True,,Simulation,,TVGS,TVGS,410,9,Overwhelmingly Positive,6276,241,6517
+1171690,Wayfinder,"Oct 21, 2024",False,24.99,RPG,49,Airship Syndicate,Airship Syndicate,401,5,Mixed,10728,4773,15501
+214490,Alien: Isolation,"Oct 6, 2014",False,39.99,Action,50,Creative Assembly,SEGA,390,8,Very Positive,33469,2760,36229
+858810,Dawn of Man,"Mar 1, 2019",False,24.99,Strategy,24,Madruga Works,Madruga Works,405,8,Very Positive,8745,1454,10199
+1583230,High On Life,"Dec 13, 2022",False,39.99,Adventure,44,"Squanch Games, Inc.","Squanch Games, Inc.",390,8,Very Positive,15396,1941,17337
+2527500,MiSide,"Dec 10, 2024",False,14.99,Simulation,26,AIHASTO,IndieArk,372,9,Overwhelmingly Positive,27763,592,28355
+10190,Call of Duty®: Modern Warfare® 2 (2009),"Nov 11, 2009",False,19.99,Action,50,Infinity Ward,Activision,390,8,Very Positive,5829,681,6510
+346010,Besiege,"Feb 18, 2020",False,14.99,Simulation,54,Spiderling Studios,Spiderling Studios,365,8,Very Positive,24418,1324,25742
+719040,Wasteland 3,"Aug 27, 2020",False,39.99,Strategy,86,inXile Entertainment,inXile Entertainment,429,8,Very Positive,12079,2174,14253
+2273430,BlazBlue Entropy Effect,"Feb 14, 2024",False,19.99,Indie,43,91Act,91Act,338,8,Very Positive,4799,268,5067
+2457220,Avowed,"Feb 18, 2025",False,49.99,RPG,50,Obsidian Entertainment,Xbox Game Studios,390,6,Mostly Positive,7679,2179,9858
+2977660,Cats,"May 21, 2024",True,,Free To Play,2,100 Cozy Games,100 Cozy Games,367,6,Mostly Positive,773,282,1055
+2289750,Super Fantasy Kingdom,"Oct 24, 2025",False,19.99,Early Access,52,Super Fantasy Games,Hooded Horse,374,8,Very Positive,2778,367,3145
+751780,Forager,"Apr 18, 2019",False,19.99,Simulation,103,HopFrog,Balor Games,371,8,Very Positive,15196,2214,17410
+2291060,EARTH DEFENSE FORCE 6,"Jul 25, 2024",False,59.99,Action,39,SANDLOT,D3PUBLISHER,346,6,Mostly Positive,3575,1039,4614
+56400,"Warhammer 40,000: Dawn of War II: Retribution",,False,,Strategy,77,Relic Entertainment,SEGA,392,8,Very Positive,6496,659,7155
+364360,Total War: WARHAMMER,"May 24, 2016",False,59.99,Strategy,185,CREATIVE ASSEMBLY,SEGA,374,8,Very Positive,23157,5272,28429
+1549250,UNDECEMBER: The Forge,"Oct 11, 2022",True,,Free To Play,,Needs Games,LINE Games Corporation,335,5,Mixed,2690,2296,4986
+3020510,Legend of Heroes: Three Kingdoms,"Mar 25, 2025",False,19.99,Early Access,37,Free Wing,Free Wing,301,8,Very Positive,117,12,129
+1611910,"Warhammer 40,000: Chaos Gate - Daemonhunters","May 5, 2022",False,44.99,Strategy,68,Complex Games,Frontier Foundry,349,6,Mostly Positive,7289,2081,9370
+2495450,Winter Memories,"Jan 5, 2024",False,19.99,Simulation,,Dojin Otome,Kagura Games,306,9,Overwhelmingly Positive,525,25,550
+213670,South Park™: The Stick of Truth™,"Mar 3, 2014",False,29.99,RPG,50,Obsidian Entertainment,Ubisoft,367,9,Overwhelmingly Positive,35438,1064,36502
+65980,Sid Meier's Civilization®: Beyond Earth™,"Oct 23, 2014",False,39.99,Strategy,90,Firaxis Games,2K,341,5,Mixed,9202,6756,15958
+3014320,OCTOPATH TRAVELER 0,"Dec 4, 2025",False,49.99,RPG,37,Square Enix,Square Enix,346,8,Very Positive,1149,218,1367
+3784030,RACCOIN: Coin Pusher Roguelike,"Mar 31, 2026",False,11.99,Strategy,23,Doraccoon ,Playstack,358,8,Very Positive,2274,396,2670
+42680,Call of Duty®: Modern Warfare® 3 (2011),"Nov 8, 2011",False,39.99,Action,76,Infinity Ward,Activision,371,8,Very Positive,13724,1954,15678
+269210,Hero Siege,"Jan 29, 2014",False,7.99,RPG,112,Panic Art Studios Ltd,Panic Art Studios Ltd,335,5,Mixed,10207,6776,16983
+65800,Dungeon Defenders,"Oct 18, 2011",False,14.99,Strategy,118,Chromatic Games,Chromatic Games,374,8,Very Positive,12877,1008,13885
+113200,The Binding of Isaac,"Sep 28, 2011",False,4.99,RPG,99,Edmund McMillen,Edmund McMillen,346,8,Very Positive,29161,1688,30849
+546560,Half-Life: Alyx,"Mar 23, 2020",False,59.99,Adventure,42,Valve,Valve,363,9,Overwhelmingly Positive,68691,1238,69929
+1588550,Cairn,"Jan 29, 2026",False,29.99,Sports,52,The Game Bakers,The Game Bakers,344,8,Very Positive,9750,571,10321
+22370,Fallout 3: Game of the Year Edition,"Dec 17, 2009",False,19.99,RPG,,Bethesda Game Studios,Bethesda Softworks,350,8,Very Positive,31496,7328,38824
+235460,METAL GEAR RISING: REVENGEANCE,"Jan 9, 2014",False,29.99,Action,60,PlatinumGames,KONAMI,326,9,Overwhelmingly Positive,47482,2026,49508
+1392860,Little Nightmares III,"Oct 9, 2025",False,39.99,Adventure,44,Supermassive Games,Bandai Namco Entertainment,321,5,Mixed,4201,4311,8512
+532210,Life is Strange 2,"Sep 26, 2018",True,,Adventure,46,DONTNOD Entertainment,Square Enix,345,8,Very Positive,14462,2446,16908
+712100,A Total War Saga: THRONES OF BRITANNIA,"May 2, 2018",False,39.99,Strategy,137,CREATIVE ASSEMBLY,SEGA,339,5,Mixed,5731,2535,8266
+2218750,Halls of Torment,"Sep 24, 2024",False,6.66,RPG,500,Chasing Carrots,Chasing Carrots,331,9,Overwhelmingly Positive,20935,867,21802
+666140,My Time at Portia,"Jan 15, 2019",False,29.99,Simulation,91,Pathea Games,Focus Entertainment,311,8,Very Positive,14501,1334,15835
+1430190,Killing Floor 3,"Jul 24, 2025",False,39.99,Action,65,Tripwire Interactive,Tripwire Interactive,352,5,Mixed,5256,5463,10719
+1097840,Gears 5,"Sep 9, 2019",False,29.99,Adventure,181,The Coalition,Xbox Game Studios,353,6,Mostly Positive,6923,2654,9577
+200710,Torchlight II,"Sep 20, 2012",False,19.99,RPG,119,Runic Games,XD,327,8,Very Positive,22213,1670,23883

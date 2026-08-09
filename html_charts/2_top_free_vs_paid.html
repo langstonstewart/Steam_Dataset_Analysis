@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free-to-Play vs Paid Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: radial-gradient(circle at top, #1c1c1c, #050505 65%);
+            color: #d4d4d4;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: #111111;
+            border: 1px solid #2a2a2a;
+            border-radius: 18px;
+            padding: 40px 36px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .header {
+            margin-bottom: 28px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .header .eyebrow {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72em;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #808080;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+        }
+
+        .header p {
+            font-size: 0.9em;
+            color: #8a8a8a;
+            margin-top: 6px;
+            font-style: italic;
+        }
+
+        .tab-bar {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid #2a2a2a;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid transparent;
+            color: #8a8a8a;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.78em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 10px 14px;
+            cursor: pointer;
+            transition: color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .tab-btn:hover {
+            color: #ffffff;
+        }
+
+        .tab-btn.active {
+            color: #ffffff;
+            border-bottom-color: #ffffff;
+        }
+
+        .tab-panel {
+            display: none;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        .chart-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .chart-header h2 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9em;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            color: #f2f2f2;
+        }
+
+        .view-toggle {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .view-btn {
+            border: 1px solid #333333;
+            background: #1a1a1a;
+            color: #b0b0b0;
+            padding: 7px 14px;
+            border-radius: 8px;
+            font-size: 0.78em;
+            letter-spacing: 0.3px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: 'Inter', Arial, sans-serif;
+        }
+
+        .view-btn:hover {
+            border-color: #808080;
+            color: #ffffff;
+        }
+
+        .view-btn.active {
+            background: #ffffff;
+            border-color: #ffffff;
+            color: #0a0a0a;
+            font-weight: 600;
+        }
+
+        .stats-row {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat {
+            flex: 1;
+            border: 1px solid #2a2a2a;
+            border-top: 2px solid #808080;
+            border-radius: 10px;
+            padding: 14px 16px;
+            background: #161616;
+            transition: border-color 0.2s ease;
+        }
+
+        .stat:hover {
+            border-top-color: #ffffff;
+        }
+
+        .stat .stat-label {
+            font-size: 0.72em;
+            color: #8a8a8a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .stat .stat-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.25em;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .stat .stat-meta {
+            font-size: 0.82em;
+            color: #8a8a8a;
+            margin-top: 3px;
+        }
+
+        .chart-wrap {
+            height: 460px;
+            transition: height 0.2s ease;
+        }
+
+        footer {
+            margin-top: 26px;
+            padding-top: 18px;
+            border-top: 1px solid #2a2a2a;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75em;
+            letter-spacing: 0.5px;
+            color: #707070;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .stats-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="eyebrow">Steam Platform · Monetization Analysis</div>
+            <h1>Free-to-Play vs Paid Games</h1>
+            <p>Compare player counts across pricing models</p>
+        </div>
+
+        <div class="tab-bar" role="tablist" aria-label="Chart selector">
+            <button class="tab-btn active" data-tab="ftp">Top Free-to-Play</button>
+            <button class="tab-btn" data-tab="ptp">Top Paid</button>
+            <button class="tab-btn" data-tab="top30">Top 30 Overall</button>
+            <button class="tab-btn" data-tab="avg">Free vs Paid Avg</button>
+        </div>
+
+        <div class="tab-panel active" data-panel="ftp">
+            <div class="chart-header">
+                <h2>Top 15 Free-to-Play Games</h2>
+            </div>
+            <div class="stats-row" id="statsRowFtp"></div>
+            <div class="chart-wrap">
+                <canvas id="ftpChart"></canvas>
+            </div>
+        </div>
+
+        <div class="tab-panel" data-panel="ptp">
+            <div class="chart-header">
+                <h2>Top 15 Paid Games</h2>
+            </div>
+            <div class="stats-row" id="statsRowPtp"></div>
+            <div class="chart-wrap">
+                <canvas id="ptpChart"></canvas>
+            </div>
+        </div>
+
+        <div class="tab-panel" data-panel="top30">
+            <div class="chart-header">
+                <h2 id="chartTitleTop30">Top 30 Games by Player Count</h2>
+                <div class="view-toggle" role="tablist" aria-label="Chart filter selector">
+                    <button class="view-btn active" data-view="all">All (30)</button>
+                    <button class="view-btn" data-view="Free-To-Play">Free-To-Play</button>
+                    <button class="view-btn" data-view="Paid">Paid</button>
+                </div>
+            </div>
+            <div class="stats-row" id="statsRowTop30"></div>
+            <div class="chart-wrap" id="chartWrapTop30">
+                <canvas id="top30Chart"></canvas>
+            </div>
+        </div>
+
+        <div class="tab-panel" data-panel="avg">
+            <div class="chart-header">
+                <h2>Average Player Count: Free-to-Play vs Paid</h2>
+            </div>
+            <div class="stats-row" id="statsRowAvg"></div>
+            <div class="chart-wrap" id="chartWrapAvg">
+                <canvas id="avgChart"></canvas>
+            </div>
+        </div>
+
+        <footer>Data sourced from the Steam Web API. Only the top 1000 games/apps by concurrent player count in Late July 2026 were included into this dataset.</footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+    <script>
+        // ---- Top Free-to-Play module ----
+        const ftpModule = (function () {
+            const gameData = [
+                { name: 'Counter-Strike 2', playerCount: 1069883 },
+                { name: 'Dota 2', playerCount: 705245 },
+                { name: 'PUBG: BATTLEGROUNDS', playerCount: 275556 },
+                { name: 'TBH: Task Bar Hero', playerCount: 234374 },
+                { name: 'Bongo Cat', playerCount: 161822 },
+                { name: 'Marvel Rivals', playerCount: 86292 },
+                { name: 'Apex Legends', playerCount: 82358 },
+                { name: 'Warframe', playerCount: 65746 },
+                { name: 'Team Fortress 2', playerCount: 59187 },
+                { name: "Tom Clancy's Rainbow Six Siege", playerCount: 58825 },
+                { name: 'War Thunder', playerCount: 56360 },
+                { name: 'Delta Force', playerCount: 56127 },
+                { name: 'Overwatch', playerCount: 49388 },
+                { name: 'VRChat', playerCount: 46796 },
+                { name: 'Destiny 2', playerCount: 42647 }
+            ];
+
+            const statsRow = document.getElementById('statsRowFtp');
+            const ctx = document.getElementById('ftpChart');
+
+            const data = [...gameData].sort((a, b) => b.playerCount - a.playerCount);
+            const top = data[0];
+            const total = data.reduce((sum, item) => sum + item.playerCount, 0);
+            const avg = total / data.length;
+
+            statsRow.innerHTML = `
+                <div class="stat">
+                    <div class="stat-label">Most Played F2P</div>
+                    <div class="stat-value">${top.name}</div>
+                    <div class="stat-meta">${top.playerCount.toLocaleString()} players</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">Games Tracked</div>
+                    <div class="stat-value">${data.length}</div>
+                    <div class="stat-meta">in current view</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">Average Players</div>
+                    <div class="stat-value">${Math.round(avg).toLocaleString()}</div>
+                    <div class="stat-meta">per game</div>
+                </div>
+            `;
+
+            return {
+                init() {
+                    new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: data.map(item => item.name),
+                            datasets: [{
+                                label: 'Player Count',
+                                data: data.map(item => item.playerCount),
+                                backgroundColor: '#c9c9c9',
+                                hoverBackgroundColor: '#ffffff',
+                                borderRadius: 6,
+                                maxBarThickness: 22
+                            }]
+                        },
+                        options: {
+                            indexAxis: 'y',
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            animation: { duration: 900, easing: 'easeOutQuart' },
+                            plugins: {
+                                legend: { display: false },
+                                tooltip: {
+                                    backgroundColor: '#1a1a1a',
+                                    titleColor: '#ffffff',
+                                    bodyColor: '#c9c9c9',
+                                    borderColor: '#3a3a3a',
+                                    borderWidth: 1,
+                                    bodyFont: { family: 'JetBrains Mono' },
+                                    titleFont: { family: 'Inter', weight: '600' },
+                                    callbacks: {
+                                        label: function (context) {
+                                            const item = data[context.dataIndex];
+                                            return `Players: ${item.playerCount.toLocaleString()}`;
+                                        }
+                                    }
+                                }
+                            },
+                            scales: {
+                                x: {
+                                    beginAtZero: true,
+                                    ticks: { color: '#8a8a8a', font: { family: 'JetBrains Mono' }, callback: value => value.toLocaleString() },
+                                    grid: { color: 'rgba(255,255,255,0.06)' }
+                                },
+                                y: {
+                                    ticks: { color: '#d4d4d4', font: { family: 'Inter' } },
+                                    grid: { display: false }
+                                }
+                            }
+                        }
+                    });
+                }
+            };
+        })();
+
+        // ---- Top Paid module ----
+        const ptpModule = (function () {
+            const gameData = [
+                { name: 'Palworld', playerCount: 641309, price: 29.99 },
+                { name: 'Rust', playerCount: 137474, price: 39.99 },
+                { name: 'EA SPORTS FC', playerCount: 126730, price: 89.99 },
+                { name: 'The Binding of Isaac: Rebirth', playerCount: 97795, price: 14.99 },
+                { name: 'Grand Theft Auto V Enhanced', playerCount: 80142, price: 29.99 },
+                { name: 'Dead by Daylight', playerCount: 72787, price: 19.99 },
+                { name: 'Wallpaper Engine', playerCount: 67312, price: 4.99 },
+                { name: 'Geometry Dash', playerCount: 61549, price: 4.99 },
+                { name: 'Stardew Valley', playerCount: 59392, price: 14.99 },
+                { name: 'Slay the Spire 2', playerCount: 59167, price: 24.99 },
+                { name: "Baldur's Gate 3", playerCount: 54369, price: 59.99 },
+                { name: 'DayZ', playerCount: 53734, price: 49.99 },
+                { name: 'Path of Exile 2', playerCount: 52181, price: 29.99 },
+                { name: 'Cyberpunk 2077', playerCount: 51936, price: 59.99 },
+                { name: "Assassin's Creed Black Flag Resynced", playerCount: 50655, price: 59.99 }
+            ];
+
+            const statsRow = document.getElementById('statsRowPtp');
+            const ctx = document.getElementById('ptpChart');
+
+            function formatCurrency(value) {
+                return '$' + value.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            }
+
+            const data = [...gameData].sort((a, b) => b.playerCount - a.playerCount);
+            const top = data[0];
+            const total = data.reduce((sum, item) => sum + item.playerCount, 0);
+            const avg = total / data.length;
+
+            statsRow.innerHTML = `
+                <div class="stat">
+                    <div class="stat-label">Most Played Paid</div>
+                    <div class="stat-value">${top.name}</div>
+                    <div class="stat-meta">${top.playerCount.toLocaleString()} players</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">Games Tracked</div>
+                    <div class="stat-value">${data.length}</div>
+                    <div class="stat-meta">in current view</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">Average Players</div>
+                    <div class="stat-value">${Math.round(avg).toLocaleString()}</div>
+                    <div class="stat-meta">per game</div>
+                </div>
+            `;
+
+            return {
+                init() {
+                    new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: data.map(item => item.name),
+                            datasets: [{
+                                label: 'Player Count',
+                                data: data.map(item => item.playerCount),
+                                backgroundColor: '#c9c9c9',
+                                hoverBackgroundColor: '#ffffff',
+                                borderRadius: 6,
+                                maxBarThickness: 22
+                            }]
+                        },
+                        options: {
+                            indexAxis: 'y',
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            animation: { duration: 900, easing: 'easeOutQuart' },
+                            plugins: {
+                                legend: { display: false },
+                                tooltip: {
+                                    backgroundColor: '#1a1a1a',
+                                    titleColor: '#ffffff',
+                                    bodyColor: '#c9c9c9',
+                                    borderColor: '#3a3a3a',
+                                    borderWidth: 1,
+                                    bodyFont: { family: 'JetBrains Mono' },
+                                    titleFont: { family: 'Inter', weight: '600' },
+                                    callbacks: {
+                                        label: function (context) {
+                                            const item = data[context.dataIndex];
+                                            return [`Players: ${item.playerCount.toLocaleString()}`, `Price: ${formatCurrency(item.price)}`];
+                                        }
+                                    }
+                                }
+                            },
+                            scales: {
+                                x: {
+                                    beginAtZero: true,
+                                    ticks: { color: '#8a8a8a', font: { family: 'JetBrains Mono' }, callback: value => value.toLocaleString() },
+                                    grid: { color: 'rgba(255,255,255,0.06)' }
+                                },
+                                y: {
+                                    ticks: { color: '#d4d4d4', font: { family: 'Inter' } },
+                                    grid: { display: false }
+                                }
+                            }
+                        }
+                    });
+                }
+            };
+        })();
+
+        // ---- Top 30 Overall module ----
+        const top30Module = (function () {
+            const gameData = [
+                { name: 'Counter-Strike 2', playerCount: 1069883, category: 'Free-To-Play' },
+                { name: 'Dota 2', playerCount: 705245, category: 'Free-To-Play' },
+                { name: 'Palworld', playerCount: 641309, category: 'Paid' },
+                { name: 'PUBG: BATTLEGROUNDS', playerCount: 275556, category: 'Free-To-Play' },
+                { name: 'TBH: Task Bar Hero', playerCount: 234374, category: 'Free-To-Play' },
+                { name: 'FiveM', playerCount: 171838, category: 'Paid' },
+                { name: 'Bongo Cat', playerCount: 161822, category: 'Free-To-Play' },
+                { name: 'Rust', playerCount: 137474, category: 'Paid' },
+                { name: 'EA SPORTS FC', playerCount: 126730, category: 'Paid' },
+                { name: 'The Binding of Isaac: Rebirth', playerCount: 97795, category: 'Paid' },
+                { name: 'Grand Theft Auto V Legacy', playerCount: 89897, category: 'Paid' },
+                { name: 'Marvel Rivals', playerCount: 86292, category: 'Free-To-Play' },
+                { name: 'Apex Legends', playerCount: 82358, category: 'Free-To-Play' },
+                { name: 'Grand Theft Auto V Enhanced', playerCount: 80142, category: 'Paid' },
+                { name: 'Dead by Daylight', playerCount: 72787, category: 'Paid' },
+                { name: 'Wallpaper Engine', playerCount: 67312, category: 'Paid' },
+                { name: 'Warframe', playerCount: 65746, category: 'Free-To-Play' },
+                { name: 'Geometry Dash', playerCount: 61549, category: 'Paid' },
+                { name: 'Stardew Valley', playerCount: 59392, category: 'Paid' },
+                { name: 'Team Fortress 2', playerCount: 59187, category: 'Free-To-Play' },
+                { name: 'Slay the Spire 2', playerCount: 59167, category: 'Paid' },
+                { name: "Tom Clancy's Rainbow Six Siege", playerCount: 58825, category: 'Free-To-Play' },
+                { name: 'War Thunder', playerCount: 56360, category: 'Free-To-Play' },
+                { name: 'Delta Force', playerCount: 56127, category: 'Free-To-Play' },
+                { name: "Baldur's Gate 3", playerCount: 54369, category: 'Paid' },
+                { name: 'DayZ', playerCount: 53734, category: 'Paid' },
+                { name: 'Path of Exile 2', playerCount: 52181, category: 'Paid' },
+                { name: 'Overwatch', playerCount: 49388, category: 'Free-To-Play' },
+                { name: 'VRChat', playerCount: 46796, category: 'Free-To-Play' },
+                { name: 'Destiny 2', playerCount: 42647, category: 'Free-To-Play' }
+            ];
+
+            const filterConfig = {
+                all: { label: 'Top 30 Games by Player Count', filter: () => true },
+                'Free-To-Play': { label: 'Top 30 Games (Free-To-Play)', filter: item => item.category === 'Free-To-Play' },
+                Paid: { label: 'Top 30 Games (Paid)', filter: item => item.category === 'Paid' }
+            };
+
+            const panel = document.querySelector('[data-panel="top30"]');
+            const statsRow = document.getElementById('statsRowTop30');
+            const chartTitle = document.getElementById('chartTitleTop30');
+            const chartWrap = document.getElementById('chartWrapTop30');
+            const viewButtons = panel.querySelectorAll('.view-btn');
+            const ctx = document.getElementById('top30Chart');
+
+            let activeView = 'all';
+            let chart;
+
+            function getFilteredData(view) {
+                return gameData.filter(filterConfig[view].filter).sort((a, b) => b.playerCount - a.playerCount);
+            }
+
+            function renderStats(view) {
+                const data = getFilteredData(view);
+                const total = data.reduce((sum, item) => sum + item.playerCount, 0);
+                const avg = total / data.length;
+                const top = data[0];
+
+                statsRow.innerHTML = `
+                    <div class="stat">
+                        <div class="stat-label">Most Played</div>
+                        <div class="stat-value">${top.name}</div>
+                        <div class="stat-meta">${top.playerCount.toLocaleString()} players</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Games Tracked</div>
+                        <div class="stat-value">${data.length}</div>
+                        <div class="stat-meta">in current view</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Average Players</div>
+                        <div class="stat-value">${Math.round(avg).toLocaleString()}</div>
+                        <div class="stat-meta">per game</div>
+                    </div>
+                `;
+            }
+
+            function renderChart(view) {
+                const data = getFilteredData(view);
+                const config = filterConfig[view];
+                chartTitle.textContent = config.label;
+                chartWrap.style.height = Math.max(360, data.length * 26 + 60) + 'px';
+
+                viewButtons.forEach(button => button.classList.toggle('active', button.dataset.view === view));
+
+                const labels = data.map(item => item.name);
+                const values = data.map(item => item.playerCount);
+
+                if (!chart) {
+                    chart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: labels,
+                            datasets: [{
+                                label: 'Player Count',
+                                data: values,
+                                backgroundColor: '#c9c9c9',
+                                hoverBackgroundColor: '#ffffff',
+                                borderRadius: 6,
+                                maxBarThickness: 20
+                            }]
+                        },
+                        options: {
+                            indexAxis: 'y',
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            animation: { duration: 900, easing: 'easeOutQuart' },
+                            plugins: {
+                                legend: { display: false },
+                                tooltip: {
+                                    backgroundColor: '#1a1a1a',
+                                    titleColor: '#ffffff',
+                                    bodyColor: '#c9c9c9',
+                                    borderColor: '#3a3a3a',
+                                    borderWidth: 1,
+                                    bodyFont: { family: 'JetBrains Mono' },
+                                    titleFont: { family: 'Inter', weight: '600' },
+                                    callbacks: {
+                                        label: function (context) {
+                                            const item = data[context.dataIndex];
+                                            return [`Players: ${item.playerCount.toLocaleString()}`, `Category: ${item.category}`];
+                                        }
+                                    }
+                                }
+                            },
+                            scales: {
+                                x: {
+                                    beginAtZero: true,
+                                    ticks: { color: '#8a8a8a', font: { family: 'JetBrains Mono' }, callback: value => value.toLocaleString() },
+                                    grid: { color: 'rgba(255,255,255,0.06)' }
+                                },
+                                y: {
+                                    ticks: { color: '#d4d4d4', font: { family: 'Inter' } },
+                                    grid: { display: false }
+                                }
+                            }
+                        }
+                    });
+                } else {
+                    chart.data.labels = labels;
+                    chart.data.datasets[0].data = values;
+                    chart.options.plugins.tooltip.callbacks.label = function (context) {
+                        const item = data[context.dataIndex];
+                        return [`Players: ${item.playerCount.toLocaleString()}`, `Category: ${item.category}`];
+                    };
+                    chart.update();
+                }
+            }
+
+            viewButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    activeView = button.dataset.view;
+                    renderStats(activeView);
+                    renderChart(activeView);
+                });
+            });
+
+            return {
+                init() {
+                    renderStats(activeView);
+                    renderChart(activeView);
+                }
+            };
+        })();
+
+        // ---- Free vs Paid Avg module ----
+        const avgModule = (function () {
+            const categoryData = [
+                { name: 'Free-To-Play', avgPlayers: 203374 },
+                { name: 'Paid', avgPlayers: 121712 }
+            ];
+
+            const statsRow = document.getElementById('statsRowAvg');
+            const chartWrap = document.getElementById('chartWrapAvg');
+            const ctx = document.getElementById('avgChart');
+
+            let chart;
+
+            return {
+                init() {
+                    if (chart) {
+                        return;
+                    }
+
+                    const data = [...categoryData].sort((a, b) => b.avgPlayers - a.avgPlayers);
+                    const top = data[0];
+                    const diff = data[0].avgPlayers - data[1].avgPlayers;
+
+                    statsRow.innerHTML = `
+                        <div class="stat">
+                            <div class="stat-label">Higher Average</div>
+                            <div class="stat-value">${top.name}</div>
+                            <div class="stat-meta">${top.avgPlayers.toLocaleString()} avg players</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Categories Tracked</div>
+                            <div class="stat-value">${data.length}</div>
+                            <div class="stat-meta">pricing models</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Difference</div>
+                            <div class="stat-value">${diff.toLocaleString()}</div>
+                            <div class="stat-meta">players higher</div>
+                        </div>
+                    `;
+
+                    chartWrap.style.height = '360px';
+
+                    const total = data.reduce((sum, item) => sum + item.avgPlayers, 0);
+                    const sliceColors = data.map(item => item.name === 'Paid' ? '#ff9f40' : '#ffffff');
+
+                    chart = new Chart(ctx, {
+                        type: 'pie',
+                        data: {
+                            labels: data.map(item => item.name),
+                            datasets: [{
+                                label: 'Average Player Count',
+                                data: data.map(item => item.avgPlayers),
+                                backgroundColor: sliceColors,
+                                hoverBackgroundColor: sliceColors,
+                                borderColor: '#111111',
+                                borderWidth: 3
+                            }]
+                        },
+                        plugins: [ChartDataLabels],
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            animation: { duration: 900, easing: 'easeOutQuart' },
+                            plugins: {
+                                legend: {
+                                    position: 'bottom',
+                                    labels: {
+                                        color: '#d4d4d4',
+                                        font: { family: 'Inter' },
+                                        padding: 18,
+                                        usePointStyle: true,
+                                        pointStyle: 'circle'
+                                    }
+                                },
+                                tooltip: {
+                                    backgroundColor: '#1a1a1a',
+                                    titleColor: '#ffffff',
+                                    bodyColor: '#c9c9c9',
+                                    borderColor: '#3a3a3a',
+                                    borderWidth: 1,
+                                    bodyFont: { family: 'JetBrains Mono' },
+                                    titleFont: { family: 'Inter', weight: '600' },
+                                    callbacks: {
+                                        label: function (context) {
+                                            const item = data[context.dataIndex];
+                                            return `Average Players: ${item.avgPlayers.toLocaleString()}`;
+                                        }
+                                    }
+                                },
+                                datalabels: {
+                                    color: '#0a0a0a',
+                                    font: { family: 'JetBrains Mono', weight: '600', size: 15 },
+                                    formatter: value => `${Math.round((value / total) * 100)}%`
+                                }
+                            }
+                        }
+                    });
+                }
+            };
+        })();
+
+        // ---- Tab switching ----
+        ftpModule.init();
+        let ptpInitialized = false;
+        let top30Initialized = false;
+        let avgInitialized = false;
+
+        document.querySelectorAll('.tab-bar .tab-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.tab-bar .tab-btn').forEach(b => b.classList.toggle('active', b === button));
+                document.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('active', p.dataset.panel === button.dataset.tab));
+
+                if (button.dataset.tab === 'ptp' && !ptpInitialized) {
+                    ptpModule.init();
+                    ptpInitialized = true;
+                } else if (button.dataset.tab === 'top30' && !top30Initialized) {
+                    top30Module.init();
+                    top30Initialized = true;
+                } else if (button.dataset.tab === 'avg' && !avgInitialized) {
+                    avgModule.init();
+                    avgInitialized = true;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

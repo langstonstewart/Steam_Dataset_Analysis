@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Average Game Price Over Time</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: radial-gradient(circle at top, #1c1c1c, #050505 65%);
+            color: #d4d4d4;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1040px;
+            width: 100%;
+            background: #111111;
+            border: 1px solid #2a2a2a;
+            border-radius: 18px;
+            padding: 40px 36px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .header {
+            margin-bottom: 28px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .header .eyebrow {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72em;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #808080;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+        }
+
+        .header p {
+            font-size: 0.9em;
+            color: #8a8a8a;
+            margin-top: 6px;
+            font-style: italic;
+        }
+
+        .chart-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .chart-header h2 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9em;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            color: #f2f2f2;
+        }
+
+        .legend-note {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .legend-note span {
+            font-size: 0.75em;
+            color: #8a8a8a;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .legend-note .swatch {
+            width: 10px;
+            height: 10px;
+            border-radius: 2px;
+            display: inline-block;
+        }
+
+        .stats-row {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat {
+            flex: 1;
+            border: 1px solid #2a2a2a;
+            border-top: 2px solid #808080;
+            border-radius: 10px;
+            padding: 14px 16px;
+            background: #161616;
+            transition: border-color 0.2s ease;
+        }
+
+        .stat:hover {
+            border-top-color: #ffffff;
+        }
+
+        .stat .stat-label {
+            font-size: 0.72em;
+            color: #8a8a8a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .stat .stat-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.25em;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .stat .stat-meta {
+            font-size: 0.82em;
+            color: #8a8a8a;
+            margin-top: 3px;
+        }
+
+        .chart-wrap {
+            height: 460px;
+        }
+
+        footer {
+            margin-top: 26px;
+            padding-top: 18px;
+            border-top: 1px solid #2a2a2a;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75em;
+            letter-spacing: 0.5px;
+            color: #707070;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .stats-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="eyebrow">Steam Platform · Pricing Analysis</div>
+            <h1>Average Game Price Over Time</h1>
+            <p>Yearly average launch price and percent change</p>
+        </div>
+
+        <div class="chart-header">
+            <h2>Average Game Price vs Percent Change</h2>
+            <div class="legend-note">
+                <span><span class="swatch" style="background:#c9c9c9"></span>Avg Game Price</span>
+                <span><span class="swatch" style="background:#ff9f40"></span>Percent Change</span>
+            </div>
+        </div>
+
+        <div class="stats-row" id="statsRow"></div>
+
+        <div class="chart-wrap">
+            <canvas id="trendChart"></canvas>
+        </div>
+
+        <footer>Data sourced from the Steam Web API. Only the top 1000 games/apps by concurrent player count in Late July 2026 were included into this dataset.</footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <script>
+        const yearData = [
+            { year: 1998, price: 9.99, change: null },
+            { year: 2000, price: 9.99, change: 0 },
+            { year: 2004, price: 9.99, change: 0 },
+            { year: 2005, price: 19.99, change: 100.1 },
+            { year: 2006, price: 14.99, change: -25.01 },
+            { year: 2007, price: 9.99, change: -33.36 },
+            { year: 2008, price: 9.99, change: 0 },
+            { year: 2009, price: 17.13, change: 71.5 },
+            { year: 2010, price: 24.16, change: 41 },
+            { year: 2011, price: 16.62, change: -31.22 },
+            { year: 2012, price: 19.16, change: 15.3 },
+            { year: 2013, price: 25.35, change: 32.31 },
+            { year: 2014, price: 22.14, change: -12.65 },
+            { year: 2015, price: 27.28, change: 23.22 },
+            { year: 2016, price: 27.3, change: 0.06 },
+            { year: 2017, price: 30.06, change: 10.12 },
+            { year: 2018, price: 31.21, change: 3.83 },
+            { year: 2019, price: 35.01, change: 12.19 },
+            { year: 2020, price: 32.3, change: -7.76 },
+            { year: 2021, price: 31.61, change: -2.13 },
+            { year: 2022, price: 39.14, change: 23.84 },
+            { year: 2023, price: 38.53, change: -1.57 },
+            { year: 2024, price: 37.51, change: -2.64 },
+            { year: 2025, price: 36.6, change: -2.42 },
+            { year: 2026, price: 27.99, change: -23.54 }
+        ];
+
+        function formatCurrency(value) {
+            return '$' + value.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        }
+
+        const peak = [...yearData].sort((a, b) => b.price - a.price)[0];
+        const latest = yearData[yearData.length - 1];
+        const avgPrice = yearData.reduce((sum, item) => sum + item.price, 0) / yearData.length;
+
+        document.getElementById('statsRow').innerHTML = `
+            <div class="stat">
+                <div class="stat-label">Peak Year</div>
+                <div class="stat-value">${peak.year}</div>
+                <div class="stat-meta">${formatCurrency(peak.price)} avg price</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Latest Year</div>
+                <div class="stat-value">${formatCurrency(latest.price)}</div>
+                <div class="stat-meta">${latest.year} · ${latest.change > 0 ? '+' : ''}${latest.change}% YoY</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Average Price</div>
+                <div class="stat-value">${formatCurrency(avgPrice)}</div>
+                <div class="stat-meta">across tracked years</div>
+            </div>
+        `;
+
+        new Chart(document.getElementById('trendChart'), {
+            data: {
+                labels: yearData.map(item => item.year),
+                datasets: [
+                    {
+                        type: 'bar',
+                        label: 'Average Game Price',
+                        data: yearData.map(item => item.price),
+                        backgroundColor: '#c9c9c9',
+                        hoverBackgroundColor: '#e8e8e8',
+                        borderRadius: 4,
+                        maxBarThickness: 26,
+                        yAxisID: 'y'
+                    },
+                    {
+                        type: 'line',
+                        label: 'Percent Change',
+                        data: yearData.map(item => item.change),
+                        borderColor: '#ff9f40',
+                        backgroundColor: '#ff9f40',
+                        pointRadius: 3,
+                        pointBackgroundColor: '#ff9f40',
+                        borderWidth: 2,
+                        tension: 0.3,
+                        spanGaps: true,
+                        yAxisID: 'y1'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: { duration: 900, easing: 'easeOutQuart' },
+                interaction: { mode: 'index', intersect: false },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: '#1a1a1a',
+                        titleColor: '#ffffff',
+                        bodyColor: '#c9c9c9',
+                        borderColor: '#3a3a3a',
+                        borderWidth: 1,
+                        bodyFont: { family: 'JetBrains Mono' },
+                        titleFont: { family: 'Inter', weight: '600' },
+                        callbacks: {
+                            label: function (context) {
+                                if (context.dataset.label === 'Average Game Price') {
+                                    return `Avg Game Price: ${formatCurrency(context.parsed.y)}`;
+                                }
+                                return context.parsed.y === null ? 'Percent Change: n/a' : `Percent Change: ${context.parsed.y > 0 ? '+' : ''}${context.parsed.y}%`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        ticks: { color: '#8a8a8a', font: { family: 'JetBrains Mono' } },
+                        grid: { display: false }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        position: 'left',
+                        ticks: { color: '#8a8a8a', font: { family: 'JetBrains Mono' }, callback: value => '$' + value.toLocaleString() },
+                        grid: { color: 'rgba(255,255,255,0.06)' }
+                    },
+                    y1: {
+                        position: 'right',
+                        ticks: { color: '#8a8a8a', font: { family: 'JetBrains Mono' }, callback: value => value + '%' },
+                        grid: { display: false }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
