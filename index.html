@@ -150,6 +150,7 @@
 
         .analysis-stack {
             display: grid;
+            grid-template-columns: minmax(0, 1fr);
             gap: 16px;
         }
 
@@ -159,9 +160,9 @@
             border-radius: 14px;
             padding: 18px;
             display: grid;
-            grid-template-columns: 0.8fr 1.2fr;
+            grid-template-columns: 1fr;
             gap: 18px;
-            align-items: center;
+            align-items: stretch;
             transition: border-color 0.25s ease, transform 0.25s ease;
         }
 
@@ -306,10 +307,6 @@
         @media (max-width: 980px) {
             .analysis-card {
                 grid-template-columns: 1fr;
-            }
-
-            .analysis-figure {
-                max-width: 620px;
             }
         }
 
