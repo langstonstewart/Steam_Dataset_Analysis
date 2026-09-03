@@ -1,5 +1,9 @@
 # 📊 Steam Database Analysis
 
+![Excel](https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoft-excel&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
+
 ## 🎯 Overview
 Analysis of my steam dataset from the Steam Web API examining game popularity, pricing trends, genre performance, and developer pricing to understand what drives success on the platform.
 
