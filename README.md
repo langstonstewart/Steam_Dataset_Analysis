@@ -1,4 +1,4 @@
-# 📊 Steam Database Analysis
+# 📊 Steam Dataset Analysis
 
 ![Excel](https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoft-excel&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
