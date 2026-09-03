@@ -11,6 +11,19 @@ It is important to remember that only the top 1,000 titles on Steam by concurren
 
 A summary of the analysis can be seen here: https://langstonstewart.github.io/Steam_Dataset_Analysis/
 
+## 📈 Interactive Excel Dashboard
+
+[steam_db_dashboard.xlsx](steam_db_dashboard.xlsx) brings the Steam analysis into a filterable Excel dashboard. It ranks the most popular games by concurrent player count and updates key popularity, pricing, and player-count metrics for the selected games.
+
+![Steam Dataset Analytics Dashboard](images/dashboard/main_dashboard.gif)
+
+### Dashboard Controls
+
+- **Release Timeline:** Filter the dashboard by game release year.
+- **Game Genre:** Select one or more genres to compare their most popular titles.
+- **Game Type:** Compare free-to-play and paid-purchase games.
+- **Dynamic KPIs:** The most popular game, average game price, and average player count update with the active filters.
+
 ## 💼 Business Questions
 Out of the current top 1000 titles:
 1. **Game Popularity:** Which games have the most players on Steam?
