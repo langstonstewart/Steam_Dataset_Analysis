@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Most Prolific Developers</title>
+    <title>Game Price by Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <style>
@@ -123,7 +123,7 @@
         }
 
         .chart-wrap {
-            height: 460px;
+            height: 620px;
         }
 
         footer {
@@ -148,12 +148,12 @@
     <div class="container">
         <div class="header">
             <div class="eyebrow">Steam Platform · Developer Analysis</div>
-            <h1>Most Prolific Developers</h1>
-            <p>Number of games developed by studio</p>
+            <h1>Game Price by Developer</h1>
+            <p>Average game price by studio (Top 25)</p>
         </div>
 
         <div class="chart-header">
-            <h2>Games Developed by Studio</h2>
+            <h2>Average Game Price by Developer</h2>
         </div>
 
         <div class="stats-row" id="statsRow"></div>
@@ -168,33 +168,47 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
     <script>
         const devData = [
-            { name: 'Valve', gameCount: 18 },
-            { name: 'CAPCOM Co., Ltd.', gameCount: 15 },
-            { name: 'Square Enix', gameCount: 12 },
-            { name: 'CREATIVE ASSEMBLY', gameCount: 10 },
-            { name: 'Firaxis Games', gameCount: 9 },
-            { name: 'Sports Interactive', gameCount: 8 },
-            { name: 'Bethesda Game Studios', gameCount: 8 },
-            { name: 'Obsidian Entertainment', gameCount: 8 },
-            { name: 'Frontier Developments', gameCount: 7 },
-            { name: 'Ubisoft Montreal', gameCount: 7 },
-            { name: 'Paradox Development Studio', gameCount: 7 },
-            { name: 'FromSoftware, Inc.', gameCount: 6 },
-            { name: 'ATLUS', gameCount: 6 },
-            { name: 'Infinity Ward', gameCount: 5 },
-            { name: 'DICE', gameCount: 5 }
+            { name: 'EA Canada', avgPrice: 89.99 },
+            { name: 'Bandai Namco Studios', avgPrice: 79.99 },
+            { name: 'Expression Games', avgPrice: 69.99 },
+            { name: 'Ubisoft Ivory Tower', avgPrice: 69.99 },
+            { name: 'Game Studio Inc.', avgPrice: 69.99 },
+            { name: 'Tiburon', avgPrice: 69.99 },
+            { name: 'Bloober Team SA', avgPrice: 69.99 },
+            { name: 'Sonic Team', avgPrice: 69.99 },
+            { name: 'NeoBards Entertainment Ltd.', avgPrice: 69.99 },
+            { name: 'Sledgehammer Games', avgPrice: 69.99 },
+            { name: 'Criterion Games', avgPrice: 69.99 },
+            { name: 'RGG Studio', avgPrice: 69.99 },
+            { name: 'Ghost Games', avgPrice: 69.99 },
+            { name: 'Respawn', avgPrice: 69.99 },
+            { name: 'Visual Concepts', avgPrice: 69.99 },
+            { name: 'Battlefield Studios', avgPrice: 69.99 },
+            { name: 'Media.Vision Inc.', avgPrice: 69.99 },
+            { name: 'Playground Games', avgPrice: 64.99 },
+            { name: 'Ubisoft Quebec', avgPrice: 64.99 },
+            { name: 'LEVEL5 Inc.', avgPrice: 64.99 },
+            { name: 'Arc System Works', avgPrice: 64.99 },
+            { name: 'KOEI TECMO GAMES CO., LTD.', avgPrice: 61.99 },
+            { name: 'BioWare', avgPrice: 59.99 },
+            { name: 'Game Science', avgPrice: 59.99 },
+            { name: 'Avalanche Software', avgPrice: 59.99 }
         ];
 
-        const data = [...devData].sort((a, b) => b.gameCount - a.gameCount);
+        function formatCurrency(value) {
+            return '$' + value.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        }
+
+        const data = [...devData].sort((a, b) => b.avgPrice - a.avgPrice);
         const topDev = data[0];
-        const total = data.reduce((sum, item) => sum + item.gameCount, 0);
+        const total = data.reduce((sum, item) => sum + item.avgPrice, 0);
         const avg = total / data.length;
 
         document.getElementById('statsRow').innerHTML = `
             <div class="stat">
                 <div class="stat-label">Top Developer</div>
                 <div class="stat-value">${topDev.name}</div>
-                <div class="stat-meta">${topDev.gameCount} games developed</div>
+                <div class="stat-meta">${formatCurrency(topDev.avgPrice)} avg price</div>
             </div>
             <div class="stat">
                 <div class="stat-label">Developers Tracked</div>
@@ -202,9 +216,9 @@
                 <div class="stat-meta">in current view</div>
             </div>
             <div class="stat">
-                <div class="stat-label">Average Count</div>
-                <div class="stat-value">${avg.toFixed(1)}</div>
-                <div class="stat-meta">games per studio</div>
+                <div class="stat-label">Average Price</div>
+                <div class="stat-value">${formatCurrency(avg)}</div>
+                <div class="stat-meta">across top 25 studios</div>
             </div>
         `;
 
@@ -213,8 +227,8 @@
             data: {
                 labels: data.map(item => item.name),
                 datasets: [{
-                    label: 'Games Developed',
-                    data: data.map(item => item.gameCount),
+                    label: 'Average Price',
+                    data: data.map(item => item.avgPrice),
                     backgroundColor: '#c9c9c9',
                     hoverBackgroundColor: '#ffffff',
                     borderRadius: 6,
@@ -239,7 +253,7 @@
                         callbacks: {
                             label: function (context) {
                                 const item = data[context.dataIndex];
-                                return `Games Developed: ${item.gameCount}`;
+                                return `Average Price: ${formatCurrency(item.avgPrice)}`;
                             }
                         }
                     }
@@ -247,7 +261,7 @@
                 scales: {
                     x: {
                         beginAtZero: true,
-                        ticks: { color: '#8a8a8a', font: { family: 'JetBrains Mono' } },
+                        ticks: { color: '#8a8a8a', font: { family: 'JetBrains Mono' }, callback: value => '$' + value.toLocaleString() },
                         grid: { color: 'rgba(255,255,255,0.06)' }
                     },
                     y: {

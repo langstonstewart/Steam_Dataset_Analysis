@@ -227,7 +227,7 @@
             <button class="tab-btn active" data-tab="ftp">Top Free-to-Play</button>
             <button class="tab-btn" data-tab="ptp">Top Paid</button>
             <button class="tab-btn" data-tab="top30">Top 30 Overall</button>
-            <button class="tab-btn" data-tab="avg">Free vs Paid Avg</button>
+            <button class="tab-btn" data-tab="avg">Free vs Paid All</button>
         </div>
 
         <div class="tab-panel active" data-panel="ftp">
@@ -267,7 +267,7 @@
 
         <div class="tab-panel" data-panel="avg">
             <div class="chart-header">
-                <h2>Average Player Count: Free-to-Play vs Paid</h2>
+                <h2>Total Player Count Share: Free-to-Play vs Paid</h2>
             </div>
             <div class="stats-row" id="statsRowAvg"></div>
             <div class="chart-wrap" id="chartWrapAvg">
@@ -281,7 +281,6 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
     <script>
-        // ---- Top Free-to-Play module ----
         const ftpModule = (function () {
             const gameData = [
                 { name: 'Counter-Strike 2', playerCount: 1069883 },
@@ -382,7 +381,6 @@
             };
         })();
 
-        // ---- Top Paid module ----
         const ptpModule = (function () {
             const gameData = [
                 { name: 'Palworld', playerCount: 641309, price: 29.99 },
@@ -487,7 +485,6 @@
             };
         })();
 
-        // ---- Top 30 Overall module ----
         const top30Module = (function () {
             const gameData = [
                 { name: 'Counter-Strike 2', playerCount: 1069883, category: 'Free-To-Play' },
@@ -655,11 +652,10 @@
             };
         })();
 
-        // ---- Free vs Paid Avg module ----
         const avgModule = (function () {
             const categoryData = [
-                { name: 'Free-To-Play', avgPlayers: 203374 },
-                { name: 'Paid', avgPlayers: 121712 }
+                { name: 'Free-To-Play', totalPlayers: 3938105 },
+                { name: 'Paid', totalPlayers: 5260906 }
             ];
 
             const statsRow = document.getElementById('statsRowAvg');
@@ -674,15 +670,15 @@
                         return;
                     }
 
-                    const data = [...categoryData].sort((a, b) => b.avgPlayers - a.avgPlayers);
+                    const data = [...categoryData].sort((a, b) => b.totalPlayers - a.totalPlayers);
                     const top = data[0];
-                    const diff = data[0].avgPlayers - data[1].avgPlayers;
+                    const diff = data[0].totalPlayers - data[1].totalPlayers;
 
                     statsRow.innerHTML = `
                         <div class="stat">
-                            <div class="stat-label">Higher Average</div>
+                            <div class="stat-label">Larger Share</div>
                             <div class="stat-value">${top.name}</div>
-                            <div class="stat-meta">${top.avgPlayers.toLocaleString()} avg players</div>
+                            <div class="stat-meta">${top.totalPlayers.toLocaleString()} total players</div>
                         </div>
                         <div class="stat">
                             <div class="stat-label">Categories Tracked</div>
@@ -698,7 +694,7 @@
 
                     chartWrap.style.height = '360px';
 
-                    const total = data.reduce((sum, item) => sum + item.avgPlayers, 0);
+                    const total = data.reduce((sum, item) => sum + item.totalPlayers, 0);
                     const sliceColors = data.map(item => item.name === 'Paid' ? '#ff9f40' : '#ffffff');
 
                     chart = new Chart(ctx, {
@@ -706,8 +702,8 @@
                         data: {
                             labels: data.map(item => item.name),
                             datasets: [{
-                                label: 'Average Player Count',
-                                data: data.map(item => item.avgPlayers),
+                                label: 'Total Player Count',
+                                data: data.map(item => item.totalPlayers),
                                 backgroundColor: sliceColors,
                                 hoverBackgroundColor: sliceColors,
                                 borderColor: '#111111',
@@ -741,7 +737,7 @@
                                     callbacks: {
                                         label: function (context) {
                                             const item = data[context.dataIndex];
-                                            return `Average Players: ${item.avgPlayers.toLocaleString()}`;
+                                            return `Total Players: ${item.totalPlayers.toLocaleString()}`;
                                         }
                                     }
                                 },
@@ -757,7 +753,6 @@
             };
         })();
 
-        // ---- Tab switching ----
         ftpModule.init();
         let ptpInitialized = false;
         let top30Initialized = false;

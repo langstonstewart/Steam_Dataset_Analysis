@@ -359,7 +359,7 @@
                 <article class="question-card"><div class="q-number">Question 04</div><p>When were the most games released, and which recent titles are performing best?</p></article>
                 <article class="question-card"><div class="q-number">Question 05</div><p>How have game prices changed year to year?</p></article>
                 <article class="question-card"><div class="q-number">Question 06</div><p>Which games are most reviewed and best rated?</p></article>
-                <article class="question-card"><div class="q-number">Question 07</div><p>Which developers have published the most games?</p></article>
+                <article class="question-card"><div class="q-number">Question 07</div><p>Which developers command the highest average game prices?</p></article>
             </div>
         </section>
 
@@ -383,7 +383,7 @@
                         </div>
                         <div class="tag-row">
                             <span class="tag">Dominance is heavily concentrated</span>
-                            <span class="tag">Legacy esports titles remain resilient</span>
+                            <span class="tag">Both new and established titles can dominate</span>
                         </div>
                     </div>
                     <a class="analysis-figure" href="html_charts/1_steam_games_by_popularity.html">
@@ -400,8 +400,8 @@
                         <p class="analysis-copy">Compared top free-to-play and paid titles, then merged them into a combined ranking with average metrics.</p>
                         <ul class="analysis-list">
                             <li>Top 15 free-to-play and top 15 paid extracted separately.</li>
-                            <li>Built a combined top-30 ranking.</li>
-                            <li>Computed average player counts by business model.</li>
+                            <li>Pie chart compares the two pricing models.</li>
+                            <li>Determined average player counts by business model.</li>
                         </ul>
                         <div class="link-row">
                             <a href="sql/2_ftp_vs_ptp_games.sql">View SQL</a>
@@ -409,13 +409,13 @@
                         </div>
                         <div class="tag-row">
                             <span class="tag">Entry barrier strongly impacts scale</span>
-                            <span class="tag">Paid titles still perform at high levels</span>
+                            <span class="tag">Paid titles hold majority share overall</span>
                         </div>
                     </div>
                     <a class="analysis-figure" href="html_charts/2_top_free_vs_paid.html">
                         <figure>
                             <img src="images/2D_ftp_vs_ptp.png" alt="Free-to-play vs paid comparison chart" />
-                            <figcaption>Average players by pricing model</figcaption>
+                            <figcaption>Total concurrent player share by pricing model</figcaption>
                         </figure>
                     </a>
                 </article>
@@ -449,25 +449,25 @@
                 <article class="analysis-card">
                     <div>
                         <h3 class="analysis-title">4. Game Release Trends</h3>
-                        <p class="analysis-copy">Measured release counts per year and highlighted the top performers from the peak release year.</p>
+                        <p class="analysis-copy">Summed total concurrent player count by release year and calculated year-over-year percent change.</p>
                         <ul class="analysis-list">
-                            <li>Counted games released in each year.</li>
-                            <li>Identified the highest-output year.</li>
-                            <li>Listed top 2025 titles by player count.</li>
+                            <li>Filtered out records with no release date.</li>
+                            <li>Summed total player count per release year.</li>
+                            <li>Calculated year-over-year percent change.</li>
                         </ul>
                         <div class="link-row">
                             <a href="sql/4_year_with_most_game_releases.sql">View SQL</a>
                             <a href="html_charts/4_game_release_trends.html">View Interactive Chart</a>
                         </div>
                         <div class="tag-row">
-                            <span class="tag">Competition for discovery is rising</span>
-                            <span class="tag">Launch strategy is now critical</span>
+                            <span class="tag">A few flagship titles skew yearly totals</span>
+                            <span class="tag">2025 shows a strong rebound</span>
                         </div>
                     </div>
                     <a class="analysis-figure" href="html_charts/4_game_release_trends.html">
                         <figure>
-                            <img src="images/4A_game_release_count_each_year.png" alt="Game releases by year chart" />
-                            <figcaption>Release counts across years</figcaption>
+                            <img src="images/4_player_count_by_release_year.png" alt="Total player count by release year chart" />
+                            <figcaption>Total player count by release year</figcaption>
                         </figure>
                     </a>
                 </article>
@@ -518,7 +518,7 @@
                     </div>
                     <a class="analysis-figure" href="html_charts/6_most_reviewed_games.html">
                         <figure>
-                            <img src="images/6B_sorted_by_review_score.png" alt="Most reviewed games chart" />
+                            <img src="images/6A_most_reviewed_games.png" alt="Most reviewed games chart" />
                             <figcaption>Review quality within top-volume titles</figcaption>
                         </figure>
                     </a>
@@ -526,26 +526,26 @@
 
                 <article class="analysis-card">
                     <div>
-                        <h3 class="analysis-title">7. Game Count by Developer</h3>
-                        <p class="analysis-copy">Ranked developers by number of published games to examine volume-based release strategy.</p>
+                        <h3 class="analysis-title">7. Game Price by Developer</h3>
+                        <p class="analysis-copy">Ranked the top 25 developers by average game price.</p>
                         <ul class="analysis-list">
-                            <li>Filtered out records without developer metadata.</li>
-                            <li>Counted total titles per developer.</li>
-                            <li>Compared catalog-size strategy across publishers.</li>
+                            <li>Filtered out records without developer or price metadata.</li>
+                            <li>Averaged game price per developer.</li>
+                            <li>Compared premium pricing across studios.</li>
                         </ul>
                         <div class="link-row">
-                            <a href="sql/7_game_count_by_developer.sql">View SQL</a>
-                            <a href="html_charts/7_game_count_by_dev.html">View Interactive Chart</a>
+                            <a href="sql/7_game_price_by_developer.sql">View SQL</a>
+                            <a href="html_charts/7_game_price_by_dev.html">View Interactive Chart</a>
                         </div>
                         <div class="tag-row">
-                            <span class="tag">Catalog size does not guarantee player scale</span>
-                            <span class="tag">Volume and blockbuster strategies differ</span>
+                            <span class="tag">Top averages often reflect few flagship titles</span>
+                            <span class="tag">Sustained premium pricing is rare</span>
                         </div>
                     </div>
-                    <a class="analysis-figure" href="html_charts/7_game_count_by_dev.html">
+                    <a class="analysis-figure" href="html_charts/7_game_price_by_dev.html">
                         <figure>
-                            <img src="images/7_game_count_by_dev.png" alt="Game count by developer chart" />
-                            <figcaption>Top developers by number of titles</figcaption>
+                            <img src="images/7_game_price_by_dev.png" alt="Average game price by developer chart" />
+                            <figcaption>Top developers by average game price</figcaption>
                         </figure>
                     </a>
                 </article>
@@ -557,7 +557,7 @@
             <div class="recommendations">
                 <article class="recommendation-item">
                     <h3>Pricing and Monetization</h3>
-                    <p>Free-to-play remains the dominant model for reaching very high concurrent player counts. Premium pricing can still succeed when paired with strong value signals, community trust, and market positioning.</p>
+                    <p>Free-to-play remains the dominant model for reaching very high per-title concurrent player counts, though paid titles collectively hold the majority share of total concurrent players platform-wide due to their sheer volume. Premium pricing can still succeed when paired with strong value signals, community trust, and market positioning.</p>
                 </article>
                 <article class="recommendation-item">
                     <h3>Genre and Positioning</h3>
@@ -572,8 +572,8 @@
                     <p>Review count indicates reach, while positive review score indicates player satisfaction. Titles strong in both are the clearest benchmark for long-term performance.</p>
                 </article>
                 <article class="recommendation-item">
-                    <h3>Developer Portfolio Strategy</h3>
-                    <p>Volume publishing increases catalog presence, while focused development can raise per-title quality and engagement. Portfolio strategy should align with team strengths and capital runway.</p>
+                    <h3>Developer Pricing Strategy</h3>
+                    <p>Premium average prices at the top of the developer list are often driven by a single flagship release rather than catalog-wide pricing power, while studios like KOEI TECMO GAMES CO., LTD. show sustained premium pricing across multiple titles is possible, but rare.</p>
                 </article>
             </div>
         </section>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Release Trends & Top 2025 Games</title>
+    <title>Player Count by Release Year</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <style>
@@ -64,44 +64,6 @@
             font-style: italic;
         }
 
-        .tab-bar {
-            display: flex;
-            gap: 4px;
-            margin-bottom: 24px;
-            border-bottom: 1px solid #2a2a2a;
-        }
-
-        .tab-btn {
-            background: transparent;
-            border: none;
-            border-bottom: 2px solid transparent;
-            color: #8a8a8a;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.82em;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            padding: 10px 16px;
-            cursor: pointer;
-            transition: color 0.2s ease, border-color 0.2s ease;
-        }
-
-        .tab-btn:hover {
-            color: #ffffff;
-        }
-
-        .tab-btn.active {
-            color: #ffffff;
-            border-bottom-color: #ffffff;
-        }
-
-        .tab-panel {
-            display: none;
-        }
-
-        .tab-panel.active {
-            display: block;
-        }
-
         .chart-header {
             display: flex;
             align-items: center;
@@ -117,6 +79,27 @@
             font-weight: 600;
             letter-spacing: 0.5px;
             color: #f2f2f2;
+        }
+
+        .legend-note {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .legend-note span {
+            font-size: 0.75em;
+            color: #8a8a8a;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .legend-note .swatch {
+            width: 10px;
+            height: 10px;
+            border-radius: 2px;
+            display: inline-block;
         }
 
         .stats-row {
@@ -186,33 +169,22 @@
     <div class="container">
         <div class="header">
             <div class="eyebrow">Steam Platform · Release Analysis</div>
-            <h1>Release Trends &amp; Top 2025 Games</h1>
-            <p>Yearly release volume and standout new releases</p>
+            <h1>Player Count by Release Year</h1>
+            <p>Total concurrent players by release year and year-over-year percent change</p>
         </div>
 
-        <div class="tab-bar" role="tablist" aria-label="Chart selector">
-            <button class="tab-btn active" data-tab="releases">Release Count by Year</button>
-            <button class="tab-btn" data-tab="top2025">Top Games of 2025</button>
-        </div>
-
-        <div class="tab-panel active" data-panel="releases">
-            <div class="chart-header">
-                <h2>Games Released by Year</h2>
-            </div>
-            <div class="stats-row" id="statsRowReleases"></div>
-            <div class="chart-wrap">
-                <canvas id="releaseChart"></canvas>
+        <div class="chart-header">
+            <h2>Total Player Count vs Percent Change</h2>
+            <div class="legend-note">
+                <span><span class="swatch" style="background:#c9c9c9"></span>Total Player Count</span>
+                <span><span class="swatch" style="background:#ff9f40"></span>Percent Change</span>
             </div>
         </div>
 
-        <div class="tab-panel" data-panel="top2025">
-            <div class="chart-header">
-                <h2>Player Count by 2025 Release</h2>
-            </div>
-            <div class="stats-row" id="statsRowTop2025"></div>
-            <div class="chart-wrap" id="chartWrapTop2025">
-                <canvas id="top2025Chart"></canvas>
-            </div>
+        <div class="stats-row" id="statsRow"></div>
+
+        <div class="chart-wrap">
+            <canvas id="trendChart"></canvas>
         </div>
 
         <footer>Data sourced from the Steam Web API. Only the top 1000 games/apps by concurrent player count in Late July 2026 were included into this dataset.</footer>
@@ -220,238 +192,128 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
     <script>
-        // ---- Release Count by Year module ----
-        const releasesModule = (function () {
-            const yearData = [
-                { year: 1998, gameCount: 1 },
-                { year: 2000, gameCount: 1 },
-                { year: 2004, gameCount: 3 },
-                { year: 2005, gameCount: 1 },
-                { year: 2006, gameCount: 4 },
-                { year: 2007, gameCount: 3 },
-                { year: 2008, gameCount: 2 },
-                { year: 2009, gameCount: 7 },
-                { year: 2010, gameCount: 7 },
-                { year: 2011, gameCount: 9 },
-                { year: 2012, gameCount: 21 },
-                { year: 2013, gameCount: 20 },
-                { year: 2014, gameCount: 22 },
-                { year: 2015, gameCount: 35 },
-                { year: 2016, gameCount: 45 },
-                { year: 2017, gameCount: 46 },
-                { year: 2018, gameCount: 49 },
-                { year: 2019, gameCount: 47 },
-                { year: 2020, gameCount: 72 },
-                { year: 2021, gameCount: 67 },
-                { year: 2022, gameCount: 68 },
-                { year: 2023, gameCount: 84 },
-                { year: 2024, gameCount: 122 },
-                { year: 2025, gameCount: 151 },
-                { year: 2026, gameCount: 106 }
-            ];
+        const yearData = [
+            { year: 1998, playerCount: 1085, change: null },
+            { year: 2000, playerCount: 11820, change: 989.4 },
+            { year: 2004, playerCount: 6366, change: -46.14 },
+            { year: 2005, playerCount: 1563, change: -75.45 },
+            { year: 2006, playerCount: 42101, change: 2593.6 },
+            { year: 2007, playerCount: 61746, change: 46.66 },
+            { year: 2008, playerCount: 1566, change: -97.46 },
+            { year: 2009, playerCount: 30708, change: 1860.92 },
+            { year: 2010, playerCount: 32138, change: 4.66 },
+            { year: 2011, playerCount: 39289, change: 22.25 },
+            { year: 2012, playerCount: 83302, change: 112.02 },
+            { year: 2013, playerCount: 941364, change: 1030.06 },
+            { year: 2014, playerCount: 209684, change: -77.73 },
+            { year: 2015, playerCount: 333463, change: 59.03 },
+            { year: 2016, playerCount: 371563, change: 11.43 },
+            { year: 2017, playerCount: 501647, change: 35.01 },
+            { year: 2018, playerCount: 435420, change: -13.2 },
+            { year: 2019, playerCount: 215040, change: -50.61 },
+            { year: 2020, playerCount: 457092, change: 112.56 },
+            { year: 2021, playerCount: 266529, change: -41.69 },
+            { year: 2022, playerCount: 328745, change: 23.34 },
+            { year: 2023, playerCount: 1534674, change: 366.83 },
+            { year: 2024, playerCount: 676727, change: -55.9 },
+            { year: 2025, playerCount: 1051643, change: 55.4 }
+        ];
 
-            const statsRow = document.getElementById('statsRowReleases');
-            const ctx = document.getElementById('releaseChart');
+        const peak = [...yearData].sort((a, b) => b.playerCount - a.playerCount)[0];
+        const latest = yearData[yearData.length - 1];
+        const total = yearData.reduce((sum, item) => sum + item.playerCount, 0);
+        const avg = total / yearData.length;
 
-            const peak = [...yearData].sort((a, b) => b.gameCount - a.gameCount)[0];
-            const total = yearData.reduce((sum, item) => sum + item.gameCount, 0);
-            const avg = total / yearData.length;
+        document.getElementById('statsRow').innerHTML = `
+            <div class="stat">
+                <div class="stat-label">Peak Year</div>
+                <div class="stat-value">${peak.year}</div>
+                <div class="stat-meta">${peak.playerCount.toLocaleString()} players</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Latest Year</div>
+                <div class="stat-value">${latest.playerCount.toLocaleString()}</div>
+                <div class="stat-meta">${latest.year} · ${latest.change > 0 ? '+' : ''}${latest.change}% YoY</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Average per Year</div>
+                <div class="stat-value">${Math.round(avg).toLocaleString()}</div>
+                <div class="stat-meta">across tracked years</div>
+            </div>
+        `;
 
-            statsRow.innerHTML = `
-                <div class="stat">
-                    <div class="stat-label">Peak Year</div>
-                    <div class="stat-value">${peak.year}</div>
-                    <div class="stat-meta">${peak.gameCount} games released</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-label">Total Releases</div>
-                    <div class="stat-value">${total.toLocaleString()}</div>
-                    <div class="stat-meta">across tracked years</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-label">Average per Year</div>
-                    <div class="stat-value">${avg.toFixed(1)}</div>
-                    <div class="stat-meta">games released</div>
-                </div>
-            `;
-
-            return {
-                init() {
-                    new Chart(ctx, {
+        new Chart(document.getElementById('trendChart'), {
+            data: {
+                labels: yearData.map(item => item.year),
+                datasets: [
+                    {
                         type: 'bar',
-                        data: {
-                            labels: yearData.map(item => item.year),
-                            datasets: [{
-                                label: 'Games Released',
-                                data: yearData.map(item => item.gameCount),
-                                backgroundColor: '#c9c9c9',
-                                hoverBackgroundColor: '#ffffff',
-                                borderRadius: 4,
-                                maxBarThickness: 26
-                            }]
-                        },
-                        options: {
-                            responsive: true,
-                            maintainAspectRatio: false,
-                            animation: { duration: 900, easing: 'easeOutQuart' },
-                            plugins: {
-                                legend: { display: false },
-                                tooltip: {
-                                    backgroundColor: '#1a1a1a',
-                                    titleColor: '#ffffff',
-                                    bodyColor: '#c9c9c9',
-                                    borderColor: '#3a3a3a',
-                                    borderWidth: 1,
-                                    bodyFont: { family: 'JetBrains Mono' },
-                                    titleFont: { family: 'Inter', weight: '600' },
-                                    callbacks: {
-                                        label: function (context) {
-                                            return `Games Released: ${context.parsed.y}`;
-                                        }
-                                    }
-                                }
-                            },
-                            scales: {
-                                x: {
-                                    ticks: { color: '#8a8a8a', font: { family: 'JetBrains Mono' } },
-                                    grid: { display: false }
-                                },
-                                y: {
-                                    beginAtZero: true,
-                                    ticks: { color: '#8a8a8a', font: { family: 'JetBrains Mono' } },
-                                    grid: { color: 'rgba(255,255,255,0.06)' }
-                                }
-                            }
-                        }
-                    });
-                }
-            };
-        })();
-
-        // ---- Top Games of 2025 module ----
-        const top2025Module = (function () {
-            const gameData = [
-                { name: 'Bongo Cat', playerCount: 161822 },
-                { name: 'EA SPORTS FC 26', playerCount: 126730 },
-                { name: 'Grand Theft Auto V Enhanced', playerCount: 80142 },
-                { name: 'Battlefield 6', playerCount: 43836 },
-                { name: 'Football Manager 26', playerCount: 42516 },
-                { name: 'ARC Raiders', playerCount: 37500 },
-                { name: 'Arena Breakout: Infinite', playerCount: 31895 },
-                { name: 'R.E.P.O.', playerCount: 30019 },
-                { name: 'Escape from Tarkov', playerCount: 21235 },
-                { name: 'Kingdom Come: Deliverance II', playerCount: 18765 },
-                { name: 'NBA 2K26', playerCount: 17763 },
-                { name: 'Wuthering Waves', playerCount: 16659 },
-                { name: 'PEAK', playerCount: 14584 },
-                { name: 'ELDEN RING NIGHTREIGN', playerCount: 14035 },
-                { name: 'Where Winds Meet', playerCount: 13257 }
-            ];
-
-            const statsRow = document.getElementById('statsRowTop2025');
-            const chartWrap = document.getElementById('chartWrapTop2025');
-            const ctx = document.getElementById('top2025Chart');
-
-            const data = [...gameData].sort((a, b) => b.playerCount - a.playerCount);
-            const top = data[0];
-            const total = data.reduce((sum, item) => sum + item.playerCount, 0);
-            const avg = total / data.length;
-
-            let chart;
-
-            return {
-                init() {
-                    if (chart) {
-                        return;
+                        label: 'Total Player Count',
+                        data: yearData.map(item => item.playerCount),
+                        backgroundColor: '#c9c9c9',
+                        hoverBackgroundColor: '#e8e8e8',
+                        borderRadius: 4,
+                        maxBarThickness: 26,
+                        yAxisID: 'y'
+                    },
+                    {
+                        type: 'line',
+                        label: 'Percent Change',
+                        data: yearData.map(item => item.change),
+                        borderColor: '#ff9f40',
+                        backgroundColor: '#ff9f40',
+                        pointRadius: 3,
+                        pointBackgroundColor: '#ff9f40',
+                        borderWidth: 2,
+                        tension: 0.3,
+                        spanGaps: true,
+                        yAxisID: 'y1'
                     }
-
-                    statsRow.innerHTML = `
-                        <div class="stat">
-                            <div class="stat-label">Most Played 2025 Release</div>
-                            <div class="stat-value">${top.name}</div>
-                            <div class="stat-meta">${top.playerCount.toLocaleString()} players</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-label">Games Tracked</div>
-                            <div class="stat-value">${data.length}</div>
-                            <div class="stat-meta">in current view</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-label">Average Players</div>
-                            <div class="stat-value">${Math.round(avg).toLocaleString()}</div>
-                            <div class="stat-meta">per game</div>
-                        </div>
-                    `;
-
-                    chartWrap.style.height = Math.max(360, data.length * 34 + 60) + 'px';
-
-                    chart = new Chart(ctx, {
-                        type: 'bar',
-                        data: {
-                            labels: data.map(item => item.name),
-                            datasets: [{
-                                label: 'Player Count',
-                                data: data.map(item => item.playerCount),
-                                backgroundColor: '#c9c9c9',
-                                hoverBackgroundColor: '#ffffff',
-                                borderRadius: 6,
-                                maxBarThickness: 22
-                            }]
-                        },
-                        options: {
-                            indexAxis: 'y',
-                            responsive: true,
-                            maintainAspectRatio: false,
-                            animation: { duration: 900, easing: 'easeOutQuart' },
-                            plugins: {
-                                legend: { display: false },
-                                tooltip: {
-                                    backgroundColor: '#1a1a1a',
-                                    titleColor: '#ffffff',
-                                    bodyColor: '#c9c9c9',
-                                    borderColor: '#3a3a3a',
-                                    borderWidth: 1,
-                                    bodyFont: { family: 'JetBrains Mono' },
-                                    titleFont: { family: 'Inter', weight: '600' },
-                                    callbacks: {
-                                        label: function (context) {
-                                            const item = data[context.dataIndex];
-                                            return `Players: ${item.playerCount.toLocaleString()}`;
-                                        }
-                                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: { duration: 900, easing: 'easeOutQuart' },
+                interaction: { mode: 'index', intersect: false },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: '#1a1a1a',
+                        titleColor: '#ffffff',
+                        bodyColor: '#c9c9c9',
+                        borderColor: '#3a3a3a',
+                        borderWidth: 1,
+                        bodyFont: { family: 'JetBrains Mono' },
+                        titleFont: { family: 'Inter', weight: '600' },
+                        callbacks: {
+                            label: function (context) {
+                                if (context.dataset.label === 'Total Player Count') {
+                                    return `Total Player Count: ${context.parsed.y.toLocaleString()}`;
                                 }
-                            },
-                            scales: {
-                                x: {
-                                    beginAtZero: true,
-                                    ticks: { color: '#8a8a8a', font: { family: 'JetBrains Mono' }, callback: value => value.toLocaleString() },
-                                    grid: { color: 'rgba(255,255,255,0.06)' }
-                                },
-                                y: {
-                                    ticks: { color: '#d4d4d4', font: { family: 'Inter' } },
-                                    grid: { display: false }
-                                }
+                                return context.parsed.y === null ? 'Percent Change: n/a' : `Percent Change: ${context.parsed.y > 0 ? '+' : ''}${context.parsed.y}%`;
                             }
                         }
-                    });
+                    }
+                },
+                scales: {
+                    x: {
+                        ticks: { color: '#8a8a8a', font: { family: 'JetBrains Mono' } },
+                        grid: { display: false }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        position: 'left',
+                        ticks: { color: '#8a8a8a', font: { family: 'JetBrains Mono' }, callback: value => value.toLocaleString() },
+                        grid: { color: 'rgba(255,255,255,0.06)' }
+                    },
+                    y1: {
+                        position: 'right',
+                        ticks: { color: '#8a8a8a', font: { family: 'JetBrains Mono' }, callback: value => value + '%' },
+                        grid: { display: false }
+                    }
                 }
-            };
-        })();
-
-        // ---- Tab switching ----
-        releasesModule.init();
-        let top2025Initialized = false;
-
-        document.querySelectorAll('.tab-bar .tab-btn').forEach(button => {
-            button.addEventListener('click', () => {
-                document.querySelectorAll('.tab-bar .tab-btn').forEach(b => b.classList.toggle('active', b === button));
-                document.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('active', p.dataset.panel === button.dataset.tab));
-
-                if (button.dataset.tab === 'top2025' && !top2025Initialized) {
-                    top2025Module.init();
-                    top2025Initialized = true;
-                }
-            });
+            }
         });
     </script>
 </body>

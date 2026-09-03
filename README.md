@@ -1,7 +1,7 @@
 # 📊 Steam Database Analysis
 
 ## 🎯 Overview
-Analysis of my steam dataset from the Steam Web API examining game popularity, pricing trends, genre performance, and developer output to understand what drives success on the platform.
+Analysis of my steam dataset from the Steam Web API examining game popularity, pricing trends, genre performance, and developer pricing to understand what drives success on the platform.
 
 It is important to remember that only the top 1,000 titles on Steam by concurrent player count were collected for this dataset.
 
@@ -15,12 +15,12 @@ Out of the current top 1000 titles:
 4. **Release Trends:** When were the most games released, and which recent titles are performing best?
 5. **Pricing Over Time:** How have game prices changed from year to year?
 6. **Review Performance:** Which games are the most reviewed and best rated?
-7. **Developer Output:** Which developers have published the most games?
+7. **Developer Pricing:** Which developers command the highest average game prices?
 
 ## 🛠️ Analysis Approach
 
 ### 1. Steam Games by Popularity
-- Ranked all games on Steam by their concurrent player count (Late-July of 2026)
+- Ranked all games in the dataset by their concurrent player count (Late-July of 2026)
 - Filtered out entries with no player count data
 - Returned the top 25 most-played games on the platform
 
@@ -36,18 +36,18 @@ Query: [1_steam_games_by_popularity.sql](sql/1_steam_games_by_popularity.sql)
 
 - A small handful of titles completely dominate player counts; the top games surpass the majority of the list by a wide margin.
 - Free-to-play games seem to be heavily represented, suggesting that the price barrier possibly plays a major role in peak player counts.
-- Legacy titles like Counter-Strike 2 and Dota 2 still hold dominant positions despite being older titles (1998 and 2013), showing the strength of established competitive games.
+- Counter-Strike 2 (a 2023 release) and Dota 2 (2013, a long-established title) both hold dominant positions at the top of the list, showing that both a recently refreshed title and a legacy competitive game can command massive concurrent player counts.
 
 **Business Insights**
 - New releases face a steep climb to reach popularity. Marketing and community-building from launch day are critical; Palworld seems to have succeeded from this, launching near the collection of this dataset and still maintaining most players the following month.
-- The longevity of top titles suggests that live-service features, consistent content updates, and competitive ecosystems are the most reliable path to sustained player counts.
+- The strength of Counter-Strike 2 and Dota 2 suggests that live-service features, consistent content updates, and competitive ecosystems are the most reliable path to sustained player counts, whether a title is new or long-established.
 
 ---
 
 ### 2. Free-to-Play vs. Paid Games
 - Pulled the top 15 free-to-play and top 15 paid games by player count
-- Combined both sets into a single ranked comparison of 30 games
 - Calculated average player counts for each pricing model
+- Gathered all player counts into a pie chart based on the games pricing model
 
 Query: [2_ftp_vs_ptp_games.sql](sql/2_ftp_vs_ptp_games.sql)
 
@@ -55,20 +55,20 @@ Query: [2_ftp_vs_ptp_games.sql](sql/2_ftp_vs_ptp_games.sql)
 
 ![2A_top_15_ftp.png](images/2A_top_15_ftp.png)
 ![2B_top_15_ptp.png](images/2B_top_15_ptp.png)
-![2C_top_30.png](images/2C_top_30.png)
 ![2D_ftp_vs_ptp.png](images/2D_ftp_vs_ptp.png)
 
 [View Interactive Chart...](html_charts/2_top_free_vs_paid.html)
 
 **Key Findings**
 
-- Free-to-play titles account for the majority of the highest player counts in the combined top-30 list.
-- The top paid games still attract massive audiences, but their numbers are lower than the leading free titles.
-- The average player count for free-to-play games is significantly higher than for paid games, likely due to the low entry barrier.
+- Paid games actually hold the majority share of total concurrent players platform-wide (57.19% vs. 42.81% for free-to-play), making paid purchases the overall winner by total player count.
+- Free-to-play titles still hold a higher average player count per title, and dominate the very top of the concurrent player list — a small number of massive free-to-play hits pull outsized numbers.
+- The top paid games still attract massive audiences, but their peak numbers are lower than the leading free titles.
 
 **Business Insights**
-- For developers aiming for a high concurrent player count, a free-to-play model with in-game monetization is clearly the more dominant approach.
-- Paid games can still succeed at scale, but they tend to rely on strong brand recognition, franchise reception, or strong audience loyalty.
+- Paid purchases command the larger overall share of concurrent players on Steam, driven by the sheer volume of paid titles on the platform rather than any single blockbuster.
+- Free-to-play is still the stronger model for a single title chasing the highest possible per-title concurrent player count, since the low entry barrier concentrates players into fewer, massive hits.
+- Paid games can still succeed, but they tend to rely on strong brand recognition, franchise reception, or strong audience loyalty.
 
 ---
 
@@ -92,35 +92,34 @@ Query: [3_most_played_genres.sql](sql/3_most_played_genres.sql)
 - Niche genres such as Game Development and Video Production trail significantly behind, confirming that genre choice has a meaningful impact on potential audience size.
 
 **Business Insights**
-- Developers targeting the widest possible audience should prioritize genres with proven mass appeal, particularly Action or Strategy.
-- As proven before, a Free-To-Play title is a guaranteed way to pull players; Launching a title in Early Access can also make players feel more special and seek a way to play.
+- Developers targeting the widest possible audience should prioritize genres with proven mass appeal, particularly RPG or Strategy.
+- The chart proves a Free-To-Play title is a guaranteed way to pull players; Launching a title in Early Access can also make players feel more special and seek a way to play.
 - Niche genres can still be commercially viable but require targeted marketing rather than relying on broad discoverability. A strong reliable brand known for titles like these wouldn't need to worry.
 
 ---
 
 ### 4. Game Release Trends
-- Counted the number of games released each year
-- Identified the peak year for new releases
-- Pulled the top 15 most-played games released in 2025 (leading year)
+- Summed total concurrent player count for games grouped by release year
+- Filtered out entries with no release date
+- Calculated year-over-year percent change in total player count from 1998 through 2025
 
 Query: [4_year_with_most_game_releases.sql](sql/4_year_with_most_game_releases.sql)
 
-**Visualizations:**
+**Visualization:**
 
-![4A_game_release_count_each_year.png](images/4A_game_release_count_each_year.png)
-![4B_top_games_2025.png](images/4B_top_games_2025.png)
+![4_player_count_by_release_year.png](images\4_player_count_by_release_year.png)
 
 [View Interactive Chart...](html_charts/4_game_release_trends.html)
 
 **Key Findings**
 
-- Top Game releases on Steam have grown dramatically over each year, with recent years hitting record highs in new titles published.
-- The sheer volume of new releases means individual games face more competition for visibility than ever before.
-- Among 2025 releases, a small number of titles show high player counts, succeeding to hold a dedicated community of players.
+- 2013 and 2023 stand out as massive outlier years in total player count, each driven almost entirely by a single flagship title: Dota 2's 2013 release and Counter-Strike 2's 2023 release each carry the vast majority of their year's total on their own.
+- Outside of those two spikes, yearly totals stay comparatively modest through the mid-2010s and early 2020s, since no other single release has matched the scale of those two titles.
+- 2025 marks a strong rebound, pushed by newer breakout hits like Bongo Cat and EA Sports FC 26, showing that recent releases can still command serious concurrent player counts even without unseating the top two years.
 
 **Business Insights**
-- The growing flood of new releases makes discoverability quite the challenge; launch-day wishlists and early community building are more important than ever.
-- Standing out in an oversaturated catalog requires a clear difference in genre, art style, gameplay, or marketing approach.
+- Total player count by release year is heavily skewed by a handful of blockbuster titles, so year-over-year swings say more about a couple of games' individual performance than the industry's overall release health.
+- Recent years (2024-2025) show a renewed ability for new releases to draw large audiences, suggesting strong launches are still very achievable despite an increasingly crowded catalog.
 
 ---
 
@@ -156,10 +155,9 @@ Query: [5_game_prices_by_year.sql](sql/5_game_prices_by_year.sql)
 
 Query: [6_most_reviewed_games.sql](sql/6_most_reviewed_games.sql)
 
-**Visualizations:**
+**Visualization:**
 
 ![6A_most_reviewed_games.png](images/6A_most_reviewed_games.png)
-![6B_sorted_by_review_score.png](images/6B_sorted_by_review_score.png)
 
 [View Interactive Chart...](html_charts/6_most_reviewed_games.html)
 
@@ -172,38 +170,40 @@ Query: [6_most_reviewed_games.sql](sql/6_most_reviewed_games.sql)
 **Business Insights**
 - Review score and review volume are distinct signals. High volume indicates reach; high positive score indicates quality perception.
 - Games with both high volume and high positive scores represent the industry gold standard and are the clearest models for long-term success.
-- A game with many reviews but a mediocre positive score signals a reachable but dissatisfied audience — a potential opportunity for a competitor that addresses the gap.
+- A game with many reviews but a mediocre positive score signals a reachable but dissatisfied audience; a potential opportunity for a competitor that addresses the gap.
 
 ---
 
-### 7. Game Count by Developer
-- Ranked the top 15 developers by total number of games published on Steam
-- Filtered out entries with no developer data
+### 7. Game Price by Developer
+- Ranked the top 25 developers by average game price
+- Filtered out entries with no developer or price data
 
-Query: [7_game_count_by_developer.sql](sql/7_game_count_by_developer.sql)
+Query: [7_game_price_by_developer.sql](sql/7_game_price_by_developer.sql)
 
 **Visualization:**
 
-![7_game_count_by_dev.png](images/7_game_count_by_dev.png)
+![7_game_price_by_dev.png](images/7_game_price_by_dev.png)
 
-[View Interactive Chart...](html_charts/7_game_count_by_dev.html)
+[View Interactive Chart...](html_charts/7_game_price_by_dev.html)
 
 **Key Findings**
 
-- The top developers by game count are prolific studios that publish a high volume of titles rather than focusing on a single blockbuster.
-- High game counts don't necessarily translate to high player counts — volume-based publishing is a distinct strategy from blockbuster development.
-- Some well-known major studios appear far lower on this list than smaller, more prolific publishers, highlighting different approaches to the market.
+- EA Canada and Bandai Namco Studios top the list with average prices near $90 and $80, well above the rest of the field.
+- Most of the top-tier developers (in the $65-$70 range) are only tied to a few flagship titles in this dataset, so their average reflects fewer premium releases rather than a sustained studio-wide pricing strategy.
+- KOEI TECMO GAMES CO., LTD. is the only developer in that upper tier with multiple titles (5 games) still averaging over $60, a rare case of a prolific studio holding premium pricing across its catalog.
 
 **Business Insights**
-- A volume strategy can build catalog presence and capture niche audiences across many titles, but each individual title competes for a smaller slice of attention.
-- Focusing resources on fewer, higher-quality titles may yield better per-game player counts and review scores, even if overall catalog size is smaller.
+- High average prices at the top of this list are mostly a reflection of individual AAA releases, not proof that a developer can command premium pricing across their whole catalog.
+- Developers with multiple titles that still sustain a high average price, like KOEI TECMO, show that premium pricing can work as a repeatable strategy rather than a one-off success.
+- For developers building a pricing strategy, a single high-profile flagship title can anchor perception, but consistent premium pricing across a catalog requires proven, repeatable quality.
 
 ---
 
 ## 🚀 Strategic Recommendations
 
 1. **Pricing & Monetization**
-   - Free-to-play is the dominant model for maximizing player acquisition. Developers targeting peak concurrent players should evaluate this model thoroughly.
+   - Free-to-play is the dominant model for maximizing per-title player acquisition. Developers targeting peak concurrent players should evaluate this model thoroughly.
+   - Paid titles still command the majority of total concurrent players platform-wide due to sheer volume, so a paid model remains a viable path when paired with strong brand recognition or franchise reception.
    - For paid titles, the market has gradually moved toward accepting higher price points — premium pricing is viable for games with strong quality signals and marketing.
 
 2. **Genre & Market Positioning**
@@ -218,8 +218,9 @@ Query: [7_game_count_by_developer.sql](sql/7_game_count_by_developer.sql)
    - Positive review scores above 90% are achievable even for indie games. Quality and player satisfaction remain important factors after a game's launch.
    - Games with large review volumes but low scores represent market gaps where a well-executed competitor could capture a dissatisfied audience.
 
-5. **Developer Strategy**
-   - Volume publishing builds catalog presence but dilutes per-title investment. Focused development on fewer titles tends to produce better individual performance metrics.
+5. **Developer Pricing Strategy**
+   - Premium average prices at the top of the developer list are often driven by a single flagship release rather than catalog-wide pricing power; developers shouldn't assume one high-profile title proves broader pricing strength.
+   - Studios like KOEI TECMO GAMES CO., LTD. show that sustaining a premium average price across multiple titles is possible, but rare, and requires consistent quality across a catalog.
 
 
 ## What Makes a Steam Title Special?
