@@ -15,7 +15,7 @@ A summary of the analysis can be seen here: https://langstonstewart.github.io/St
 
 [steam_db_dashboard.xlsx](steam_db_dashboard.xlsx) brings the Steam analysis into a filterable Excel dashboard. It ranks the most popular games by concurrent player count and updates key popularity, pricing, and player-count metrics for the selected games.
 
-![Steam Dataset Analytics Dashboard](Images/dashboard/main_dashboard.gif)
+![Steam Dataset Analytics Dashboard](images/dashboard/main_dashboard.gif)
 
 ### Dashboard Controls
 
