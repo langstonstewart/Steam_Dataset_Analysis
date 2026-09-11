@@ -45,7 +45,7 @@ Query: [1_steam_games_by_popularity.sql](sql/1_steam_games_by_popularity.sql)
 
 **Visualization:**
 
-![1_steam_games_by_popularity.png](Images/charts/1_steam_games_by_popularity.png)
+![1_steam_games_by_popularity.png](images/charts/1_steam_games_by_popularity.png)
 
 [View Interactive Chart...](html_charts/1_steam_games_by_popularity.html)
 
@@ -70,9 +70,9 @@ Query: [2_ftp_vs_ptp_games.sql](sql/2_ftp_vs_ptp_games.sql)
 
 **Visualizations:**
 
-![2A_top_15_ftp.png](Images/charts/2A_top_15_ftp.png)
-![2B_top_15_ptp.png](Images/charts/2B_top_15_ptp.png)
-![2D_ftp_vs_ptp.png](Images/charts/2D_ftp_vs_ptp.png)
+![2A_top_15_ftp.png](images/charts/2A_top_15_ftp.png)
+![2B_top_15_ptp.png](images/charts/2B_top_15_ptp.png)
+![2D_ftp_vs_ptp.png](images/charts/2D_ftp_vs_ptp.png)
 
 [View Interactive Chart...](html_charts/2_top_free_vs_paid.html)
 
@@ -98,7 +98,7 @@ Query: [3_most_played_genres.sql](sql/3_most_played_genres.sql)
 
 **Visualization:**
 
-![3_genre_popularity.png](Images/charts/3_genre_popularity.png)
+![3_genre_popularity.png](images/charts/3_genre_popularity.png)
 
 [View Interactive Chart...](html_charts/3_genre_popularity.html)
 
@@ -149,7 +149,7 @@ Query: [5_game_prices_by_year.sql](sql/5_game_prices_by_year.sql)
 
 **Visualization:**
 
-![5_game_prices_by_year.png](Images/charts/5_game_prices_by_year.png)
+![5_game_prices_by_year.png](images/charts/5_game_prices_by_year.png)
 
 [View Interactive Chart...](html_charts/5_game_prices_by_year.html)
 
@@ -174,7 +174,7 @@ Query: [6_most_reviewed_games.sql](sql/6_most_reviewed_games.sql)
 
 **Visualization:**
 
-![6A_most_reviewed_games.png](Images/charts/6A_most_reviewed_games.png)
+![6A_most_reviewed_games.png](images/charts/6A_most_reviewed_games.png)
 
 [View Interactive Chart...](html_charts/6_most_reviewed_games.html)
 
@@ -199,7 +199,7 @@ Query: [7_game_price_by_developer.sql](sql/7_game_price_by_developer.sql)
 
 **Visualization:**
 
-![7_game_price_by_dev.png](Images/charts/7_game_price_by_dev.png)
+![7_game_price_by_dev.png](images/charts/7_game_price_by_dev.png)
 
 [View Interactive Chart...](html_charts/7_game_price_by_dev.html)
 
